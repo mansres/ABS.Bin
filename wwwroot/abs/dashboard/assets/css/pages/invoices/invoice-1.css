@@ -1,0 +1,278 @@
+.abs-invoice-1 {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+  .abs-invoice-1 .abs-invoice_container {
+    width: 100%;
+    margin: 0;
+    padding: 0 30px; }
+  .abs-invoice-1 .abs-invoice_head {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0; }
+    .abs-invoice-1 .abs-invoice_head .abs-invoice_container {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px; }
+    .abs-invoice-1 .abs-invoice_head .abs-invoice_brand {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .abs-invoice-1 .abs-invoice_head .abs-invoice_brand .abs-invoice_title {
+        font-weight: 700;
+        font-size: 2.7rem;
+        margin-right: 10px;
+        margin-top: 5px;
+        color: #fff;
+        vertical-align: top; }
+      .abs-invoice-1 .abs-invoice_head .abs-invoice_brand .abs-invoice_logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 5px;
+        text-align: right; }
+        .abs-invoice-1 .abs-invoice_head .abs-invoice_brand .abs-invoice_logo img {
+          text-align: right; }
+        .abs-invoice-1 .abs-invoice_head .abs-invoice_brand .abs-invoice_logo .abs-invoice_desc {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          text-align: right;
+          padding: 1rem 0 1rem 0;
+          color: rgba(255, 255, 255, 0.7); }
+    .abs-invoice-1 .abs-invoice_head .abs-invoice_items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.2); }
+      .abs-invoice-1 .abs-invoice_head .abs-invoice_items .abs-invoice_item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        color: #fff;
+        margin-right: 10px;
+        margin-top: 20px; }
+        .abs-invoice-1 .abs-invoice_head .abs-invoice_items .abs-invoice_item:last-child {
+          margin-right: 0; }
+        .abs-invoice-1 .abs-invoice_head .abs-invoice_items .abs-invoice_item .abs-invoice_subtitle {
+          font-weight: 500;
+          padding-bottom: 0.5rem; }
+        .abs-invoice-1 .abs-invoice_head .abs-invoice_items .abs-invoice_item .abs-invoice_text {
+          color: rgba(255, 255, 255, 0.7); }
+  .abs-invoice-1 .abs-invoice_body {
+    padding: 3rem 0; }
+    .abs-invoice-1 .abs-invoice_body table {
+      background-color: transparent; }
+      .abs-invoice-1 .abs-invoice_body table thead tr th {
+        background-color: transparent;
+        padding: 1rem 0 0.5rem 0;
+        border-top: none;
+        color: #74788d; }
+        .abs-invoice-1 .abs-invoice_body table thead tr th:not(:first-child) {
+          text-align: right; }
+      .abs-invoice-1 .abs-invoice_body table tbody tr td {
+        background-color: transparent;
+        padding: 1rem 0 1rem 0;
+        border-top: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #595d6e; }
+        .abs-invoice-1 .abs-invoice_body table tbody tr td:not(:first-child) {
+          text-align: right; }
+        .abs-invoice-1 .abs-invoice_body table tbody tr td:last-child {
+          color: #FE21BE;
+          font-size: 1.2rem; }
+      .abs-invoice-1 .abs-invoice_body table tbody tr:first-child td {
+        padding-top: 1.8rem; }
+  .abs-invoice-1 .abs-invoice_footer {
+    padding: 3rem 0;
+    background-color: #f7f8fa; }
+    .abs-invoice-1 .abs-invoice_footer .abs-invoice_container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+    .abs-invoice-1 .abs-invoice_footer .abs-invoice_bank {
+      margin-right: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .abs-invoice-1 .abs-invoice_footer .abs-invoice_bank .abs-invoice_title {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        color: #74788d; }
+      .abs-invoice-1 .abs-invoice_footer .abs-invoice_bank .abs-invoice_item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-top: 10px; }
+        .abs-invoice-1 .abs-invoice_footer .abs-invoice_bank .abs-invoice_item .abs-invoice_label {
+          font-size: 1.1rem;
+          font-weight: 500;
+          margin-right: 40px;
+          color: #595d6e;
+          text-align: left; }
+        .abs-invoice-1 .abs-invoice_footer .abs-invoice_bank .abs-invoice_item .abs-invoice_value {
+          font-size: 1.1rem;
+          font-weight: 400;
+          color: #74788d;
+          text-align: right; }
+    .abs-invoice-1 .abs-invoice_footer .abs-invoice_total {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: right; }
+      .abs-invoice-1 .abs-invoice_footer .abs-invoice_total .abs-invoice_title {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        color: #74788d; }
+      .abs-invoice-1 .abs-invoice_footer .abs-invoice_total .abs-invoice_price {
+        color: #FE21BE;
+        font-weight: 700;
+        font-size: 24px; }
+      .abs-invoice-1 .abs-invoice_footer .abs-invoice_total .abs-invoice_notice {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #74788d; }
+  .abs-invoice-1 .abs-invoice_actions {
+    padding: 2rem 0; }
+    .abs-invoice-1 .abs-invoice_actions .abs-invoice_container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+@media (min-width: 1025px) {
+  .abs-invoice-1 .abs-invoice_container {
+    width: 80%;
+    margin: 0 auto; } }
+
+@media (max-width: 768px) {
+  .abs-invoice-1 .abs-invoice_container {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px; }
+  .abs-invoice-1 .abs-invoice_head {
+    padding: 20px 0; }
+    .abs-invoice-1 .abs-invoice_head .abs-invoice_brand {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .abs-invoice-1 .abs-invoice_head .abs-invoice_brand .abs-invoice_title {
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 30px; }
+      .abs-invoice-1 .abs-invoice_head .abs-invoice_brand .abs-invoice_logo {
+        text-align: left; }
+        .abs-invoice-1 .abs-invoice_head .abs-invoice_brand .abs-invoice_logo img {
+          text-align: left; }
+        .abs-invoice-1 .abs-invoice_head .abs-invoice_brand .abs-invoice_logo .abs-invoice_desc {
+          text-align: left; }
+    .abs-invoice-1 .abs-invoice_head .abs-invoice_items {
+      margin-top: 20px; }
+  .abs-invoice-1 .abs-invoice_body {
+    padding: 2rem 0; }
+  .abs-invoice-1 .abs-invoice_footer {
+    padding: 2rem 0; }
+    .abs-invoice-1 .abs-invoice_footer .abs-invoice_container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .abs-invoice-1 .abs-invoice_footer .abs-invoice_bank .abs-invoice_item .abs-invoice_label {
+      margin-right: 20px; }
+    .abs-invoice-1 .abs-invoice_footer .abs-invoice_total {
+      margin-top: 30px;
+      text-align: left; } }
+
+@media print {
+  .abs-header,
+  .abs-header-mobile,
+  .abs-aside,
+  .abs-footer,
+  .abs-subheader,
+  .abs-scrolltop,
+  .abs-quick-panel,
+  .abs-demo-panel,
+  .abs-sticky-toolbar {
+    display: none !important; }
+  body,
+  .abs-wrapper,
+  .abs-body,
+  .abs-content {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important; }
+  .abs-invoice-1 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+    .abs-invoice-1 .abs-invoice_head {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+      .abs-invoice-1 .abs-invoice_head .abs-invoice_container {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; }
+    .abs-invoice-1 .abs-invoice_actions {
+      display: none !important; }
+    .abs-invoice-1 .abs-invoice_container {
+      width: 100%;
+      padding: 0 10px; } }

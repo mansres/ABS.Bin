@@ -1,0 +1,16 @@
+.abs-faq-v1 .abs-nav .abs-nav_item {
+  padding: 0.5rem 0; }
+  .abs-faq-v1 .abs-nav .abs-nav_item .abs-nav_link {
+    background-color: transparent !important; }
+    .abs-faq-v1 .abs-nav .abs-nav_item .abs-nav_link > .abs-nav_link-text {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #74788d;
+      -webkit-transition: color 0.3s ease;
+      transition: color 0.3s ease; }
+  .abs-faq-v1 .abs-nav .abs-nav_item:hover > .abs-nav_link > .abs-nav_link-text, .abs-faq-v1 .abs-nav .abs-nav_item.abs-nav_item--active > .abs-nav_link > .abs-nav_link-text {
+    color: #22b9ff;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+  .abs-faq-v1 .abs-nav .abs-nav_item .abs-nav_sub .abs-nav_item {
+    padding: 0.25rem 0; }

@@ -1,0 +1,23 @@
+.abs-error-v1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  .abs-error-v1 .abs-error-v1_container .abs-error-v1_number {
+    font-size: 150px;
+    margin-left: 80px;
+    margin-top: 9rem;
+    font-weight: 700;
+    color: #595d6e; }
+  .abs-error-v1 .abs-error-v1_container .abs-error-v1_desc {
+    font-size: 1.5rem;
+    margin-left: 80px;
+    color: #74788d; }
+
+@media (max-width: 768px) {
+  .abs-error-v1 .abs-error-v1_container .abs-error-v1_number {
+    margin: 120px 0 0 3rem;
+    font-size: 8rem; }
+  .abs-error-v1 .abs-error-v1_container .abs-error-v1_desc {
+    margin-left: 3rem;
+    padding-right: 0.5rem; } }
