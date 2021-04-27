@@ -1,0 +1,512 @@
+[
+  {
+    "TimeZoneID": "Pacific/Midway",
+    "UTC_Offset": "UTC-11:00",
+    "TimeZoneName": "Midway Island"
+  },
+  {
+    "TimeZoneID": "Pacific/Honolulu",
+    "UTC_Offset": "UTC-10:00",
+    "TimeZoneName": "Hawaii"
+  },
+  {
+    "TimeZoneID": "America/Anchorage",
+    "UTC_Offset": "UTC-08:00",
+    "TimeZoneName": "Alaska"
+  },
+  {
+    "TimeZoneID": "America/Tijuana",
+    "UTC_Offset": "UTC-07:00",
+    "TimeZoneName": "Baja California"
+  },
+  {
+    "TimeZoneID": "America/Los_Angeles",
+    "UTC_Offset": "UTC-07:00",
+    "TimeZoneName": "Pacific Time US and Canada)"
+  },
+  {
+    "TimeZoneID": "America/Phoenix",
+    "UTC_Offset": "UTC-07:00",
+    "TimeZoneName": "Arizona"
+  },
+  {
+    "TimeZoneID": "America/Chihuahua",
+    "UTC_Offset": "UTC-06:00",
+    "TimeZoneName": "Chihuahua"
+  },
+  {
+    "TimeZoneID": "America/Denver",
+    "UTC_Offset": "UTC-06:00",
+    "TimeZoneName": "Mountain Time US and Canada)"
+  },
+  {
+    "TimeZoneID": "America/Belize",
+    "UTC_Offset": "UTC-06:00",
+    "TimeZoneName": "Central America"
+  },
+  {
+    "TimeZoneID": "America/Chicago",
+    "UTC_Offset": "UTC-05:00",
+    "TimeZoneName": "Central Time US and Canada)\t"
+  },
+  {
+    "TimeZoneID": "America/Mexico_City",
+    "UTC_Offset": "UTC-05:00",
+    "TimeZoneName": "Guadalajara"
+  },
+  {
+    "TimeZoneID": "America/Regina",
+    "UTC_Offset": "UTC-06:00",
+    "TimeZoneName": "Saskatchewan"
+  },
+  {
+    "TimeZoneID": "America/Bogota",
+    "UTC_Offset": "UTC-05:00",
+    "TimeZoneName": "Bogota"
+  },
+  {
+    "TimeZoneID": "America/Jamaica",
+    "UTC_Offset": "UTC-05:00",
+    "TimeZoneName": "Kingston"
+  },
+  {
+    "TimeZoneID": "America/New_York",
+    "UTC_Offset": "UTC-04:00",
+    "TimeZoneName": "Eastern Time US and Canada)"
+  },
+  {
+    "TimeZoneID": "America/Indiana/Indianapolis",
+    "UTC_Offset": "UTC-04:00",
+    "TimeZoneName": "Indiana East)"
+  },
+  {
+    "TimeZoneID": "America/Caracas",
+    "UTC_Offset": "UTC-04:30",
+    "TimeZoneName": "Caracas"
+  },
+  {
+    "TimeZoneID": "America/Asuncion",
+    "UTC_Offset": "UTC-03:00",
+    "TimeZoneName": "Asuncion"
+  },
+  {
+    "TimeZoneID": "America/Halifax",
+    "UTC_Offset": "UTC-03:00",
+    "TimeZoneName": "Atlantic Time Canada)"
+  },
+  {
+    "TimeZoneID": "America/Cuiaba",
+    "UTC_Offset": "UTC-04:00",
+    "TimeZoneName": "Cuiaba"
+  },
+  {
+    "TimeZoneID": "America/Manaus",
+    "UTC_Offset": "UTC-04:00",
+    "TimeZoneName": "Georgetown"
+  },
+  {
+    "TimeZoneID": "America/St_Johns",
+    "UTC_Offset": "UTC-02:30",
+    "TimeZoneName": "Newfoundland and Labrador"
+  },
+  {
+    "TimeZoneID": "America/Sao_Paulo",
+    "UTC_Offset": "UTC-03:00",
+    "TimeZoneName": "Brasilia"
+  },
+  {
+    "TimeZoneID": "America/Buenos_Aires",
+    "UTC_Offset": "UTC-03:00",
+    "TimeZoneName": "Buenos Aires"
+  },
+  {
+    "TimeZoneID": "America/Cayenne",
+    "UTC_Offset": "UTC-03:00",
+    "TimeZoneName": "Cayenne"
+  },
+  {
+    "TimeZoneID": "America/Godthab",
+    "UTC_Offset": "UTC-02:00",
+    "TimeZoneName": "Greenland"
+  },
+  {
+    "TimeZoneID": "America/Montevideo",
+    "UTC_Offset": "UTC-03:00",
+    "TimeZoneName": "Montevideo"
+  },
+  {
+    "TimeZoneID": "America/Bahia",
+    "UTC_Offset": "UTC-03:00",
+    "TimeZoneName": "Salvador"
+  },
+  {
+    "TimeZoneID": "America/Santiago",
+    "UTC_Offset": "UTC-03:00",
+    "TimeZoneName": "Santiago"
+  },
+  {
+    "TimeZoneID": "America/Noronha",
+    "UTC_Offset": "UTC-02:00",
+    "TimeZoneName": "Mid-Atlantic"
+  },
+  {
+    "TimeZoneID": "Atlantic/Azores",
+    "UTC_Offset": "UTC+00:00",
+    "TimeZoneName": "Azores"
+  },
+  {
+    "TimeZoneID": "Atlantic/Cape_Verde",
+    "UTC_Offset": "UTC-01:00",
+    "TimeZoneName": "Cape Verde Islands"
+  },
+  {
+    "TimeZoneID": "Europe/London",
+    "UTC_Offset": "UTC+01:00",
+    "TimeZoneName": "Dublin"
+  },
+  {
+    "TimeZoneID": "Africa/Casablanca",
+    "UTC_Offset": "UTC+01:00",
+    "TimeZoneName": "Casablanca"
+  },
+  {
+    "TimeZoneID": "Africa/Monrovia",
+    "UTC_Offset": "UTC+00:00",
+    "TimeZoneName": "Monrovia"
+  },
+  {
+    "TimeZoneID": "Europe/Amsterdam",
+    "UTC_Offset": "UTC+02:00",
+    "TimeZoneName": "Amsterdam"
+  },
+  {
+    "TimeZoneID": "Europe/Belgrade",
+    "UTC_Offset": "UTC+02:00",
+    "TimeZoneName": "Belgrade"
+  },
+  {
+    "TimeZoneID": "Europe/Brussels",
+    "UTC_Offset": "UTC+02:00",
+    "TimeZoneName": "Brussels"
+  },
+  {
+    "TimeZoneID": "Europe/Warsaw",
+    "UTC_Offset": "UTC+02:00",
+    "TimeZoneName": "Sarajevo"
+  },
+  {
+    "TimeZoneID": "Africa/Algiers",
+    "UTC_Offset": "UTC+01:00",
+    "TimeZoneName": "West Central Africa"
+  },
+  {
+    "TimeZoneID": "Africa/Windhoek",
+    "UTC_Offset": "UTC+02:00",
+    "TimeZoneName": "Windhoek"
+  },
+  {
+    "TimeZoneID": "Europe/Athens",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Athens"
+  },
+  {
+    "TimeZoneID": "Asia/Beirut",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Beirut"
+  },
+  {
+    "TimeZoneID": "Africa/Cairo",
+    "UTC_Offset": "UTC+02:00",
+    "TimeZoneName": "Cairo"
+  },
+  {
+    "TimeZoneID": "Asia/Damascus",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Damascus"
+  },
+  {
+    "TimeZoneID": "EET",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Eastern Europe"
+  },
+  {
+    "TimeZoneID": "Africa/Harare",
+    "UTC_Offset": "UTC+02:00",
+    "TimeZoneName": "Harare"
+  },
+  {
+    "TimeZoneID": "Europe/Helsinki",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Helsinki"
+  },
+  {
+    "TimeZoneID": "Asia/Istanbul",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Istanbul"
+  },
+  {
+    "TimeZoneID": "Asia/Jerusalem",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Jerusalem"
+  },
+  {
+    "TimeZoneID": "Europe/Kaliningrad",
+    "UTC_Offset": "UTC+02:00",
+    "TimeZoneName": "Kaliningrad"
+  },
+  {
+    "TimeZoneID": "Africa/Tripoli",
+    "UTC_Offset": "UTC+02:00",
+    "TimeZoneName": "Tripoli"
+  },
+  {
+    "TimeZoneID": "Asia/Amman",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Amman"
+  },
+  {
+    "TimeZoneID": "Asia/Baghdad",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Baghdad"
+  },
+  {
+    "TimeZoneID": "Asia/Kuwait",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Kuwait"
+  },
+  {
+    "TimeZoneID": "Europe/Minsk",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Minsk"
+  },
+  {
+    "TimeZoneID": "Europe/Moscow",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Moscow"
+  },
+  {
+    "TimeZoneID": "Africa/Nairobi",
+    "UTC_Offset": "UTC+03:00",
+    "TimeZoneName": "Nairobi"
+  },
+  {
+    "TimeZoneID": "Asia/Tehran",
+    "UTC_Offset": "UTC+03:30",
+    "TimeZoneName": "Tehran"
+  },
+  {
+    "TimeZoneID": "Asia/Muscat",
+    "UTC_Offset": "UTC+04:00",
+    "TimeZoneName": "Abu Dhabi"
+  },
+  {
+    "TimeZoneID": "Asia/Baku",
+    "UTC_Offset": "UTC+05:00",
+    "TimeZoneName": "Baku"
+  },
+  {
+    "TimeZoneID": "Europe/Samara",
+    "UTC_Offset": "UTC+04:00",
+    "TimeZoneName": "Izhevsk"
+  },
+  {
+    "TimeZoneID": "Indian/Mauritius",
+    "UTC_Offset": "UTC+04:00",
+    "TimeZoneName": "Port Louis"
+  },
+  {
+    "TimeZoneID": "Asia/Tbilisi",
+    "UTC_Offset": "UTC+04:00",
+    "TimeZoneName": "Tbilisi"
+  },
+  {
+    "TimeZoneID": "Asia/Yerevan",
+    "UTC_Offset": "UTC+04:00",
+    "TimeZoneName": "Yerevan"
+  },
+  {
+    "TimeZoneID": "Asia/Kabul",
+    "UTC_Offset": "UTC+04:30",
+    "TimeZoneName": "Kabul"
+  },
+  {
+    "TimeZoneID": "Asia/Tashkent",
+    "UTC_Offset": "UTC+05:00",
+    "TimeZoneName": "Tashkent"
+  },
+  {
+    "TimeZoneID": "Asia/Yekaterinburg",
+    "UTC_Offset": "UTC+05:00",
+    "TimeZoneName": "Ekaterinburg"
+  },
+  {
+    "TimeZoneID": "Asia/Karachi",
+    "UTC_Offset": "UTC+05:00",
+    "TimeZoneName": "Islamabad"
+  },
+  {
+    "TimeZoneID": "Asia/Kolkata",
+    "UTC_Offset": "UTC+05:30",
+    "TimeZoneName": "Chennai"
+  },
+  {
+    "TimeZoneID": "Asia/Colombo",
+    "UTC_Offset": "UTC+05:30",
+    "TimeZoneName": "Sri Jayawardenepura"
+  },
+  {
+    "TimeZoneID": "Asia/Katmandu",
+    "UTC_Offset": "UTC+05:45",
+    "TimeZoneName": "Kathmandu"
+  },
+  {
+    "TimeZoneID": "Asia/Almaty",
+    "UTC_Offset": "UTC+06:00",
+    "TimeZoneName": "Astana"
+  },
+  {
+    "TimeZoneID": "Asia/Dhaka",
+    "UTC_Offset": "UTC+06:00",
+    "TimeZoneName": "Dhaka"
+  },
+  {
+    "TimeZoneID": "Asia/Novosibirsk",
+    "UTC_Offset": "UTC+06:00",
+    "TimeZoneName": "Novosibirsk"
+  },
+  {
+    "TimeZoneID": "Asia/Rangoon",
+    "UTC_Offset": "UTC+06:30",
+    "TimeZoneName": "Yangon Rangoon)"
+  },
+  {
+    "TimeZoneID": "Asia/Bangkok",
+    "UTC_Offset": "UTC+07:00",
+    "TimeZoneName": "Bangkok"
+  },
+  {
+    "TimeZoneID": "Asia/Krasnoyarsk",
+    "UTC_Offset": "UTC+07:00",
+    "TimeZoneName": "Krasnoyarsk"
+  },
+  {
+    "TimeZoneID": "Asia/Chongqing",
+    "UTC_Offset": "UTC+08:00",
+    "TimeZoneName": "Beijing"
+  },
+  {
+    "TimeZoneID": "Asia/Irkutsk",
+    "UTC_Offset": "UTC+08:00",
+    "TimeZoneName": "Irkutsk"
+  },
+  {
+    "TimeZoneID": "Asia/Kuala_Lumpur",
+    "UTC_Offset": "UTC+08:00",
+    "TimeZoneName": "Kuala Lumpur"
+  },
+  {
+    "TimeZoneID": "Australia/Perth",
+    "UTC_Offset": "UTC+08:00",
+    "TimeZoneName": "Perth"
+  },
+  {
+    "TimeZoneID": "Asia/Taipei",
+    "UTC_Offset": "UTC+08:00",
+    "TimeZoneName": "Taipei"
+  },
+  {
+    "TimeZoneID": "Asia/Ulaanbaatar",
+    "UTC_Offset": "UTC+08:00",
+    "TimeZoneName": "Ulaanbaatar"
+  },
+  {
+    "TimeZoneID": "Asia/Tokyo",
+    "UTC_Offset": "UTC+09:00",
+    "TimeZoneName": "Osaka"
+  },
+  {
+    "TimeZoneID": "Asia/Seoul",
+    "UTC_Offset": "UTC+09:00",
+    "TimeZoneName": "Seoul"
+  },
+  {
+    "TimeZoneID": "Asia/Yakutsk",
+    "UTC_Offset": "UTC+09:00",
+    "TimeZoneName": "Yakutsk"
+  },
+  {
+    "TimeZoneID": "Australia/Adelaide",
+    "UTC_Offset": "UTC+10:30",
+    "TimeZoneName": "Adelaide"
+  },
+  {
+    "TimeZoneID": "Australia/Darwin",
+    "UTC_Offset": "UTC+09:30",
+    "TimeZoneName": "Darwin"
+  },
+  {
+    "TimeZoneID": "Australia/Brisbane",
+    "UTC_Offset": "UTC+10:00",
+    "TimeZoneName": "Brisbane"
+  },
+  {
+    "TimeZoneID": "Australia/Canberra",
+    "UTC_Offset": "UTC+11:00",
+    "TimeZoneName": "Canberra"
+  },
+  {
+    "TimeZoneID": "Pacific/Guam",
+    "UTC_Offset": "UTC+10:00",
+    "TimeZoneName": "Guam"
+  },
+  {
+    "TimeZoneID": "Australia/Hobart",
+    "UTC_Offset": "UTC+11:00",
+    "TimeZoneName": "Hobart"
+  },
+  {
+    "TimeZoneID": "Asia/Magadan",
+    "UTC_Offset": "UTC+10:00",
+    "TimeZoneName": "Magadan"
+  },
+  {
+    "TimeZoneID": "Asia/Vladivostok",
+    "UTC_Offset": "UTC+10:00",
+    "TimeZoneName": "Vladivostok"
+  },
+  {
+    "TimeZoneID": "Asia/Srednekolymsk",
+    "UTC_Offset": "UTC+11:00",
+    "TimeZoneName": "Chokirdakh"
+  },
+  {
+    "TimeZoneID": "Pacific/Guadalcanal",
+    "UTC_Offset": "UTC+11:00",
+    "TimeZoneName": "Solomon Islands"
+  },
+  {
+    "TimeZoneID": "Asia/Anadyr",
+    "UTC_Offset": "UTC+12:00",
+    "TimeZoneName": "Anadyr"
+  },
+  {
+    "TimeZoneID": "Pacific/Auckland",
+    "UTC_Offset": "UTC+13:00",
+    "TimeZoneName": "Auckland"
+  },
+  {
+    "TimeZoneID": "Pacific/Fiji",
+    "UTC_Offset": "UTC+12:00",
+    "TimeZoneName": "Fiji Islands"
+  },
+  {
+    "TimeZoneID": "Pacific/Tongatapu",
+    "UTC_Offset": "UTC+13:00",
+    "TimeZoneName": "Nuku'alofa"
+  },
+  {
+    "TimeZoneID": "Pacific/Apia",
+    "UTC_Offset": "UTC+14:00",
+    "TimeZoneName": "Samoa"
+  }
+]

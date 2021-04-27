@@ -1,0 +1,27 @@
+[
+  {
+    "ID": "Portal.Header",
+    "Name": "Footer",
+    "Category": "Portal",
+    "Enable": true,
+    "StudioMenu": false,
+    "LoggedInOnly": true
+  },
+  {
+    "ID": "Portal.Empty",
+    "Name": "Home",
+    "Category": "Studio",
+    "Enable": true,
+    "StudioMenu": true,
+    "LoggedInOnly": false
+  },
+  {
+    "ID": "Portal.Footer",
+    "Name": "Footer",
+    "Category": "Portal",
+    "Enable": true,
+    "StudioMenu": false,
+    "LoggedInOnly": true
+
+  }
+]

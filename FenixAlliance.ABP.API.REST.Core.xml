@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FenixAlliance.ABP.API.REST.Core</name>
+    </assembly>
+    <members>
+        <member name="T:FenixAlliance.ABP.API.REST.Core.Extensions.RestApiServiceExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FenixAlliance.ABP.API.REST.Core.Extensions.RestApiServiceExtensions.AddRestApiService(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment,FenixAlliance.ACL.Configuration.Interfaces.ISuiteOptions)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="Configuration"></param>
+            <param name="Environment"></param>
+            <param name="Options"></param>
+        </member>
+        <member name="M:FenixAlliance.ABP.API.REST.Core.Extensions.RestApiServiceExtensions.UseRestApiService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment,FenixAlliance.ACL.Configuration.Interfaces.ISuiteOptions)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="Configuration"></param>
+            <param name="Environment"></param>
+            <param name="Options"></param>
+        </member>
+    </members>
+</doc>

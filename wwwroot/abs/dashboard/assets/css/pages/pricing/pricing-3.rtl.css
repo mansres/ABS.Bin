@@ -1,0 +1,97 @@
+.abs-pricing-3 {
+  padding: 5.71rem 0 5.71rem 0; }
+  .abs-pricing-3.abs-pricing-3--fixed {
+    width: 75%;
+    margin: 0 auto; }
+  .abs-pricing-3 .abs-pricing-3_items {
+    width: 100%;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+    box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08); }
+    .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item {
+      border-radius: 4px; }
+      .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper {
+        padding: 4.2rem 1rem;
+        text-align: center; }
+        .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_title {
+          font-size: 1.3rem;
+          color: #74788d; }
+        .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_price {
+          border-radius: 16px;
+          margin-top: 2.83rem;
+          display: inline-block;
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding: 0.83rem 1.43rem 0.83rem 1.43rem;
+          background-color: rgba(34, 185, 255, 0.05);
+          color: #74788d; }
+          .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_price.abs-pricing-3_price--padding {
+            padding: 1.4rem 1.43rem 1.4rem 1.43rem; }
+          .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_price .abs-pricing-3_label {
+            font-size: 1.5rem;
+            vertical-align: 33%;
+            color: #74788d; }
+          .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_price .abs-pricing-3_number {
+            font-size: 2.64rem;
+            color: #595d6e; }
+          .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_price .abs-pricing-3_text {
+            font-size: 1.07rem;
+            vertical-align: 40%;
+            color: #74788d; }
+        .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_description {
+          text-align: center;
+          font-size: 0.96rem;
+          display: inline-block;
+          margin-top: 2.85rem;
+          color: #74788d; }
+          .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_description > span {
+            display: block; }
+            .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_description > span:nth-child(1) {
+              letter-spacing: 0.01rem; }
+        .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_btn {
+          margin: 2.83rem auto 0 auto; }
+          .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper .abs-pricing-3_btn > .btn {
+            padding: 0.8rem 3.6rem 0.8rem 3.6rem; }
+      .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus {
+        background-color: #22b9ff;
+        margin-top: -3rem;
+        margin-bottom: -3rem;
+        color: rgba(255, 255, 255, 0.1); }
+        .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus .abs-pricing-3_wrapper {
+          padding: 7rem 1rem; }
+          .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus .abs-pricing-3_wrapper .abs-pricing-3_btn > .btn {
+            color: #595d6e; }
+            .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus .abs-pricing-3_wrapper .abs-pricing-3_btn > .btn:hover {
+              color: #595d6e;
+              background-color: #fff;
+              border: 1px solid #fff; }
+          .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus .abs-pricing-3_wrapper .abs-pricing-3_price {
+            background-color: white; }
+            .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus .abs-pricing-3_wrapper .abs-pricing-3_price .abs-pricing-3_label {
+              color: rgba(255, 255, 255, 0.6); }
+            .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus .abs-pricing-3_wrapper .abs-pricing-3_price .abs-pricing-3_number {
+              font-size: 2.64rem;
+              color: rgba(255, 255, 255, 0.8); }
+            .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus .abs-pricing-3_wrapper .abs-pricing-3_price .abs-pricing-3_text {
+              color: rgba(255, 255, 255, 0.6); }
+          .abs-pricing-3 .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus .abs-pricing-3_wrapper .abs-pricing-3_description {
+            color: rgba(255, 255, 255, 0.9); }
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+  .abs-pricing-3.abs-pricing-3--fixed {
+    width: 90%;
+    margin: 0 auto; } }
+
+@media (max-width: 1024px) {
+  .abs-pricing-3 {
+    padding: 2.14rem 0 2.14rem 0; }
+    .abs-pricing-3.abs-pricing-3--fixed {
+      width: 100%;
+      margin: 0 auto; }
+      .abs-pricing-3.abs-pricing-3--fixed .abs-pricing-3_items .abs-pricing-3_item .abs-pricing-3_wrapper {
+        padding: 3rem 1rem; }
+      .abs-pricing-3.abs-pricing-3--fixed .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus {
+        margin-top: 0;
+        margin-bottom: 0; }
+        .abs-pricing-3.abs-pricing-3--fixed .abs-pricing-3_items .abs-pricing-3_item.abs-pricing-3_item--focus .abs-pricing-3_wrapper {
+          padding: 3rem 1rem; } }
