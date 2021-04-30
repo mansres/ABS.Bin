@@ -1,0 +1,12 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\PC\.nuget\packages\radzen.blazor\3.2.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Toolbelt.Blazor.HotKeys" Path="C:\Users\PC\.nuget\packages\toolbelt.blazor.hotkeys\10.0.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/admin" Path="C:\Code\FAGroup\FenixAlliance.ABS\FenixAlliance.ABS.Portal\FenixAlliance.ABS.Portal.Admin\wwwroot\" />
+  <ContentRoot BasePath="/aps" Path="C:\Code\FAGroup\FenixAlliance.APS\FenixAlliance.APS.Core\wwwroot\" />
+  <ContentRoot BasePath="/editor" Path="C:\Code\FAGroup\FenixAlliance.ABS\FenixAlliance.ABS.Portal\FenixAlliance.ABS.Portal.Editor\wwwroot\" />
+  <ContentRoot BasePath="/fixtures" Path="C:\Code\FAGroup\FenixAlliance.ABM\FenixAlliance.ABM.Fixtures\wwwroot\" />
+  <ContentRoot BasePath="/fs" Path="C:\Code\FAGroup\FenixAlliance.ABP\FenixAlliance.ABP.FileSystem\wwwroot\" />
+  <ContentRoot BasePath="/Identity" Path="C:\Users\PC\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.5\staticwebassets\V4\" />
+  <ContentRoot BasePath="/portal" Path="C:\Code\FAGroup\FenixAlliance.ABS\FenixAlliance.ABS.Portal\FenixAlliance.ABS.Portal.Core\wwwroot\" />
+  <ContentRoot BasePath="/ui" Path="C:\Code\FAGroup\FenixAlliance.ABS\FenixAlliance.ABS.Portal\FenixAlliance.ABS.Portal.UI\wwwroot\" />
+</StaticWebAssets>
