@@ -664,6 +664,7 @@
           "lib/netstandard2.0/Azure.Storage.Common.dll": {}
         }
       },
+      "BuildBundlerMinifier/3.2.449": {},
       "ByteSize/2.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.1"
@@ -6600,6 +6601,7 @@
       },
       "FenixAlliance.ABP.FileSystem/1.1.6.9": {
         "dependencies": {
+          "BuildBundlerMinifier": "3.2.449",
           "FenixAlliance.ABP.Core": "1.1.6.9"
         },
         "runtime": {
@@ -8766,6 +8768,13 @@
       "sha512": "sha512-3f5auvdpx3LZpQq/bdqVurxuoaoIjnupefmBdDuOF7K70XFB2mTLLcx4erzZnUK7X82GKh/qkJGb5lyQFPgDVg==",
       "path": "azure.storage.common/12.7.1",
       "hashPath": "azure.storage.common.12.7.1.nupkg.sha512"
+    },
+    "BuildBundlerMinifier/3.2.449": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uA9sYDy4VepL3xwzBTLcP2LyuVYMt0ZIT3gaSiXvGoX15Ob+rOP+hGydhevlSVd+rFo+Y+VQFEHDuWU8HBW+XA==",
+      "path": "buildbundlerminifier/3.2.449",
+      "hashPath": "buildbundlerminifier.3.2.449.nupkg.sha512"
     },
     "ByteSize/2.0.0": {
       "type": "package",

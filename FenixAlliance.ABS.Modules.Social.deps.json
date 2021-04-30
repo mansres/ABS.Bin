@@ -6600,6 +6600,7 @@
       },
       "FenixAlliance.ABP.FileSystem/1.1.6.9": {
         "dependencies": {
+          "BuildBundlerMinifier": "3.2.449",
           "FenixAlliance.ABP.Core": "1.1.6.9"
         },
         "runtime": {
