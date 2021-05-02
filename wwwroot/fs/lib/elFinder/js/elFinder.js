@@ -1127,7 +1127,8 @@ var elFinder = function(elm, opts, bootCallback) {
 				}
 				baseUrl = self.options.baseUrl;
 			}
-			return baseUrl;
+			console.log("base url: "+ baseUrl)
+			return "/fs/lib/elfinder/" + baseUrl;
 		}
 	})();
 	
