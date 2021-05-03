@@ -18,7 +18,6 @@ window.blazorUtils = {
     NProgressIncrement: function () {
         NProgress.inc()
     },
-
     NProgressDone: function () {
         NProgress.done()
     },
@@ -34,6 +33,11 @@ window.blazorUtils = {
         return new Intl.NumberFormat(locale, { style: 'currency', currency: currency }).format(number)
     },
     toastNotification: function (notificationType, notificationMessage) {
+        toastr.options.closeButton = true;
+        toastr.options.progressBar = true;
+        toastr.options.preventDuplicates = true;
+        toastr.options.positionClass = "toast-bottom-right";
+
         // Display an info toast with no title
         switch (notificationType) {
             case "info":

@@ -1,18 +1,15 @@
 var absMenuEditor;
 window.adminInterop = {
+    Reload: function () {
+        window.location.reload();
+    },
     enableSideMenu: function () {
         adminlte.Treeview._jQueryInterface.call($(this), 'init')
-    },
-    getMenuBuilderContent: function () {
-        return $("#out").val()
     },
     AddOnErrorReload: function () {
         window.onerror = function () {
             window.location.reload();
         }
-    },
-    Reload: function () {
-        window.location.reload();
     },
     initMediaManager: function () {
         var myCommands = elFinder.prototype._options.commands;
@@ -80,5 +77,8 @@ window.adminInterop = {
             labelEdit: 'Edit',
             labelRemove: 'X',
         });
+    },
+    getMenuBuilderContent: function () {
+        return $("#out").val()
     }
 }

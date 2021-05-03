@@ -22,33 +22,38 @@ https://github.com/givanz/VvvebJs
 (function(){
   var cache = {};
   
-  this.tmpl = function tmpl(str, data){
-    // Figure out if we're getting a template, or if we need to
-    // load the template - and be sure to cache the result.
-	var fn = /^[-a-zA-Z0-9]+$/.test(str) ?
-      cache[str] = cache[str] ||
-        tmpl(document.getElementById(str).innerHTML) :
-              
-      // Generate a reusable function that will serve as a template
-      // generator (and which will be cached).
-      new Function("obj",
-        "var p=[],print=function(){p.push.apply(p,arguments);};" +
-         
-        // Introduce the data as local variables using with(){}
-        "with(obj){p.push('" +
-         
-        // Convert the template into pure JavaScript
-        str
-          .replace(/[\r\t\n]/g, " ")
-          .split("{%").join("\t")
-          .replace(/((^|%})[^\t]*)'/g, "$1\r")
-          .replace(/\t=(.*?)%}/g, "',$1,'")
-          .split("\t").join("');")
-          .split("%}").join("p.push('")
-          .split("\r").join("\\'")
-      + "');}return p.join('');");
-    // Provide some basic currying to the user
-    return data ? fn( data ) : fn;
+	this.tmpl = function tmpl(str, data) {
+        try {
+			// Figure out if we're getting a template, or if we need to
+			// load the template - and be sure to cache the result.
+			var fn = /^[-a-zA-Z0-9]+$/.test(str) ?
+				cache[str] = cache[str] ||
+				tmpl(document.getElementById(str).innerHTML) :
+
+				// Generate a reusable function that will serve as a template
+				// generator (and which will be cached).
+				new Function("obj",
+					"var p=[],print=function(){p.push.apply(p,arguments);};" +
+
+					// Introduce the data as local variables using with(){}
+					"with(obj){p.push('" +
+
+					// Convert the template into pure JavaScript
+					str
+						.replace(/[\r\t\n]/g, " ")
+						.split("{%").join("\t")
+						.replace(/((^|%})[^\t]*)'/g, "$1\r")
+						.replace(/\t=(.*?)%}/g, "',$1,'")
+						.split("\t").join("');")
+						.split("%}").join("p.push('")
+						.split("\r").join("\\'")
+					+ "');}return p.join('');");
+			// Provide some basic currying to the user
+			return data ? fn(data) : fn;
+        } catch (e) {
+
+        }
+
   };
 })();
 
@@ -581,7 +586,8 @@ Vvveb.Builder = {
 		self.highlightEl = null;
 		self.initCallback = callback;
 		
-        self.documentFrame = $("#iframe-wrapper > iframe");
+		self.documentFrame = $("#iframe-wrapper > iframe");
+
         self.canvas = $("#canvas");
 
 		self._loadIframe(url);
@@ -854,11 +860,11 @@ Vvveb.Builder = {
 		self.frameHead = $(window.FrameDocument).find("head");
 		
 		//insert editor helpers like non editable areas
-		self.frameHead.append('<link data-vvveb-helpers href="' + Vvveb.baseUrl + '../../css/vvvebjs-editor-helpers.css" rel="stylesheet">');
+		//self.frameHead.append('<link data-vvveb-helpers href="' + Vvveb.baseUrl + '../../css/vvvebjs-editor-helpers.css" rel="stylesheet">');
 
-		self._initHighlight();
+		//self._initHighlight();
 		
-		$(window).triggerHandler("vvveb.iframe.loaded", self.frameDoc);
+		//$(window).triggerHandler("vvveb.iframe.loaded", self.frameDoc);
 		$(".loading-message").removeClass("active");
     },	
     
@@ -1664,9 +1670,11 @@ Vvveb.Gui = {
 		$("#vvveb-builder").toggleClass("bottom-panel-expand");
 		$("#toggleEditorJsExecute").toggle();
 		Vvveb.CodeEditor.toggle();
+		editor.layout();
 	},
 	
 	toggleEditorJsExecute : function () {
+		editor.layout();
 		Vvveb.Builder.runJsOnSetHtml = this.checked;
 	},
 	
@@ -1785,7 +1793,7 @@ Vvveb.Gui = {
 		var designerMode = this.attributes["aria-pressed"].value != "true";
 		Vvveb.Builder.setDesignerMode(designerMode);
 	},
-//layout
+	//layout
 	togglePanel: function (panel, cssVar) {
 		var panel = $(panel);
 		var body = $("body");
@@ -1927,35 +1935,35 @@ function drawComponentsTree(tree) {
 	var prefix = Math.floor(Math.random() * 100);
 	
 	function drawComponentsTreeTraverse(tree) {
-		var html = $("<ol></ol>");
-		j++;
+		//var html = $("<ol></ol>");
+		//j++;
 		
-		for (i in tree)
-		{
-			var node = tree[i];
-			var id = prefix + '-' + j + '-' + i; 
+		//for (i in tree)
+		//{
+		//	var node = tree[i];
+		//	var id = prefix + '-' + j + '-' + i; 
 			
-			if (tree[i].children.length > 0) 
-			{
-				var li = $('<li data-component="' + node.name + '">\
-								<label for="id' + id + '" style="background-image:url(' + Vvveb.imgBaseUrl + node.image + ')"><span>' + node.name + '</span></label>\
-								<input type="checkbox" id="id' + id + '">\
-							</li>');		
-				li.append(drawComponentsTreeTraverse(node.children));
-			}
-			else 
-			{
-				var li =$('<li data-component="' + node.name + '" class="file">\
-							<label for="id' +  id + '" style="background-image:url(' + Vvveb.imgBaseUrl + node.image + ')"><span>' + node.name + '</span></label>\
-							<input type="checkbox" id="id' + id + '">\
-							</li>');
-			}
+		//	if (tree[i].children.length > 0) 
+		//	{
+		//		var li = $('<li data-component="' + node.name + '">\
+		//						<label for="id' + id + '" style="background-image:url(' + Vvveb.imgBaseUrl + node.image + ')"><span>' + node.name + '</span></label>\
+		//						<input type="checkbox" id="id' + id + '">\
+		//					</li>');		
+		//		li.append(drawComponentsTreeTraverse(node.children));
+		//	}
+		//	else 
+		//	{
+		//		var li =$('<li data-component="' + node.name + '" class="file">\
+		//					<label for="id' +  id + '" style="background-image:url(' + Vvveb.imgBaseUrl + node.image + ')"><span>' + node.name + '</span></label>\
+		//					<input type="checkbox" id="id' + id + '">\
+		//					</li>');
+		//	}
 
-			li.data("node", node.node);
-			html.append(li);
-		}
+		//	li.data("node", node.node);
+		//	html.append(li);
+		//}
 		
-		return html;
+		//return html;
 	}
 	
 	return drawComponentsTreeTraverse(tree);
@@ -2225,10 +2233,10 @@ Vvveb.FileManager = {
 		this.allowedComponents = allowedComponents;
 		this.tree = $("#filemanager .tree > ol").html("");
 		
-		$(this.tree).on("click", "a", function (e) {
-			e.preventDefault();
-			return false;
-		});
+		//$(this.tree).on("click", "a", function (e) {
+		//	e.preventDefault();
+		//	return false;
+		//});
 		
 		$(this.tree).on("click", "li[data-page] label", function (e) {
 			var page = $(this.parentNode).data("page");
