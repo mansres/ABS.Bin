@@ -797,11 +797,11 @@ Vvveb.Builder = {
 				
 
 				$(window.FrameWindow).on( "beforeunload", function(event) {
-					if (Vvveb.Undo.undoIndex >= 0) {
-						var dialogText = "You have unsaved changes";
-						event.returnValue = dialogText;
-						return dialogText;
-					}
+					//if (Vvveb.Undo.undoIndex >= 0) {
+					//	var dialogText = "You have unsaved changes";
+					//	event.returnValue = dialogText;
+					//	return dialogText;
+					//}
 				});
 				
 				$(window.FrameWindow).on( "unload", function(event) {
@@ -1583,17 +1583,17 @@ Vvveb.CodeEditor = {
 Vvveb.Gui = {
 	
 	init: function() {
-		$("[data-vvveb-action]").each(function () {
-			on = "click";
-			if (this.dataset.vvvebOn) on = this.dataset.vvvebOn;
+		//$("[data-vvveb-action]").each(function () {
+		//	on = "click";
+		//	if (this.dataset.vvvebOn) on = this.dataset.vvvebOn;
 			
-			$(this).on(on, Vvveb.Gui[this.dataset.vvvebAction]);
-			if (this.dataset.vvvebShortcut)
-			{
-				$(document).bind('keydown', this.dataset.vvvebShortcut, Vvveb.Gui[this.dataset.vvvebAction]);
-				$(window.FrameDocument, window.FrameWindow).bind('keydown', this.dataset.vvvebShortcut, Vvveb.Gui[this.dataset.vvvebAction]);
-			}
-		});
+		//	$(this).on(on, Vvveb.Gui[this.dataset.vvvebAction]);
+		//	if (this.dataset.vvvebShortcut)
+		//	{
+		//		$(document).bind('keydown', this.dataset.vvvebShortcut, Vvveb.Gui[this.dataset.vvvebAction]);
+		//		$(window.FrameDocument, window.FrameWindow).bind('keydown', this.dataset.vvvebShortcut, Vvveb.Gui[this.dataset.vvvebAction]);
+		//	}
+		//});
 	},
 	
 	undo : function () {
@@ -1662,14 +1662,22 @@ Vvveb.Gui = {
 		}
 	},
 	
-	viewport : function () {
+	viewport: function () {
 		$("#canvas").attr("class", this.dataset.view);
+	},
+	desktopViewport: function () {
+		$("#canvas").attr("class", "");
+	},
+	tabletViewport: function () {
+		$("#canvas").attr("class", "tablet");
+	},
+	mobileViewport: function () {
+		$("#canvas").attr("class", "mobile");
 	},
 	
 	toggleEditor : function () {
 		$("#vvveb-builder").toggleClass("bottom-panel-expand");
-		$("#toggleEditorJsExecute").toggle();
-		Vvveb.CodeEditor.toggle();
+		//$("#toggleEditorJsExecute").toggle();
 		editor.layout();
 	},
 	
@@ -2233,10 +2241,10 @@ Vvveb.FileManager = {
 		this.allowedComponents = allowedComponents;
 		this.tree = $("#filemanager .tree > ol").html("");
 		
-		//$(this.tree).on("click", "a", function (e) {
-		//	e.preventDefault();
-		//	return false;
-		//});
+		$(this.tree).on("click", "a", function (e) {
+			e.preventDefault();
+			return false;
+		});
 		
 		$(this.tree).on("click", "li[data-page] label", function (e) {
 			var page = $(this.parentNode).data("page");

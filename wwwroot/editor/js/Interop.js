@@ -44,6 +44,9 @@ window.editorInterop = {
     toggleRightColumn: function () {
         Vvveb.Gui.toggleRightColumn()
     },
+    toggleEditor: function () {
+        Vvveb.Gui.toggleEditor()
+    },
     initEditor: function (pageId, pageTitle = "Page Title Placeholder") {
         //if url has #no-right-panel set one panel demo
         if (window.location.hash.indexOf("no-right-panel") != -1) {
@@ -67,8 +70,3 @@ window.editorInterop = {
         });
     }
 }
-
-$(document).bind('keydown', 'ctrl+s', function (e) {
-    e.preventDefault();
-    return false;
-});

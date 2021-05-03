@@ -7,27 +7,41 @@ function htmlDecode(input) {
 }
 function createDependencyProposals(range) {
     // returning a static list of proposals, not even looking at the prefix (filtering is done by the Monaco editor),
-    // here you could do a server side lookup
+    // TODO: server side type & member lookup
     return [
         {
-            label: '"lodash"',
-            kind: monaco.languages.CompletionItemKind.Function,
-            documentation: "The Lodash library exported as Node.js modules.",
-            insertText: '"lodash": "*"',
-            range: range
-        },
-        {
-            label: '"express"',
+            label: 'GetHolderId',
             kind: monaco.languages.CompletionItemKind.Function,
             documentation: "Fast, unopinionated, minimalist web framework",
-            insertText: '"express": "*"',
+            insertText: '{var holderId = await HolderService.GetCurrentAccountHolderIDAsync(User)}',
             range: range
         },
         {
-            label: '"mkdirp"',
+            label: 'DateTime',
             kind: monaco.languages.CompletionItemKind.Function,
             documentation: "Recursively mkdir, like <code>mkdir -p</code>",
-            insertText: '"mkdirp": "*"',
+            insertText: '@DateTime',
+            range: range
+        },
+        {
+            label: 'HolderService',
+            kind: monaco.languages.CompletionItemKind.Function,
+            documentation: "Recursively mkdir, like <code>mkdir -p</code>",
+            insertText: 'HolderService',
+            range: range
+        },
+        {
+            label: 'HolderService.GetCurrentAccountHolderIDAsync(User)',
+            kind: monaco.languages.CompletionItemKind.Function,
+            documentation: "Recursively mkdir, like <code>mkdir -p</code>",
+            insertText: 'HolderService.GetCurrentAccountHolderIDAsync(User)',
+            range: range
+        },
+        {
+            label: 'DateTime.Now',
+            kind: monaco.languages.CompletionItemKind.Function,
+            documentation: "Recursively mkdir, like <code>mkdir -p</code>",
+            insertText: '@DateTime.Now',
             range: range
         },
         {
@@ -47,30 +61,40 @@ window.adminPortal = {
         // Here are a few examples of config options that can be passed to the editor.
         // You can also call editor.updateOptions at any time to change the options.
         try {
+
+            if (editor) {
+                editor.dispose()
+            }
+
             $("#" + containerId).empty();
 
             monaco.languages.registerCompletionItemProvider('razor', {
                 provideCompletionItems: function (model, position) {
                     // find out if we are completing a property in the 'dependencies' object.
                     var textUntilPosition = model.getValueInRange({ startLineNumber: 1, startColumn: 1, endLineNumber: position.lineNumber, endColumn: position.column });
-                    //var match = textUntilPosition.match(/"@"\s*:\s*\{\s*("[^"]*"\s*:\s*"[^"]*"\s*,\s*)*([^"]*)?$/);
-                    var match = textUntilPosition.match("");
-                    if (!match) {
-                        return { suggestions: [] };
-                    }
+                   
                     var word = model.getWordUntilPosition(position);
+
                     var range = {
                         startLineNumber: position.lineNumber,
                         endLineNumber: position.lineNumber,
                         startColumn: word.startColumn,
                         endColumn: word.endColumn
                     };
-                    return {
-                        suggestions: createDependencyProposals(range)
-                    };
+
+                    return { suggestions: [] };
+
+                    if (textUntilPosition.match(/"@"\s*:\s*\{\s*("[^"]*"\s*:\s*"[^"]*"\s*,\s*)*([^"]*)?$/)) {
+                        return { suggestions: [] };
+                    }
+
+                    if (textUntilPosition.match(/@/)) {
+                        return {
+                            suggestions: createDependencyProposals(range)
+                        };
+                    }
                 }
             });
-
 
             editor = monaco.editor.create(document.getElementById(containerId), {
                 value: unescape(editorContent),
@@ -78,17 +102,17 @@ window.adminPortal = {
 
                 lineNumbers: "on",
                 roundedSelection: false,
-                automaticLayout: false,
+                automaticLayout: true,
                 scrollBeyondLastLine: false,
                 readOnly: false,
                 theme: "vs-dark",
             });
 
+            editor.onKeyDown(window.adminPortal.closeHtmlTags());
+
             window.onresize = function () {
                 editor.layout();
             };
-
-            editor.onKeyDown(window.adminPortal.closeHtmlTags());
         } catch (ex) {
             console.log(ex);
         }
