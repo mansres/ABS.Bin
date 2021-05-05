@@ -1,0 +1,188 @@
+.abs-login.abs-login--v1 .abs-login_aside {
+  width: 605px;
+  padding: 3rem 3.5rem;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .abs-login.abs-login--v1 .abs-login_aside .abs-login_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .abs-login.abs-login--v1 .abs-login_aside .abs-login_title {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500; }
+  .abs-login.abs-login--v1 .abs-login_aside .abs-login_subtitle {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 2.5rem 0 3.5rem 0;
+    color: rgba(255, 255, 255, 0.7); }
+  .abs-login.abs-login--v1 .abs-login_aside .abs-login_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .abs-login.abs-login--v1 .abs-login_aside .abs-login_info .abs-login_menu > a {
+      text-decoration: none;
+      color: #fff;
+      margin-left: 2rem;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.7); }
+      .abs-login.abs-login--v1 .abs-login_aside .abs-login_info .abs-login_menu > a:hover {
+        color: #fff; }
+        .abs-login.abs-login--v1 .abs-login_aside .abs-login_info .abs-login_menu > a:hover:after {
+          border-bottom: 1px solid #fff;
+          opacity: 0.3; }
+      .abs-login.abs-login--v1 .abs-login_aside .abs-login_info .abs-login_menu > a:last-child {
+        margin-left: 0; }
+    .abs-login.abs-login--v1 .abs-login_aside .abs-login_info .abs-login_copyright {
+      color: rgba(255, 255, 255, 0.4); }
+
+.abs-login.abs-login--v1 .abs-login_wrapper {
+  padding: 3rem 3rem;
+  background: #fff; }
+  .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_head {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left; }
+    .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_head .abs-login_signup-label {
+      color: #74788d; }
+    .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_head .abs-login_signup-link {
+      color: #22b9ff; }
+  .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%; }
+    .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form {
+      width: 100%;
+      max-width: 450px; }
+      .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_title {
+        display: block;
+        text-align: center;
+        margin-bottom: 5rem;
+        text-decoration: none; }
+        .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_title > h3 {
+          font-size: 2rem;
+          color: #67666e; }
+      .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-form {
+        margin: 4rem auto; }
+        .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-form .form-group {
+          margin: 0;
+          padding: 0;
+          margin: 0 auto; }
+          .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-form .form-group .form-control {
+            border: none;
+            height: 50px;
+            margin-top: 1.25rem;
+            background-color: rgba(247, 247, 249, 0.7);
+            padding-right: 1.25rem;
+            padding-left: 1.25rem;
+            -webkit-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease; }
+            .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-form .form-group .form-control:focus {
+              -webkit-transition: background-color 0.3s ease;
+              transition: background-color 0.3s ease;
+              background-color: #f7f7f9; }
+      .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_actions {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 3rem 0; }
+        .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_actions .abs-login_link-forgot {
+          font-weight: 400;
+          color: #74788d; }
+          .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_actions .abs-login_link-forgot:hover {
+            color: #22b9ff; }
+            .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_actions .abs-login_link-forgot:hover:after {
+              border-bottom: 1px solid #22b9ff;
+              opacity: 0.3; }
+        .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_actions .abs-login_btn-secondary,
+        .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_actions .abs-login_btn-primary {
+          font-weight: 500;
+          font-size: 1rem;
+          height: 50px;
+          padding-right: 2.75rem;
+          padding-left: 2.75rem; }
+      .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_divider {
+        margin: 1rem 0 2rem 0; }
+        .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_divider:not(:first-child):not(:last-child) {
+          font-weight: 400;
+          color: #b5b2c3;
+          font-size: 1rem; }
+      .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_options {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        max-width: 100%; }
+        .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_options > a {
+          text-decoration: none;
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_options > a:not(:last-child) {
+            margin: 0 0 0 1.5rem; }
+
+@media (min-width: 1025px) {
+  .abs-login.abs-login--v1 .abs-login_aside {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; } }
+
+@media (max-width: 1024px) {
+  .abs-login.abs-login--v1 .abs-login_aside {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1.5rem; }
+    .abs-login.abs-login--v1 .abs-login_aside .abs-login_logo {
+      margin-bottom: 2.5rem; }
+    .abs-login.abs-login--v1 .abs-login_aside .abs-login_info {
+      margin-top: 2rem; }
+    .abs-login.abs-login--v1 .abs-login_aside .abs-login_subtitle {
+      margin: 2rem 0; }
+  .abs-login.abs-login--v1 .abs-login_wrapper {
+    padding: 3rem 1.5rem; }
+    .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_head {
+      padding-right: 2rem;
+      left: 2rem; }
+    .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 5rem; }
+      .abs-login.abs-login--v1 .abs-login_wrapper .abs-login_body .abs-login_form .abs-login_options > a:not(:first-child):not(:last-child) {
+        margin: 0 0.8rem; } }

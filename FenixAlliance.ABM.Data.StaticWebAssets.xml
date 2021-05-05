@@ -1,5 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\PC\.nuget\packages\radzen.blazor\3.2.2\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Toolbelt.Blazor.HotKeys" Path="C:\Users\PC\.nuget\packages\toolbelt.blazor.hotkeys\10.0.1\build\..\staticwebassets\" />
-  <ContentRoot BasePath="/Identity" Path="C:\Users\PC\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.5\staticwebassets\V4\" />
-</StaticWebAssets>

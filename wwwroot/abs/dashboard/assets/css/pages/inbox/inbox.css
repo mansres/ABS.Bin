@@ -1,0 +1,1078 @@
+.abs-inbox .abs-inbox_icon {
+  border: 0;
+  background: none;
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background-color: #f7f8fa;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0;
+  border-radius: 0;
+  border-radius: 4px; }
+  .abs-inbox .abs-inbox_icon i {
+    font-size: 1.1rem; }
+  .abs-inbox .abs-inbox_icon.abs-inbox_icon--sm {
+    height: 26px;
+    width: 26px; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--sm i {
+      font-size: 0.8rem; }
+  .abs-inbox .abs-inbox_icon.abs-inbox_icon--md {
+    height: 30px;
+    width: 30px; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--md i {
+      font-size: 1rem; }
+  .abs-inbox .abs-inbox_icon.abs-inbox_icon--light {
+    background-color: transparent; }
+  .abs-inbox .abs-inbox_icon i {
+    color: #8e96b8; }
+  .abs-inbox .abs-inbox_icon g [fill] {
+    -webkit-transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
+    fill: #8e96b8; }
+  .abs-inbox .abs-inbox_icon:hover g [fill] {
+    -webkit-transition: fill 0.3s ease;
+    transition: fill 0.3s ease; }
+  .abs-inbox .abs-inbox_icon.abs-inbox_icon--active, .abs-inbox .abs-inbox_icon:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #ebedf2; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--active.abs-inbox_icon--light, .abs-inbox .abs-inbox_icon:hover.abs-inbox_icon--light {
+      background-color: transparent; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--active i, .abs-inbox .abs-inbox_icon:hover i {
+      color: #22b9ff; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--active g [fill], .abs-inbox .abs-inbox_icon:hover g [fill] {
+      -webkit-transition: fill 0.3s ease;
+      transition: fill 0.3s ease;
+      fill: #22b9ff; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--active:hover g [fill], .abs-inbox .abs-inbox_icon:hover:hover g [fill] {
+      -webkit-transition: fill 0.3s ease;
+      transition: fill 0.3s ease; }
+  .abs-inbox .abs-inbox_icon.abs-inbox_icon--back {
+    background-color: transparent; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--back i {
+      color: #8e96b8;
+      font-size: 1.5rem; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--back g [fill] {
+      -webkit-transition: fill 0.3s ease;
+      transition: fill 0.3s ease;
+      fill: #8e96b8; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--back:hover g [fill] {
+      -webkit-transition: fill 0.3s ease;
+      transition: fill 0.3s ease; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--back svg {
+      height: 32px;
+      width: 32px; }
+    .abs-inbox .abs-inbox_icon.abs-inbox_icon--back:hover {
+      background-color: transparent; }
+      .abs-inbox .abs-inbox_icon.abs-inbox_icon--back:hover i {
+        color: #22b9ff; }
+      .abs-inbox .abs-inbox_icon.abs-inbox_icon--back:hover g [fill] {
+        -webkit-transition: fill 0.3s ease;
+        transition: fill 0.3s ease;
+        fill: #22b9ff; }
+      .abs-inbox .abs-inbox_icon.abs-inbox_icon--back:hover:hover g [fill] {
+        -webkit-transition: fill 0.3s ease;
+        transition: fill 0.3s ease; }
+
+.abs-inbox .abs-inbox_aside {
+  padding: 40px 20px;
+  width: 275px; }
+  .abs-inbox .abs-inbox_aside .abs-inbox_compose {
+    margin: 0 20px;
+    padding: 0.9rem 0; }
+  .abs-inbox .abs-inbox_aside .abs-inbox_nav {
+    margin-top: 1.2rem; }
+    .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item {
+      margin-bottom: 0.5rem; }
+      .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item .abs-nav_link {
+        padding: 0.75rem 20px;
+        border-radius: 4px; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item .abs-nav_link i {
+          color: #8e96b8; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item .abs-nav_link g [fill] {
+          -webkit-transition: fill 0.3s ease;
+          transition: fill 0.3s ease;
+          fill: #8e96b8; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item .abs-nav_link:hover g [fill] {
+          -webkit-transition: fill 0.3s ease;
+          transition: fill 0.3s ease; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item .abs-nav_link .abs-nav_link-icon {
+          text-align: center;
+          margin: 0 0.7rem 0 -0.23rem; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item .abs-nav_link .abs-nav_link-text {
+          font-weight: 500;
+          color: #74788d; }
+      .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item:last-child {
+        margin-bottom: 0; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item:last-child .abs-nav_link .abs-nav_link-icon {
+          font-size: 0.9rem; }
+      .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.hover .abs-nav_link, .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--selected .abs-nav_link, .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--active .abs-nav_link {
+        background-color: #f7f8fa;
+        border-radius: 4px; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.hover .abs-nav_link i, .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--selected .abs-nav_link i, .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--active .abs-nav_link i {
+          color: #22b9ff; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.hover .abs-nav_link g [fill], .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--selected .abs-nav_link g [fill], .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--active .abs-nav_link g [fill] {
+          -webkit-transition: fill 0.3s ease;
+          transition: fill 0.3s ease;
+          fill: #22b9ff; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.hover .abs-nav_link:hover g [fill], .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--selected .abs-nav_link:hover g [fill], .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--active .abs-nav_link:hover g [fill] {
+          -webkit-transition: fill 0.3s ease;
+          transition: fill 0.3s ease; }
+        .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.hover .abs-nav_link .abs-nav_link-text, .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--selected .abs-nav_link .abs-nav_link-text, .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item.abs-nav_item--active .abs-nav_link .abs-nav_link-text {
+          color: #22b9ff; }
+
+.abs-inbox .abs-inbox_list {
+  display: none;
+  padding: 0; }
+  @media (min-width: 1025px) {
+    .abs-inbox .abs-inbox_list {
+      margin-left: 25px; } }
+  .abs-inbox .abs-inbox_list.abs-inbox_list--shown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .abs-inbox .abs-inbox_list .abs-inbox_items {
+    padding: 0; }
+    .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item {
+      display: none;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      padding: 12px 25px;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      cursor: pointer; }
+      .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info {
+            padding: 8px 0; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info {
+            min-width: 210px; } }
+        .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_actions {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-right: 10px;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_actions {
+              min-width: 70px; } }
+          .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_actions .abs-checkbox {
+            margin: 0;
+            padding: 0;
+            margin-right: 10px; }
+          .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_actions .abs-inbox_icon {
+            height: 22px;
+            width: 22px; }
+            .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_actions .abs-inbox_icon i {
+              font-size: 1rem;
+              color: #ebedf2; }
+            .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_actions .abs-inbox_icon:hover i {
+              color: rgba(255, 184, 34, 0.5) !important; }
+            .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_actions .abs-inbox_icon.abs-inbox_icon--on i {
+              color: #ffb822 !important; }
+        .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_sender {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin-right: 30px;
+          width: 175px; }
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_sender {
+              min-width: 175px; } }
+          .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_sender .abs-media {
+            margin-right: 10px;
+            min-width: 30px !important; }
+            .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_sender .abs-media span {
+              min-width: 30px !important; }
+          .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_sender .abs-inbox_author {
+            font-size: 1rem;
+            color: #595d6e;
+            font-weight: 500; }
+          @media (max-width: 1400px) {
+            .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_sender {
+              display: block;
+              width: 70px;
+              margin-right: 10px; }
+              .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_sender .abs-inbox_author {
+                display: block; }
+              .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_info .abs-inbox_sender .abs-media {
+                margin-bottom: 5px; } }
+      .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_details {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        margin-top: 5px; }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_details {
+            width: 0;
+            height: 0; } }
+        .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_details .abs-inbox_message .abs-inbox_subject {
+          font-size: 1rem;
+          color: #48465b;
+          font-weight: 400; }
+        .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_details .abs-inbox_message .abs-inbox_summary {
+          font-size: 1rem;
+          color: #a2a5b9;
+          font-weight: 400;
+          text-overflow: ellipsis; }
+        .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_details .abs-inbox_labels {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: 5px; }
+          .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_details .abs-inbox_labels .abs-inbox_label {
+            margin-right: 5px; }
+      .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_datetime {
+        font-size: 1rem;
+        color: #a2a5b9;
+        font-weight: 400;
+        margin-left: 20px;
+        margin-top: 5px;
+        width: 85px;
+        text-align: right; }
+        @media (max-width: 1400px) {
+          .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item .abs-inbox_datetime {
+            width: 70px; } }
+      .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item:hover, .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item.abs-inbox_item--selected {
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        background-color: #f2f3f7; }
+        .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item:hover .abs-inbox_info .abs-inbox_actions .abs-inbox_icon i, .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item.abs-inbox_item--selected .abs-inbox_info .abs-inbox_actions .abs-inbox_icon i {
+          font-size: 1rem;
+          color: #e2e5ec; }
+      .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item.abs-inbox_item--unread .abs-inbox_sender .abs-inbox_author {
+        color: #48465b;
+        font-weight: 600; }
+      .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item.abs-inbox_item--unread .abs-inbox_details .abs-inbox_message .abs-inbox_subject {
+        color: #48465b;
+        font-weight: 600; }
+      .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item.abs-inbox_item--unread .abs-inbox_datetime {
+        color: #48465b;
+        font-weight: 600; }
+    .abs-inbox .abs-inbox_list .abs-inbox_items[data-type="inbox"] .abs-inbox_item[data-type="inbox"] {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .abs-inbox .abs-inbox_list .abs-inbox_items[data-type="marked"] .abs-inbox_item[data-type="marked"] {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .abs-inbox .abs-inbox_list .abs-inbox_items[data-type="draft"] .abs-inbox_item[data-type="draft"] {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .abs-inbox .abs-inbox_list .abs-inbox_items[data-type="sent"] .abs-inbox_item[data-type="sent"] {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .abs-inbox .abs-inbox_list .abs-inbox_items[data-type="trash"] .abs-inbox_item[data-type="trash"] {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+
+.abs-inbox .abs-inbox_toolbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .abs-inbox .abs-inbox_toolbar .abs-inbox_actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 1rem; }
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_actions .abs-inbox_check {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_actions .abs-inbox_check .abs-checkbox {
+        margin: 0;
+        padding-left: 0; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_actions .abs-inbox_check .abs-inbox_icon {
+        margin-left: 0; }
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_actions .abs-inbox_panel {
+      display: none;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_actions.abs-inbox_actions--expanded .abs-inbox_panel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_actions .abs-inbox_icon {
+      margin-right: 0.5rem; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_actions .abs-inbox_icon.abs-inbox_icon--back {
+        margin-right: 2.5rem; }
+  .abs-inbox .abs-inbox_toolbar .abs-inbox_controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 1rem; }
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_controls .abs-inbox_icon {
+      margin-left: 0.5rem; }
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_controls .abs-inbox_sort {
+      margin-left: 0.5rem; }
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_controls .abs-inbox_pages {
+      margin-left: 0.5rem; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_controls .abs-inbox_pages .abs-inbox_perpage {
+        color: #74788d;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-right: 1rem;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        padding: 0.5rem 0; }
+        .abs-inbox .abs-inbox_toolbar .abs-inbox_controls .abs-inbox_pages .abs-inbox_perpage:hover {
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          color: #22b9ff; }
+  .abs-inbox .abs-inbox_toolbar .abs-inbox_search {
+    width: 300px; }
+    @media (min-width: 1601px) {
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_search {
+        position: absolute;
+        left: 50%;
+        width: 300px;
+        margin-left: -150px; } }
+  @media screen and (min-width: 1601px) and (-ms-high-contrast: active), (min-width: 1601px) and (-ms-high-contrast: none) {
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_search {
+      top: 18px; } }
+    @media (max-width: 1599px) {
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_search {
+        width: 175px; } }
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_search .input-group .input-group-text {
+      border: none;
+      background-color: #f2f3f7;
+      padding: 0 0.65rem 0 1rem; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_search .input-group .input-group-text .abs-svg-icon {
+        height: 22px;
+        width: 22px; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_search .input-group .input-group-text i {
+        font-size: 1.1rem; }
+    .abs-inbox .abs-inbox_toolbar .abs-inbox_search .input-group .form-control {
+      height: 44px;
+      border: none;
+      background-color: #f2f3f7; }
+      @media (max-width: 1024px) {
+        .abs-inbox .abs-inbox_toolbar .abs-inbox_search .input-group .form-control {
+          height: 40px; } }
+  .abs-inbox .abs-inbox_toolbar .abs-inbox_sep {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    width: 1rem; }
+  @media (max-width: 1450px) {
+    .abs-inbox .abs-inbox_toolbar {
+      position: static; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_search {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        width: 100%; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_actions {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_controls {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .abs-inbox .abs-inbox_toolbar.abs-inbox_toolbar--extended .abs-inbox_actions {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        margin-bottom: 10px;
+        -webkit-box-pack: flex-first;
+        -ms-flex-pack: flex-first;
+        justify-content: flex-first; }
+      .abs-inbox .abs-inbox_toolbar.abs-inbox_toolbar--extended .abs-inbox_controls {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        margin-bottom: 10px;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; } }
+
+.abs-inbox .abs-inbox_view {
+  padding: 0;
+  display: none; }
+  @media (min-width: 1025px) {
+    .abs-inbox .abs-inbox_view {
+      margin-left: 25px; } }
+  .abs-inbox .abs-inbox_view.abs-inbox_view--shown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .abs-inbox .abs-inbox_view .abs-inbox_subject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 25px; }
+    .abs-inbox .abs-inbox_view .abs-inbox_subject .abs-inbox_title {
+      margin-right: 1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .abs-inbox .abs-inbox_view .abs-inbox_subject .abs-inbox_title .abs-inbox_text {
+        margin: 0;
+        padding: 0;
+        color: #595d6e;
+        font-size: 1.4rem;
+        font-weight: 500; }
+      .abs-inbox .abs-inbox_view .abs-inbox_subject .abs-inbox_title .abs-inbox_label {
+        margin-left: 0.75rem; }
+    .abs-inbox .abs-inbox_view .abs-inbox_subject .abs-inbox_actions {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 10px 0; }
+      .abs-inbox .abs-inbox_view .abs-inbox_subject .abs-inbox_actions .abs-inbox_icon {
+        margin-left: 0.5rem; }
+        .abs-inbox .abs-inbox_view .abs-inbox_subject .abs-inbox_actions .abs-inbox_icon:first-child {
+          margin-left: 0; }
+  .abs-inbox .abs-inbox_view .abs-inbox_reply {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 25px; }
+    .abs-inbox .abs-inbox_view .abs-inbox_reply .abs-inbox_actions {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .abs-inbox .abs-inbox_view .abs-inbox_reply .abs-inbox_actions .btn {
+        margin-right: 1rem; }
+    .abs-inbox .abs-inbox_view .abs-inbox_reply .abs-inbox_form {
+      display: none; }
+    .abs-inbox .abs-inbox_view .abs-inbox_reply.abs-inbox_reply--on .abs-inbox_actions {
+      display: none; }
+    .abs-inbox .abs-inbox_view .abs-inbox_reply.abs-inbox_reply--on .abs-inbox_form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .abs-inbox .abs-inbox_view .abs-inbox_messages {
+    margin-top: 15px; }
+    .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message {
+      padding: 0 25px 15px 25px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.05); }
+      .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message:last-child {
+        margin-bottom: 0; }
+      .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: pointer; }
+        .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-media {
+          margin-right: 1.2rem; }
+        .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          padding: 0.5rem 0.5rem 0.5rem 0;
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1; }
+          .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_author {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+            .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_author .abs-inbox_name {
+              color: #48465b;
+              font-weight: 600;
+              font-size: 1.1rem;
+              margin-right: 0.5rem; }
+            .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_author .abs-inbox_status {
+              color: #a2a5b9;
+              font-weight: 500; }
+              .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_author .abs-inbox_status a {
+                font-size: 0.9rem; }
+              .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_author .abs-inbox_status .abs-badge {
+                margin-right: 0.4rem;
+                margin-bottom: 0.1rem; }
+          .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_tome {
+              display: none; }
+              .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_tome .abs-inbox_details {
+                padding: 20px 0; }
+                .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_tome .abs-inbox_details td {
+                  padding: 5px 10px;
+                  vertical-align: top; }
+                  .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_tome .abs-inbox_details td:nth-child(1) {
+                    width: 30px;
+                    text-align: right;
+                    color: #a2a5b9; }
+                  .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_tome .abs-inbox_details td:nth-child(2) {
+                    text-align: left;
+                    color: #595d6e;
+                    font-weight: 500; }
+              .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_tome .abs-inbox_label {
+                color: #74788d;
+                font-weight: 400;
+                font-size: 1rem; }
+                .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_tome .abs-inbox_label i {
+                  margin-left: 0.5rem;
+                  font-size: 0.7rem;
+                  color: #74788d; }
+            .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_desc {
+              color: #74788d;
+              font-weight: 400;
+              font-size: 1rem; }
+        .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_actions {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_actions .abs-inbox_datetime {
+            color: #a2a5b9;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-right: 1.5rem; }
+          .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_actions .abs-inbox_group {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+          .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_actions .abs-inbox_icon.abs-inbox_icon--label:hover i {
+            color: rgba(255, 184, 34, 0.5) !important; }
+          .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_actions .abs-inbox_icon.abs-inbox_icon--label.abs-inbox_icon--on i {
+            color: #ffb822 !important; }
+      .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_body {
+        display: none;
+        padding: 1rem 0; }
+      .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message.abs-inbox_message--expanded .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_tome {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message.abs-inbox_message--expanded .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_desc {
+        display: none; }
+      .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message.abs-inbox_message--expanded .abs-inbox_body {
+        display: block; }
+      .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message.abs-inbox_message--reply .abs-inbox_reply {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_reply {
+      margin-bottom: 30px; }
+
+.abs-inbox .abs-inbox_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1); }
+  .abs-inbox .abs-inbox_form .abs-inbox_head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px 15px 20px 25px;
+    border-bottom: 1px solid #ebedf2; }
+    .abs-inbox .abs-inbox_form .abs-inbox_head .abs-inbox_title {
+      margin-right: 10px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #595d6e; }
+    .abs-inbox .abs-inbox_form .abs-inbox_head .abs-inbox_actions {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .abs-inbox .abs-inbox_form .abs-inbox_head .abs-inbox_actions .abs-inbox_icon {
+        margin-left: 5px; }
+  .abs-inbox .abs-inbox_form .abs-inbox_body {
+    padding: 0 0 10px 0; }
+    .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      min-height: 50px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10px 25px; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .tagify {
+        border: 0 !important; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .tagify .tagify_input {
+          border: 0 !important; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        padding: 0; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field.abs-inbox_field--cc, .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field.abs-inbox_field--bcc {
+          display: none;
+          margin-top: 5px; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field .abs-inbox_label {
+          font-weight: 400;
+          font-size: 1rem;
+          width: 40px;
+          min-width: 40px;
+          color: #74788d; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field .abs-inbox_input {
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1; }
+          .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field .abs-inbox_input input {
+            border: 0 !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            -moz-appearance: none !important;
+            -webkit-appearance: none !important; }
+          .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field .abs-inbox_input .form-control {
+            border: 0;
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+            color: #74788d; }
+            .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field .abs-inbox_input .form-control::-moz-placeholder {
+              color: #74788d;
+              opacity: 1; }
+            .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field .abs-inbox_input .form-control:-ms-input-placeholder {
+              color: #74788d; }
+            .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field .abs-inbox_input .form-control::-webkit-input-placeholder {
+              color: #74788d; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field .abs-inbox_tools {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin-left: 1rem; }
+          .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to .abs-inbox_field .abs-inbox_tools .abs-inbox_tool {
+            font-size: 1rem;
+            color: #a2a5b9;
+            font-weight: 500;
+            margin-left: 10px;
+            cursor: pointer; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to.abs-inbox_to--cc .abs-inbox_tools .abs-inbox_tool:nth-child(1) {
+        display: none; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to.abs-inbox_to--cc .abs-inbox_field.abs-inbox_field--cc {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to.abs-inbox_to--bcc .abs-inbox_tools .abs-inbox_tool:nth-child(2) {
+        display: none; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to.abs-inbox_to--bcc .abs-inbox_field.abs-inbox_field--bcc {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_subject {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      min-height: 50px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0 25px;
+      border-top: 1px solid #ebedf2; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_subject .form-control {
+        border: 0;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #74788d; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_subject .form-control::-moz-placeholder {
+          color: #74788d;
+          opacity: 1; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_subject .form-control:-ms-input-placeholder {
+          color: #74788d; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_subject .form-control::-webkit-input-placeholder {
+          color: #74788d; }
+    .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_text {
+      padding: 10px 25px;
+      padding-bottom: 0;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #74788d; }
+    .abs-inbox .abs-inbox_form .abs-inbox_body .ql-container.ql-snow {
+      border: 0;
+      padding: 0;
+      border-radius: 0; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .ql-container.ql-snow .ql-editor {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #74788d;
+        padding: 15px 25px;
+        font-family: Poppins, Helvetica, sans-serif; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .ql-container.ql-snow .ql-editor.ql-blank:before {
+          left: 25px;
+          color: #a2a5b9;
+          font-weight: 400;
+          font-style: normal; }
+    .abs-inbox .abs-inbox_form .abs-inbox_body .ql-toolbar.ql-snow {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 50px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 0;
+      border: 0;
+      border-top: 1px solid #ebedf2;
+      border-bottom: 1px solid #ebedf2;
+      padding-left: 18px; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .ql-toolbar.ql-snow .ql-picker-label, .abs-inbox .abs-inbox_form .abs-inbox_body .ql-toolbar.ql-snow .ql-picker-label:before {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #74788d;
+        font-family: Poppins, Helvetica, sans-serif; }
+    .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_attachments {
+      min-width: 500px;
+      display: inline-block;
+      padding: 0 25px; }
+  .abs-inbox .abs-inbox_form .abs-inbox_foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 15px 20px 25px;
+    border-top: 1px solid #ebedf2; }
+    .abs-inbox .abs-inbox_form .abs-inbox_foot .abs-inbox_primary {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .abs-inbox .abs-inbox_form .abs-inbox_foot .abs-inbox_primary .btn-group .btn:nth-child(1) {
+        padding-left: 20px;
+        padding-right: 20px; }
+      .abs-inbox .abs-inbox_form .abs-inbox_foot .abs-inbox_primary .btn-group .btn:nth-child(2) {
+        padding-left: 6px;
+        padding-right: 9px; }
+      .abs-inbox .abs-inbox_form .abs-inbox_foot .abs-inbox_primary .abs-inbox_panel {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-left: 1rem; }
+    .abs-inbox .abs-inbox_form .abs-inbox_foot .abs-inbox_secondary {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0; }
+
+.abs-inbox .abs-portlet_head {
+  min-height: 80px !important;
+  padding: 10px 25px; }
+
+@media (max-width: 1024px) {
+  .abs-inbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .abs-inbox .abs-inbox_aside {
+      background: #fff;
+      margin: 0; }
+      .abs-inbox .abs-inbox_aside .abs-inbox_compose {
+        margin: 0; }
+      .abs-inbox .abs-inbox_aside .abs-inbox_nav .abs-nav .abs-nav_item .abs-nav_link {
+        padding: 0.75rem 10px; }
+    .abs-inbox .abs-inbox_toolbar {
+      position: static; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_search {
+        margin: 10px 0; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_actions {
+        margin: 10px 0; }
+      .abs-inbox .abs-inbox_toolbar .abs-inbox_controls {
+        margin: 10px 0; }
+    .abs-inbox .abs-inbox_list .abs-inbox_items {
+      overflow: auto; }
+      .abs-inbox .abs-inbox_list .abs-inbox_items .abs-inbox_item {
+        min-width: 500px;
+        padding: 10px 15px;
+        margin-bottom: 15px; }
+    .abs-inbox .abs-inbox_list .abs-portlet_head {
+      min-height: 60px !important;
+      padding: 10px 15px; }
+    .abs-inbox .abs-inbox_view .abs-inbox_subject {
+      padding: 10px 15px; }
+      .abs-inbox .abs-inbox_view .abs-inbox_subject .abs-inbox_title {
+        display: block; }
+        .abs-inbox .abs-inbox_view .abs-inbox_subject .abs-inbox_title .abs-inbox_text {
+          display: inline; }
+    .abs-inbox .abs-inbox_view .abs-inbox_messages {
+      padding: 10px 15px; }
+      .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message {
+        padding: 0 10px 5px 10px;
+        margin-bottom: 15px; }
+        .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-media span {
+          width: 26px;
+          height: 26px; }
+        .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_info .abs-inbox_details .abs-inbox_desc {
+          display: none; }
+    .abs-inbox .abs-inbox_view .abs-inbox_reply {
+      padding: 10px 15px;
+      overflow: auto; }
+    .abs-inbox .abs-inbox_form {
+      min-width: 400px; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_to {
+        padding: 10px 15px; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_subject {
+        padding: 10px 15px; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_text {
+        padding: 10px 15px; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .ql-container.ql-snow .ql-editor {
+        padding: 15px 15px; }
+        .abs-inbox .abs-inbox_form .abs-inbox_body .ql-container.ql-snow .ql-editor.ql-blank:before {
+          left: 15px; }
+      .abs-inbox .abs-inbox_form .abs-inbox_body .abs-inbox_attachments {
+        min-width: auto;
+        padding: 0 15px; }
+    .abs-inbox .abs-portlet_head {
+      min-height: 60px !important;
+      padding: 10px 15px; } }
+
+@media (max-width: 768px) {
+  .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .abs-inbox .abs-inbox_view .abs-inbox_messages .abs-inbox_message .abs-inbox_head .abs-inbox_actions {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .abs-inbox .abs-inbox_view .abs-inbox_reply {
+    padding: 10px 15px; } }
+
+.abs-inbox_aside-close {
+  display: none; }
+
+@media (max-width: 1024px) {
+  .abs-inbox_aside {
+    z-index: 1001;
+    position: fixed;
+    -webkit-overflow-scrolling: touch;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    width: 300px !important;
+    -webkit-transition: left 0.3s ease, right 0.3s ease;
+    transition: left 0.3s ease, right 0.3s ease;
+    left: -320px; }
+    .abs-inbox_aside.abs-inbox_aside--on {
+      -webkit-transition: left 0.3s ease, right 0.3s ease;
+      transition: left 0.3s ease, right 0.3s ease;
+      left: 0; } }
+  @media screen and (max-width: 1024px) and (-ms-high-contrast: active), (max-width: 1024px) and (-ms-high-contrast: none) {
+    .abs-inbox_aside {
+      -webkit-transition: none !important;
+      transition: none !important; } }
+
+@media (max-width: 1024px) {
+  .abs-inbox_aside--right .abs-inbox_aside {
+    right: -320px;
+    left: auto; }
+    .abs-inbox_aside--right .abs-inbox_aside.abs-inbox_aside--on {
+      -webkit-transition: left 0.3s ease, right 0.3s ease;
+      transition: left 0.3s ease, right 0.3s ease;
+      right: 0;
+      left: auto; }
+  .abs-inbox_aside-close {
+    width: 25px;
+    height: 25px;
+    top: 1px;
+    z-index: 1002;
+    -webkit-transition: left 0.3s ease, right 0.3s ease;
+    transition: left 0.3s ease, right 0.3s ease;
+    position: fixed;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: -25px; } }
+  @media screen and (max-width: 1024px) and (-ms-high-contrast: active), (max-width: 1024px) and (-ms-high-contrast: none) {
+    .abs-inbox_aside-close {
+      -webkit-transition: none !important;
+      transition: none !important; } }
+
+@media (max-width: 1024px) {
+    .abs-inbox_aside-close > i {
+      line-height: 0;
+      font-size: 1.4rem; }
+    .abs-inbox_aside-close:hover {
+      text-decoration: none; }
+    .abs-inbox_aside--right .abs-inbox_aside-close {
+      left: auto;
+      right: -25px; }
+    .abs-inbox_aside--on .abs-inbox_aside-close {
+      -webkit-transition: left 0.3s ease, right 0.3s ease;
+      transition: left 0.3s ease, right 0.3s ease;
+      left: 274px; }
+    .abs-inbox_aside--on.abs-inbox_aside--right .abs-inbox_aside-close {
+      left: auto;
+      right: 274px; }
+  .abs-inbox_aside-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-animation: abs-animate-fade-in .3s linear 1;
+    animation: abs-animate-fade-in .3s linear 1; }
+  .abs-inbox_aside-overlay {
+    background: rgba(0, 0, 0, 0.05); }
+  .abs-inbox_aside-close {
+    background-color: #f7f8fa; }
+    .abs-inbox_aside-close > i {
+      color: #74788d; }
+    .abs-inbox_aside-close:hover {
+      background-color: transparent; }
+      .abs-inbox_aside-close:hover > i {
+        color: #22b9ff; } }
+
+@media (max-width: 350px) {
+  .abs-inbox_aside {
+    width: 90% !important; } }

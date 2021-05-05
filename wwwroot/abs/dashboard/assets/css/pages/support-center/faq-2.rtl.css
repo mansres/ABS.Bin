@@ -1,0 +1,98 @@
+.abs-sc-faq-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative; }
+  .abs-sc-faq-2 .abs-sc_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    z-index: 0;
+    padding-left: 70px;
+    overflow: hidden; }
+    .abs-sc-faq-2 .abs-sc_bg .abs-svg-icon {
+      height: 110%;
+      width: auto;
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px); }
+    .abs-sc-faq-2 .abs-sc_bg--layer {
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      padding-left: 0; }
+      .abs-sc-faq-2 .abs-sc_bg--layer .abs-svg-icon {
+        height: auto;
+        width: 100%;
+        fill: rgba(103, 112, 153, 0.04);
+        -webkit-transform: translateY(0);
+        transform: translateY(0); }
+  .abs-sc-faq-2 .abs-sc_top {
+    position: relative;
+    z-index: 1; }
+    .abs-sc-faq-2 .abs-sc_top .abs-sc_content {
+      margin-left: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 6rem 3rem; }
+      .abs-sc-faq-2 .abs-sc_top .abs-sc_content .abs-sc_title {
+        color: #48465b;
+        font-size: 2.15rem;
+        font-weight: 600;
+        margin-left: 3.5rem;
+        margin-bottom: 0; }
+      .abs-sc-faq-2 .abs-sc_top .abs-sc_content .abs-sc_form .input-group {
+        width: 380px;
+        -webkit-box-shadow: 0px 0px 27px 0px rgba(160, 160, 191, 0.2);
+        box-shadow: 0px 0px 27px 0px rgba(160, 160, 191, 0.2); }
+        .abs-sc-faq-2 .abs-sc_top .abs-sc_content .abs-sc_form .input-group .input-group-text {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border: none;
+          padding: 0.65rem 2rem;
+          background-color: #ffffff; }
+        .abs-sc-faq-2 .abs-sc_top .abs-sc_content .abs-sc_form .input-group .form-control {
+          border: none;
+          padding: 2.5rem 0;
+          font-weight: 400;
+          font-size: 1.1rem; }
+
+@media (max-width: 1024px) {
+  .abs-sc-2 .abs-sc_bg {
+    opacity: 0.2; }
+    .abs-sc-2 .abs-sc_bg .abs-svg-icon {
+      -webkit-transform: translateY(0);
+      transform: translateY(0); }
+  .abs-sc-2 .abs-sc_top {
+    min-height: auto; }
+    .abs-sc-2 .abs-sc_top .abs-sc_content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 4rem 0;
+      margin-left: 0;
+      min-height: auto; }
+      .abs-sc-2 .abs-sc_top .abs-sc_content .abs-sc_title {
+        margin-bottom: 2rem; }
+      .abs-sc-2 .abs-sc_top .abs-sc_content .abs-sc_form .input-group {
+        width: 100%; } }

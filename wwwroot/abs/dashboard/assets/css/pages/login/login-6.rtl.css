@@ -1,0 +1,215 @@
+.abs-login.abs-login--v6 {
+  background: #fff; }
+  .abs-login.abs-login--v6 .abs-login_aside {
+    padding: 2rem;
+    background: #fff;
+    width: 600px; }
+    .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 2rem; }
+      .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 400px;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-bottom: 5rem; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_body {
+          width: 100%;
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_logo {
+          text-align: center;
+          margin: 1rem auto 4rem auto; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_head {
+          margin-top: 1rem;
+          text-align: center; }
+          .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_head .abs-login_title {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #595d6e;
+            font-weight: 500; }
+          .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_head .abs-login_desc {
+            text-align: center;
+            font-size: 1rem;
+            color: #74788d;
+            font-weight: 400;
+            margin-top: 1rem; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_form {
+          margin-top: 4rem; }
+          .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_form .form-group {
+            margin: 0;
+            padding: 0;
+            position: relative; }
+          .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_form .form-control {
+            height: 46px;
+            border-radius: 0;
+            border: 0;
+            border-bottom: 1px solid rgba(235, 237, 242, 0.8);
+            padding: 1rem 0;
+            margin-top: 0.1rem;
+            color: #595d6e; }
+            .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_form .form-control::-moz-placeholder {
+              color: #74788d;
+              opacity: 1; }
+            .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_form .form-control:-ms-input-placeholder {
+              color: #74788d; }
+            .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_form .form-control::-webkit-input-placeholder {
+              color: #74788d; }
+            .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_form .form-control.form-control-last {
+              border: 0; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_actions {
+          margin: 3rem 0;
+          text-align: center; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_extra {
+          margin-top: 2rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_extra label {
+            margin: 0; }
+          .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_extra a {
+            font-weight: 500;
+            color: #595d6e;
+            -webkit-transition: color 0.3s ease;
+            transition: color 0.3s ease;
+            display: inline-block; }
+            .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_extra a:hover {
+              -webkit-transition: color 0.3s ease;
+              transition: color 0.3s ease;
+              color: #22b9ff; }
+      .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_account {
+        text-align: center; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_account .abs-login_account-msg {
+          font-size: 1rem;
+          font-weight: 500;
+          color: #74788d; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_account .abs-login_account-link {
+          font-size: 1rem;
+          font-weight: 500;
+          color: #595d6e;
+          -webkit-transition: color 0.3s ease;
+          transition: color 0.3s ease; }
+          .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_account .abs-login_account-link:hover {
+            -webkit-transition: color 0.3s ease;
+            transition: color 0.3s ease;
+            color: #22b9ff; }
+  .abs-login.abs-login--v6 .btn {
+    height: 46px;
+    padding-right: 3rem;
+    padding-left: 3rem; }
+    .abs-login.abs-login--v6 .btn ~ .btn {
+      margin-right: 0.5rem; }
+  .abs-login.abs-login--v6 .abs-login_content {
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .abs-login.abs-login--v6 .abs-login_content .abs-login_section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .abs-login.abs-login--v6 .abs-login_content .abs-login_section .abs-login_title {
+        color: #ffffff;
+        font-size: 3.5rem;
+        font-weight: 500;
+        margin-bottom: 2rem; }
+      .abs-login.abs-login--v6 .abs-login_content .abs-login_section .abs-login_desc {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.1rem;
+        font-weight: 400; }
+
+.abs-login.abs-login--v6.abs-login--signin .abs-login_signup {
+  display: none; }
+
+.abs-login.abs-login--v6.abs-login--signin .abs-login_signin {
+  display: block; }
+
+.abs-login.abs-login--v6.abs-login--signin .abs-login_forgot {
+  display: none; }
+
+.abs-login.abs-login--v6.abs-login--signup .abs-login_signup {
+  display: block; }
+
+.abs-login.abs-login--v6.abs-login--signup .abs-login_signin {
+  display: none; }
+
+.abs-login.abs-login--v6.abs-login--signup .abs-login_forgot {
+  display: none; }
+
+.abs-login.abs-login--v6.abs-login--signup .abs-login_account {
+  display: none; }
+
+.abs-login.abs-login--v6.abs-login--forgot .abs-login_signup {
+  display: none; }
+
+.abs-login.abs-login--v6.abs-login--forgot .abs-login_signin {
+  display: none; }
+
+.abs-login.abs-login--v6.abs-login--forgot .abs-login_forgot {
+  display: block; }
+
+@media (max-width: 1024px) {
+  .abs-login.abs-login--v6 {
+    height: 100%; }
+    .abs-login.abs-login--v6 .abs-login_aside {
+      padding: 20px 15px;
+      width: 100%; }
+      .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container {
+          width: 100%;
+          padding-bottom: 20px; }
+          .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_form {
+            margin-top: 20px; }
+          .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_container .abs-login_actions {
+            margin: 20px 0; }
+        .abs-login.abs-login--v6 .abs-login_aside .abs-login_wrapper .abs-login_logo {
+          margin: 20px auto; }
+      .abs-login.abs-login--v6 .abs-login_aside .abs-login_account {
+        margin-top: 1.5rem; }
+    .abs-login.abs-login--v6 .abs-login_content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 20px 15px; }
+      .abs-login.abs-login--v6 .abs-login_content .abs-login_section .abs-login_title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem; }
+      .abs-login.abs-login--v6 .abs-login_content .abs-login_section .abs-login_desc {
+        font-size: 1rem;
+        margin: 0; } }
