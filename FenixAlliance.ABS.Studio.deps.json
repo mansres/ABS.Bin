@@ -35,6 +35,7 @@
       "FenixAlliance.ABS.Studio/2.0.0": {
         "dependencies": {
           "FenixAlliance.ABS.Hub": "1.1.6.9",
+          "FenixAlliance.ABS.Integrations": "1.1.6.9",
           "FenixAlliance.ABS.Modules.Hub": "1.1.6.9",
           "FenixAlliance.ICX.Core": "1.1.6.9",
           "Microsoft.AspNetCore.Antiforgery.Reference": "6.0.0.0",
@@ -665,6 +666,37 @@
           "lib/netstandard2.0/Azure.Storage.Common.dll": {}
         }
       },
+      "BlazorFluentUI.CoreComponents/5.2.8": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.5",
+          "System.Reactive": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/BlazorFluentUI.CoreComponents.dll": {
+            "assemblyVersion": "5.2.8.0",
+            "fileVersion": "5.2.8.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/BlazorFluentUI.CoreComponents.dll": {}
+        }
+      },
+      "BlazorFluentUI.ListComponents/5.2.8": {
+        "dependencies": {
+          "BlazorFluentUI.CoreComponents": "5.2.8",
+          "DynamicData": "7.1.1",
+          "Microsoft.AspNetCore.Components.Web": "5.0.5"
+        },
+        "runtime": {
+          "lib/net5.0/BlazorFluentUI.ListComponents.dll": {
+            "assemblyVersion": "5.2.8.0",
+            "fileVersion": "5.2.8.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/BlazorFluentUI.ListComponents.dll": {}
+        }
+      },
       "BuildBundlerMinifier/3.2.449": {},
       "ByteSize/2.0.0": {
         "dependencies": {
@@ -750,6 +782,20 @@
         },
         "compile": {
           "lib/netstandard2.0/DotLiquid.dll": {}
+        }
+      },
+      "DynamicData/7.1.1": {
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/DynamicData.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.1.11487"
+          }
+        },
+        "compile": {
+          "lib/net5.0/DynamicData.dll": {}
         }
       },
       "Emitter/1.0.41": {
@@ -2557,6 +2603,20 @@
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Common": "1.1.0",
           "Newtonsoft.Json": "13.0.1"
+        }
+      },
+      "Microsoft.AspNetCore.SpaServices.Extensions/5.0.5": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Physical": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.SpaServices.Extensions.dll": {
+            "assemblyVersion": "5.0.5.0",
+            "fileVersion": "5.0.521.16708"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.SpaServices.Extensions.dll": {}
         }
       },
       "Microsoft.AspNetCore.WebUtilities/2.2.0": {
@@ -6685,6 +6745,29 @@
           "FenixAlliance.ABS.Installer.Core.dll": {}
         }
       },
+      "FenixAlliance.ABS.Integrations/1.1.6.9": {
+        "dependencies": {
+          "FenixAlliance.ABS.Hub": "1.1.6.9",
+          "FenixAlliance.ABS.Integrations.Self": "1.1.6.9"
+        },
+        "runtime": {
+          "FenixAlliance.ABS.Integrations.dll": {}
+        },
+        "compile": {
+          "FenixAlliance.ABS.Integrations.dll": {}
+        }
+      },
+      "FenixAlliance.ABS.Integrations.Self/1.1.6.9": {
+        "dependencies": {
+          "FenixAlliance.ABS.Hub": "1.1.6.9"
+        },
+        "runtime": {
+          "FenixAlliance.ABS.Integrations.Self.dll": {}
+        },
+        "compile": {
+          "FenixAlliance.ABS.Integrations.Self.dll": {}
+        }
+      },
       "FenixAlliance.ABS.Modules.Accounting/1.1.6.9": {
         "dependencies": {
           "FenixAlliance.ABS.Hub": "1.1.6.9"
@@ -6772,7 +6855,7 @@
       },
       "FenixAlliance.ABS.Modules.Learning/1.1.6.9": {
         "dependencies": {
-          "FenixAlliance.ABS.Studio.Core": "1.1.6.9"
+          "FenixAlliance.ABS.Hub": "1.1.6.9"
         },
         "runtime": {
           "FenixAlliance.ABS.Modules.Learning.dll": {}
@@ -7033,6 +7116,7 @@
           "Autofac": "6.1.0",
           "Autofac.Extensions.DependencyInjection": "7.1.0",
           "Azure.Storage.Blobs": "12.8.1",
+          "BlazorFluentUI.ListComponents": "5.2.8",
           "ByteSize": "2.0.0",
           "CsvHelper": "26.1.0",
           "Dapper": "2.0.78",
@@ -7095,6 +7179,7 @@
           "Microsoft.AspNetCore.Mvc.WebApiCompatShim": "2.2.0",
           "Microsoft.AspNetCore.Razor.Language": "5.0.5",
           "Microsoft.AspNetCore.SignalR.Core": "1.1.0",
+          "Microsoft.AspNetCore.SpaServices.Extensions": "5.0.5",
           "Microsoft.Azure.KeyVault.Core": "3.0.5",
           "Microsoft.Bot.Builder.AI.Luis": "4.12.2",
           "Microsoft.Bot.Builder.Dialogs": "4.12.2",
@@ -9130,6 +9215,20 @@
       "path": "azure.storage.common/12.7.1",
       "hashPath": "azure.storage.common.12.7.1.nupkg.sha512"
     },
+    "BlazorFluentUI.CoreComponents/5.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XaR56bOM4CMCOyVYY/ztbe3Q20V5QtXxDQOuKoHw+0hht2lKKSVOyYutV0PekoqhZieaZ7zwcx7cksP5OR6QFg==",
+      "path": "blazorfluentui.corecomponents/5.2.8",
+      "hashPath": "blazorfluentui.corecomponents.5.2.8.nupkg.sha512"
+    },
+    "BlazorFluentUI.ListComponents/5.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S4aj0Lnr4VkqvW6imS/Uy+QzMokFRFuMhIaREhXznRTUBzcUBcp9piTuH7bFN2hPyrrYRHdO7tJppBuEOFCzng==",
+      "path": "blazorfluentui.listcomponents/5.2.8",
+      "hashPath": "blazorfluentui.listcomponents.5.2.8.nupkg.sha512"
+    },
     "BuildBundlerMinifier/3.2.449": {
       "type": "package",
       "serviceable": true,
@@ -9178,6 +9277,13 @@
       "sha512": "sha512-d05HeePb5+X6skq8q+uiWUb/PQP6VO5L1KoH9cDhDEragOok9l0AiTotcctSxzGCJDpCMUWGD9GvoVPoiDNhdg==",
       "path": "dotliquid/2.1.433",
       "hashPath": "dotliquid.2.1.433.nupkg.sha512"
+    },
+    "DynamicData/7.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pc6J5bFnSxEa64PV2V67FMcLlDdpv6m+zTBKSnRN3aLon/WtWWy8kuDpHFbJlgXHtqc6Nxloj9ItuvDlvKC/8w==",
+      "path": "dynamicdata/7.1.1",
+      "hashPath": "dynamicdata.7.1.1.nupkg.sha512"
     },
     "Emitter/1.0.41": {
       "type": "package",
@@ -10291,6 +10397,13 @@
       "sha512": "sha512-BOsjatDJnvnnXCMajOlC0ISmiFnJi/EyJzMo0i//5fZJVCLrQ4fyV/HzrhhAhSJuwJOQDdDozKQ9MB9jHq84pg==",
       "path": "microsoft.aspnetcore.signalr.protocols.json/1.1.0",
       "hashPath": "microsoft.aspnetcore.signalr.protocols.json.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SpaServices.Extensions/5.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RnhWHWqY85znCHQBLBCbZqKXt8Hl4HLTLFsKjIudH6U6CzdK9orWMMpJuZfdswbC2ILIhZtTOMSjVixofXyuMw==",
+      "path": "microsoft.aspnetcore.spaservices.extensions/5.0.5",
+      "hashPath": "microsoft.aspnetcore.spaservices.extensions.5.0.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.WebUtilities/2.2.0": {
       "type": "package",
@@ -12645,6 +12758,16 @@
       "sha512": ""
     },
     "FenixAlliance.ABS.Installer.Core/1.1.6.9": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FenixAlliance.ABS.Integrations/1.1.6.9": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FenixAlliance.ABS.Integrations.Self/1.1.6.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

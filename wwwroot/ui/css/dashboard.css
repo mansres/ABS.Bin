@@ -73,11 +73,11 @@
 
 .header-spacer {
     display: block;
-    height: 110px
+    height: 85px
 }
 
 .header-spacer-small {
-    height: 70px
+    height: 72px
 }
 
 .header-spacer--standard {
@@ -18807,3 +18807,65 @@ div.mejs-speed-button {
 .swiper-container.auto-height .swiper-slide {
     height: auto !important
 }
+
+.container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: 10px !important;
+    margin-left: auto;
+    width: 100%;
+}
+.container .container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: 10px !important;
+    margin-left: auto;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+.form-group.with-icon i, .form-group.with-icon svg {
+    left: 0;
+    top: 25%;
+    width: 50px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    line-height: 3.5rem;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(4rem) !important;
+    padding: .375rem .75rem;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+label {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100% !important;
+}
+

@@ -41,11 +41,10 @@ window.interopFunctions = {
     FormatCurrency: function (number, currency = "USD", locale = "en-US") {
         return new Intl.NumberFormat(locale, { style: 'currency', currency: currency }).format(number)
     },
-    InitLayout: function () {
-        StudioApp.init(StudioAppOptions);
-        StudioDemoPanel.init();
-        StudioLayout.init();
-        StudioQuickPanel.init();
-        StudioUtil.removeClass(StudioUtil.get('body'), 'abs-page--loading');
+    InitFacePile: function () {
+        var PersonaElements = document.querySelectorAll(".ms-Persona");
+        for (var i = 0; i < PersonaElements.length; i++) {
+            new fabric['Persona'](PersonaElements[i]);
+        }
     }
 };

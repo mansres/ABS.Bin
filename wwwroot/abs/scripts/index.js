@@ -1,3 +1,5 @@
+var dashboardInitialized = false;
+
 window.InteropFunctions = {
     OpenUrlNewTab: function (URL) {
         window.open(URL, '_blank');
@@ -42,10 +44,13 @@ window.InteropFunctions = {
         return new Intl.NumberFormat(locale, { style: 'currency', currency: currency }).format(number)
     },
     InitLayout: function () {
-        StudioApp.init(StudioAppOptions);
-        StudioDemoPanel.init();
-        StudioLayout.init();
-        StudioQuickPanel.init();
-        StudioUtil.removeClass(StudioUtil.get('body'), 'abs-page--loading');
+            StudioApp.init(StudioAppOptions);
+            StudioDemoPanel.init();
+            StudioLayout.init();
+        if (!dashboardInitialized) {
+            StudioQuickPanel.init();
+            StudioUtil.removeClass(StudioUtil.get('body'), 'abs-page--loading');
+            dashboardInitialized = true;
+        }
     }
 };

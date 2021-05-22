@@ -23933,7 +23933,7 @@ body {
     min-width: 320px;
 }
 
-.header {
+.material-header {
     width: 100%;
     display: block;
     min-height: 85px;
@@ -24072,15 +24072,15 @@ body {
         margin: 0% 0%;
     }
 
-    .header {
-        min-height: 75px;
+    .material-header {
+        min-height: 55px;
     }
 
     .logo {
         display: none !important;
     }
 
-    .header {
+    .material-header {
         box-shadow: none !important;
         background-image: none !important;
         position: static !important;
@@ -24183,7 +24183,7 @@ body {
 }
 
 
-.header {
+.material-header {
     z-index: 1000;
 }
 
