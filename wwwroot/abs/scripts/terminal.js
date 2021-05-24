@@ -1,4 +1,5 @@
-
+var commands = [];
+var commandIndex = 0;
 window.TerminalUtils = {
 
     setDotnetReference: function (pDotNetReference) {
@@ -42,6 +43,7 @@ window.TerminalUtils = {
         term.dispose();
         $("#terminal").empty();
         term = new Terminal();
+        term.onCursorMove(e => { return false; })
         term.open(document.getElementById('terminal'));
         console.log("Opening Terminal.");
         var command = "";
@@ -51,13 +53,35 @@ window.TerminalUtils = {
         term.write('\r\n');
         term.write('\r\n');
         term.write("~$ ");
+
         term.onKey(e => {
+
             const printable = !e.domEvent.altKey && !e.domEvent.altGraphKey && !e.domEvent.ctrlKey && !e.domEvent.metaKey;
 
-            if (e.domEvent.keyCode === 46) {
+            if (e.domEvent.keyCode === 8) {
                 command = command.slice(0, -1);
+                term.write(e.key);
+                command += e.key;
             }
+
+            if (printable) {
+                command += e.key;
+                term.write(e.key);
+            }
+
+
+            if (e.domEvent.keyCode === 38) {
+                term.write('\x1b[2K\r')    
+                return;
+            }
+
+            if (e.domEvent.keyCode === 40) {
+                term.write('\x1b[2K\r')    
+                return;
+            }
+
             if (e.domEvent.keyCode === 13) {
+                commands.push(command);
                 if (command === "me") {
                     window.TerminalUtils.GetMe();
                 } else {
@@ -70,20 +94,12 @@ window.TerminalUtils = {
 
                     } catch (e) {
                         term.write("~$ " + e);
-                        term.write('\r\n');
-                        term.write("~$ ");
+                        term.write("\r\n~$ ");
                     }
                 }
                 command = "";
-            } else if (e.domEvent.keyCode === 8) {
-                // Do not delete the prompt
-                if (term._core.buffer.x > 2) {
-                    term.write('\b \b');
-                }
-            } else if (printable) {
-                command += e.key;
-                term.write(e.key);
-            }
+            } 
+
         });
     },
     DisposeTerminal: function () {
