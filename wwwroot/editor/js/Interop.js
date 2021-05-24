@@ -1,5 +1,4 @@
-﻿var pDotNetReference;
-window.editorInterop = {
+﻿window.editorInterop = {
     setDotnetReference: function (pDotNetReference) {
         window.editorInterop.pDotNetReference = pDotNetReference;
     },

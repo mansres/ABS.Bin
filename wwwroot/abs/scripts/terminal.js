@@ -1,6 +1,17 @@
+
 window.TerminalUtils = {
 
+    setDotnetReference: function (pDotNetReference) {
+        window.TerminalUtils.pDotNetReference = pDotNetReference;
+    },
     writeToTerminal: function (data) {
+        term.write('\r\n');
+        term.write(data);
+        term.write('\r\n');
+        term.write('\r\n');
+        term.write("~$ ");
+    },
+    writeJsonToTerminal: function (data) {
         console.log(data);
         term.write('\r\n');
         term.write(JSON.stringify(data));
@@ -17,7 +28,7 @@ window.TerminalUtils = {
             },
             url: "/api/v2/me",
             type: 'GET',
-            success: window.TerminalUtils.writeToTerminal,
+            success: window.TerminalUtils.writeJsonToTerminal,
         });
     },
     OpenTerminal: function () {
@@ -26,7 +37,8 @@ window.TerminalUtils = {
         });
         setTimeout(function () { window.TerminalUtils.InitTerminal() }, 200);
     },
-    InitTerminal: function () {
+    InitTerminal: function (dotNetReference) {
+        terminalDotNetReference = dotNetReference;
         term.dispose();
         $("#terminal").empty();
         term = new Terminal();
@@ -42,15 +54,20 @@ window.TerminalUtils = {
         term.onKey(e => {
             const printable = !e.domEvent.altKey && !e.domEvent.altGraphKey && !e.domEvent.ctrlKey && !e.domEvent.metaKey;
 
+            if (e.domEvent.keyCode === 46) {
+                command = command.slice(0, -1);
+            }
             if (e.domEvent.keyCode === 13) {
                 if (command === "me") {
                     window.TerminalUtils.GetMe();
                 } else {
                     try {
                         term.write('\r\n');
-                        term.write("~$ " + eval(command));
-                        term.write('\r\n');
-                        term.write("~$ ");
+
+                        window.TerminalUtils.pDotNetReference.invokeMethodAsync('ExecuteCommand', command).then(data => {
+                            term.write(data + '\r\n~$ ');
+                        });
+
                     } catch (e) {
                         term.write("~$ " + e);
                         term.write('\r\n');
