@@ -750,7 +750,9 @@ window.Radzen = {
           e.target.clientHeight < e.target.scrollHeight ? (e.target.offsetWidth - e.target.clientWidth) + 'px' : '0px';
 
     if (e.target.nextElementSibling) {
-      e.target.nextElementSibling.style.paddingRight = scrollLeft;
+        e.target.nextElementSibling.style.marginLeft = scrollLeft;
+        e.target.nextElementSibling.firstElementChild.style.paddingRight =
+            e.target.clientHeight < e.target.scrollHeight ? (e.target.offsetWidth - e.target.clientWidth) + 'px' : '0px';
     }
 
     for (var i = 0; i < document.body.children.length; i++) {
@@ -1051,11 +1053,15 @@ window.Radzen = {
   selectionAttributes: function (selector, attributes) {
     var selection = getSelection();
     var target = selection.focusNode;
+    var innerHTML;
     if (target) {
       if (target.nodeType == 3) {
         target = target.parentElement;
       } else {
         target = target.childNodes[selection.focusOffset];
+        if (target) {
+          innerHTML = target.outerHTML;
+        }
       }
       if (target && !target.matches(selector)) {
         target = target.closest(selector);
@@ -1066,7 +1072,7 @@ window.Radzen = {
         result[name] = target[name];
       }
       return result;
-    }, { innerText: selection.toString() });
+    }, { innerText: selection.toString(), innerHTML: innerHTML });
   },
   destroyEditor: function (ref) {
     if (ref) {
@@ -1092,6 +1098,9 @@ window.Radzen = {
     document.addEventListener('touchmove', ref.touchMoveHandler, { passive: true })
     document.addEventListener('touchend', ref.mouseUpHandler, { passive: true });
     return Radzen.clientRect(ref);
+  },
+  submit: function (form) {
+    form.submit();
   },
   clientRect: function (arg) {
     var el = arg instanceof Element || arg instanceof HTMLDocument

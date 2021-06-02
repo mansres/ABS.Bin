@@ -47,10 +47,16 @@ window.InteropFunctions = {
             StudioApp.init(StudioAppOptions);
             StudioDemoPanel.init();
             StudioLayout.init();
-        if (!dashboardInitialized) {
-            StudioQuickPanel.init();
             StudioUtil.removeClass(StudioUtil.get('body'), 'abs-page--loading');
-            dashboardInitialized = true;
-        }
+            
+            if (!dashboardInitialized) {
+                setTimeout(function () {
+                    // This will be executed after 1,000 milliseconds
+                    StudioQuickPanel.init();
+                    window.fabricUtils.enableBreadcrumbs();
+                }, 1000);
+                dashboardInitialized = true;
+            }
     }
 };
+
