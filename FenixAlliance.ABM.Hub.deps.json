@@ -138,6 +138,7 @@
           "Microsoft.Extensions.DependencyInjection.Reference": "6.0.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.Reference": "6.0.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks.Reference": "6.0.0.0",
+          "Microsoft.Extensions.Features": "6.0.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions.Reference": "6.0.0.0",
           "Microsoft.Extensions.FileProviders.Composite.Reference": "6.0.0.0",
           "Microsoft.Extensions.FileProviders.Embedded.Reference": "6.0.0.0",
@@ -284,6 +285,7 @@
           "System.Security.Cryptography.Cng.Reference": "6.0.0.0",
           "System.Security.Cryptography.Csp.Reference": "6.0.0.0",
           "System.Security.Cryptography.Encoding.Reference": "6.0.0.0",
+          "System.Security.Cryptography.OpenSsl.Reference": "6.0.0.0",
           "System.Security.Cryptography.Primitives.Reference": "6.0.0.0",
           "System.Security.Cryptography.X509Certificates.Reference": "6.0.0.0",
           "System.Security.Cryptography.Xml.Reference": "6.0.0.0",
@@ -7629,6 +7631,12 @@
         },
         "compileOnly": true
       },
+      "Microsoft.Extensions.Features/6.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Features.dll": {}
+        },
+        "compileOnly": true
+      },
       "Microsoft.Extensions.FileProviders.Abstractions.Reference/6.0.0.0": {
         "compile": {
           "Microsoft.Extensions.FileProviders.Abstractions.dll": {}
@@ -8502,6 +8510,12 @@
       "System.Security.Cryptography.Encoding.Reference/6.0.0.0": {
         "compile": {
           "System.Security.Cryptography.Encoding.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography.OpenSsl.Reference/6.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.OpenSsl.dll": {}
         },
         "compileOnly": true
       },
@@ -12985,6 +12999,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.Extensions.Features/6.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Microsoft.Extensions.FileProviders.Abstractions.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -13711,6 +13730,11 @@
       "sha512": ""
     },
     "System.Security.Cryptography.Encoding.Reference/6.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.OpenSsl.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
