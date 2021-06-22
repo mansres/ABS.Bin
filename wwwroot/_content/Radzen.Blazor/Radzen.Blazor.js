@@ -129,7 +129,9 @@ window.Radzen = {
         return false;
       }
     };
-    el.addEventListener('keydown', preventDefault, false);
+    if (el) {
+       el.addEventListener('keydown', preventDefault, false);
+    }
   },
   loadGoogleMaps: function (defaultView, apiKey, resolve, reject) {
     resolveCallbacks.push(resolve);
@@ -594,7 +596,7 @@ window.Radzen = {
     var popup = document.getElementById(id);
     if (!popup) return;
 
-    var parentRect = parent ? parent.getBoundingClientRect() : { top: 0, bottom: 0, left: 0, right: 0, width: 0, height: 0 };
+    var parentRect = parent ? parent.getBoundingClientRect() : { top: y || 0, bottom: 0, left: x || 0, right: 0, width: 0, height: 0 };
 
     if (/Edge/.test(navigator.userAgent)) {
       var scrollLeft = document.body.scrollLeft;
@@ -684,7 +686,7 @@ window.Radzen = {
       popup.style.left = parentRect.left + scrollLeft + 'px';
     }
 
-    popup.style.zIndex = 1000;
+    popup.style.zIndex = 2000;
 
     if (!popup.classList.contains('rz-overlaypanel')) {
         popup.classList.add('rz-popup');

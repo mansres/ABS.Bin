@@ -701,10 +701,6 @@
     transition: all .3s ease
 }
 
-    .fixed-sidebar.fixed-sidebar-responsive.open {
-        min-height: 1000vh
-    }
-
 .header-responsive .header-content-wrapper {
     z-index: 5
 }
@@ -4948,7 +4944,6 @@ fieldset[disabled] .form-group.is-focused .checkbox label {
     position: fixed;
     z-index: 22;
     width: 70px;
-    min-height: 1000vh
 }
 
 .fixed-sidebar-left, .fixed-sidebar-right {
@@ -18812,20 +18807,20 @@ div.mejs-speed-button {
     padding-right: 0px !important;
     padding-left: 0px !important;
     margin-right: 10px !important;
-    margin-left: auto;
+    margin-left: 15px !important;
     width: 100%;
 }
-.container .container-fluid {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-right: 10px !important;
-    margin-left: auto;
-    width: 100%;
-}
+    .container .container-fluid {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        margin-right: 10px !important;
+        margin-left: 15px !important;
+        width: 100%;
+    }
 
 @media (min-width: 1024px) {
     .container {
-        max-width: 95%;
+        max-width: 100%;
     }
 }
 

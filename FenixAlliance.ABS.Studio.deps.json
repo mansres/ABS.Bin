@@ -7606,18 +7606,6 @@
           "FenixAlliance.ABS.Modules.Workplace.WOPI.dll": {}
         }
       },
-      "FenixAlliance.ABS.Portal.Admin/1.1.6.9": {
-        "dependencies": {
-          "BuildBundlerMinifier": "3.2.449",
-          "FenixAlliance.ABS.Portal.Core": "1.1.6.9"
-        },
-        "runtime": {
-          "FenixAlliance.ABS.Portal.Admin.dll": {}
-        },
-        "compile": {
-          "FenixAlliance.ABS.Portal.Admin.dll": {}
-        }
-      },
       "FenixAlliance.ABS.Portal.Core/1.1.6.9": {
         "dependencies": {
           "BuildBundlerMinifier": "3.2.449",
@@ -7644,7 +7632,6 @@
       },
       "FenixAlliance.ABS.Portal.Hub/1.1.6.9": {
         "dependencies": {
-          "FenixAlliance.ABS.Portal.Admin": "1.1.6.9",
           "FenixAlliance.ABS.Portal.Editor": "1.1.6",
           "FenixAlliance.ABS.Portal.UI": "1.1.6.9"
         },
@@ -13721,11 +13708,6 @@
       "sha512": ""
     },
     "FenixAlliance.ABS.Modules.Workplace.WOPI/1.1.6.9": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "FenixAlliance.ABS.Portal.Admin/1.1.6.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

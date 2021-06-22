@@ -38,7 +38,7 @@ We're designed to succeed when you and your business succeed; that's why we're c
 
 The fact is, since our inception, we've steered towards creating a culture designed to reach beyond expectations together by building an organization whose success strategy is to help others to succeed.
 
-### Well when. What do I get?
+### Well then. What do I get?
 
 We are creating our applications in such a form that they deliver as much value to your business and cause as we can. They work primarily as an interface for users to manage their services, products, and cloud resources. But the truth is that isn't limited to just that.
 
@@ -167,12 +167,12 @@ namespace FenixAlliance.ABS
 # Roadmap
 This project is a work in progress and the schedule for implementing enhancements is dependent upon the availability of community members who are willing/able to assist. For a more comprehensive look at our roadmap, please visit our **[Progess Board](https://dev.azure.com/fenixalliance/ABS.Docs/_workitems/recentlyupdated)**.
 
-V.1.7.5 ( release in 2022 S1 )
+V.1.4 ( release in 2022 S1 )
 - [ ] UBL 2.1 Support
 - [ ] Process Canvas.
 - [ ] PowerShell SDK 
 
-V.1.5.0 ( release in 2021 S2 )
+V.1.3 ( release in 2021 S2 )
 - [ ] gRPC Modularization
 - [ ] Reporting Dashboard
 - [ ] Dynamic Dashboards
@@ -180,12 +180,11 @@ V.1.5.0 ( release in 2021 S2 )
 - [ ] gRPC Modularization
 - [ ] ACS Modularization
 
-V.1.2.5 ( release in 2021 S1 )
+V.1.2 ( release: July 12, 2021 )
 - [ ] Custom Macro Definitions
 - [ ] Virtual Entity Data Sources
 - [ ] Studio Static Localization
 - [ ] Custom Portal Profile Definitions
-- [ ] Identity Server Integration (Local accounts)
 - [ ] Template Definitions
     - [ ] Agreement Template Definitions
     - [ ] Email Template Definitions
@@ -202,6 +201,18 @@ V.1.2.5 ( release in 2021 S1 )
 - ✅ Custom Option Definitions
 - ✅ Custom Service Endpoint Definitions
 - ✅ Custom Web Portal Resources
+- ✅ Alliance Passport Services (Auth Engine)
+    - ✅ TOTP MFA Enabled
+    - ✅ Local Account Support
+    - ✅ Microsoft Identity Integration
+    - ✅ Twitter Identity Integration
+    - ✅ Facebook Identity Integration
+    - ✅ Google Identity Integration
+    - ✅ Azure AD Identity Integration
+    - ✅ Azure AD B2C Identity Integration
+    - ✅ Okta Identity Integration (Preview)
+    - ✅ AWS Cognito Identity Integration 
+    - ✅ Default Identity Management
 - ✅ Module Manager Dashboard
     - ✅ Trusted Publisher Rules
     - ✅ Module Assembly Manager
@@ -246,7 +257,7 @@ V.1.0.0 ( released in Dec 31, 2020 )
 - ✅ Slack integration (OAuth)
 - ✅ Support For Additional Authentication Providers (OAuth)
 
-Constant Consideration
+Constant Considerations
 
 - ✅ Code Annotations
 - ✅ A11y Improvements
@@ -263,7 +274,7 @@ Constant Consideration
 
 # Release Announcements
 
-[Alliance Business Suite v1.2.5](https://absuite.net/Blog/announcing-1-25-for-net-5)
+[Alliance Business Suite v1.2](https://absuite.net/Blog/Posts/abs_v1.2)
 
 # Example Screenshots
 
@@ -368,3 +379,6 @@ Fenix Alliance, Alliance Business Suite, Infinity Comex, and/or other Fenix Alli
 Privacy information can be found at https://fenix-alliance.com/legal/policies/privacypolicy
 
 Fenix Alliance and any contributors reserve all other rights, whether under their respective copyrights, patents, or trademarks, whether by implication, estoppel, or otherwise.
+
+
+<a href="https://www.producthunt.com/posts/alliance-business-suite?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-alliance-business-suite" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=300812&theme=dark" alt="Alliance Business Suite - Low-Code Next-Generation Business Development Platform. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>

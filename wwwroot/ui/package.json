@@ -1,11 +1,17 @@
 {
-  "name": "wwwroot",
+  "name": "abs-statics",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "xterm": "^4.4.0"
+    "xterm": "^4.13.0"
   }
 }

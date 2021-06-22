@@ -1,0 +1,84 @@
+.fa-small {
+    font-size: 10px !important;
+}
+
+.rz-datatable-data td .rz-cell-data {
+    color: #48606c;
+    font-size: 1.5rem;
+    display: block;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rz-dropdown-item {
+    font-size: 1.2rem !important;
+}
+
+.rz-dropdown-label {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    margin-right: 1.1875rem;
+    line-height: 3.5rem;
+    font-size: 1.2rem !important;
+}
+
+.rz-dropdown {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 3.5rem;
+}
+
+.rz-fileupload {
+    display: block !important;
+    height: auto;
+}
+
+.ms-PanelHost {
+    z-index: 100 !important
+}
+
+.card{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.abs-aside .abs-aside-menu .abs-menu_nav > .abs-menu_item > .abs-menu_link > .abs-menu_link-icon{
+    font-size:1rem
+}
+
+
+
+#blazor-error-ui {
+    background: #F44336;
+    background-color: #F44336;
+    color: white;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+    #blazor-error-ui a {
+        color: white;
+        text-decoration: underline;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
