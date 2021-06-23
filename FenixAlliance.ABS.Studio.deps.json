@@ -6906,6 +6906,9 @@
           "FenixAlliance.ABM.Core": "1.1.6.9",
           "FenixAlliance.ABM.Models": "1.1.6.9",
           "FenixAlliance.ABM.Models.DTOs": "1.1.6.9",
+          "FenixAlliance.ABM.Models.Mappers": "1.1.6.9",
+          "FenixAlliance.ABM.Models.Mappers.UBL": "1.1.6.9",
+          "FenixAlliance.ABM.Models.UBL": "1.1.6.9",
           "FenixAlliance.ABM.SDK": "1.1.6.9"
         },
         "runtime": {
@@ -7003,7 +7006,6 @@
       },
       "FenixAlliance.ABM.Models.Mappers/1.1.6.9": {
         "dependencies": {
-          "FenixAlliance.ABM.Data": "1.1.6.9",
           "FenixAlliance.ABM.Models": "1.1.6.9",
           "FenixAlliance.ABM.Models.DTOs": "1.1.6.9"
         },
@@ -7012,6 +7014,22 @@
         },
         "compile": {
           "FenixAlliance.ABM.Models.Mappers.dll": {}
+        }
+      },
+      "FenixAlliance.ABM.Models.Mappers.UBL/1.1.6.9": {
+        "runtime": {
+          "FenixAlliance.ABM.Models.Mappers.UBL.dll": {}
+        },
+        "compile": {
+          "FenixAlliance.ABM.Models.Mappers.UBL.dll": {}
+        }
+      },
+      "FenixAlliance.ABM.Models.UBL/1.1.6.9": {
+        "runtime": {
+          "FenixAlliance.ABM.Models.UBL.dll": {}
+        },
+        "compile": {
+          "FenixAlliance.ABM.Models.UBL.dll": {}
         }
       },
       "FenixAlliance.ABM.SDK/1.1.6.9": {
@@ -13463,6 +13481,16 @@
       "sha512": ""
     },
     "FenixAlliance.ABM.Models.Mappers/1.1.6.9": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FenixAlliance.ABM.Models.Mappers.UBL/1.1.6.9": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FenixAlliance.ABM.Models.UBL/1.1.6.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
