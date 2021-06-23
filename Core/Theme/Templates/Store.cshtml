@@ -1,0 +1,315 @@
+@{
+    Name = "Turing Store Template";
+}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+
+
+    <!-- MS Bing Validation -->
+    <meta name="msvalidate.01" content="@SuiteOptions.ABS.Portal.Options.Seo.BingVerificationCode" />
+
+    <!-- Google Validation -->
+    <meta name="google-site-verification" content="@SuiteOptions.ABS.Portal.Options.Seo.GoogleVerificationCode" />
+
+    <!-- Pinterest Validation -->
+    <meta name="p:domain_verify" content="@SuiteOptions.ABS.Portal.Options.Seo.PinterestVerificationCode" />
+
+    <title>@ViewData["Title"]</title>
+
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The57" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The60" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The72" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The76" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The114" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The120" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The144" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The152" />
+
+    <link rel="icon" type="image/png" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The57" sizes="196x196" />
+    <link rel="icon" type="image/png" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The57" sizes="96x96" />
+    <link rel="icon" type="image/png" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The57" sizes="32x32" />
+    <link rel="icon" type="image/png" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The57" sizes="16x16" />
+    <link rel="icon" type="image/png" href="@SuiteOptions.ABS.Portal.Options.Branding.AppleIcon.The57" sizes="128x128" />
+
+    <meta name="msapplication-TileImage" content="@SuiteOptions.ABS.Portal.Options.Branding.MSAppTile.Logo" />
+    <meta name="msapplication-TileColor" content="@SuiteOptions.ABS.Portal.Options.Branding.MSAppTile.Color" />
+    <meta name="msapplication-square70x70logo" content="@SuiteOptions.ABS.Portal.Options.Branding.MSAppTile.Logo70" />
+    <meta name="msapplication-square150x150logo" content="@SuiteOptions.ABS.Portal.Options.Branding.MSAppTile.Logo150" />
+    <meta name="msapplication-wide310x150logo" content="@SuiteOptions.ABS.Portal.Options.Branding.MSAppTile.Logo310" />
+    <meta name="msapplication-square310x310logo" content="@SuiteOptions.ABS.Portal.Options.Branding.MSAppTile.Logo310W" />
+
+    @if (SuiteOptions.ABP.Integrations.Google.GoogleTagManager.Enable)
+    {
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', '@SuiteOptions.ABP.Integrations.Google.GoogleTagManager.Id');
+        </script>
+    }
+
+
+
+    <!--====== Google Font ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="/themes/turing/css/vendor.css">
+
+    <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="/themes/turing/css/utility.css">
+
+    <!--====== App ======-->
+    <link rel="stylesheet" href="/themes/turing/css/app.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/money.js/0.0.1/money.min.js" integrity="sha512-dfZQaBBlTXvL+AUQKi7dd/9kb/KhreymnZYVdinjigqTdZUrAnLUNJRV34DUPFCdyek9mMBns3rzTlipnBKhTg==" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    
+    @if (SuiteOptions.ABP.Integrations.Google.GoogleTagManager.Enable)
+    {
+        @* Google Tag Manager (noscript) *@
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=@SuiteOptions?.ABP?.Integrations?.Google?.GoogleTagManager?.Id"
+                    height="0"
+                    width="0"
+                    style="display:none; visibility:hidden">
+            </iframe>
+        </noscript>
+    }
+
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+            <img class="preloader__img" src="/themes/turing/images/preloader.png" alt="">
+        </div>
+    </div>
+
+    <!--====== Main App ======-->
+    <div id="app">
+        @await Component.InvokeAsync("StoreHeader", User)
+        @Body
+        @await Component.InvokeAsync("StoreFooter", User)
+    </div>
+
+    <!--====== Google Analytics ======-->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="https://unpkg.com/@@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" integrity="sha512-42kB9yDlYiCEfx2xVwq0q7hT4uf26FUgSIZBK8uiaEnTdShXjwr8Ip1V4xGJMg3mHkUt9nNuTDxunHF0/EgxLQ==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js" integrity="sha512-bUg5gaqBVaXIJNuebamJ6uex//mjxPk8kljQTdM1SwkNrQD7pjS+PerntUSD+QRWPNJ0tq54/x4zRV8bLrLhZg==" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
+
+    <!--====== Vendor Js ======-->
+    <script src="/themes/turing/js/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="/themes/turing/js/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="/themes/turing/js/app.js"></script>
+    <script>
+        function AddProductToCart(ProductID) {
+            NProgress.start();
+            $("#CartButton").attr("disabled", true);
+            $("#CartButton").css('cursor', 'wait');
+            var Count = $('#CartQuantity').text();
+            var ProductCartRecord = { "ProductID": ProductID, "CartID": CartID, "Quantity": parseInt(1) };
+            $.ajax({
+                url: '/api/v2/Store/CartRecords/Products',
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                headers: {
+                    RequestVerificationToken: $('input:hidden[name="__RequestVerificationToken"]').val()
+                },
+                data: JSON.stringify(ProductCartRecord)
+            }).done(function (ProductCartRecordResult) {
+                $.ajax({
+                    url: '/api/v2/Store/Products/GetFinalPriceInUSD?ItemID=' + ProductID,
+                    type: 'GET',
+                    contentType: 'application/json; charset=utf-8',
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val()
+                    }
+                }).done(function (productPrice) {
+                    // Product price to cart price
+                    TotalPrice += fx.convert((productPrice * 1), { from: 'USD', to: CartCurrencyCode });
+    
+                    $.ajax({
+                        url: '/api/v2/Store/Products/' + ProductID,
+                        type: 'GET',
+                        contentType: 'application/json; charset=utf-8',
+                        headers: {
+                            RequestVerificationToken:
+                                $('input:hidden[name="__RequestVerificationToken"]').val()
+                        }
+                    }).done(function (productResult) {
+    
+                        var CartEntryDiv = `<div id="${ ProductCartRecordResult.id}" class="cart-entry">`; 
+    
+                        if (productResult.images === null || productResult.images.length === 0 ) {
+                            CartEntryDiv +=
+                                `<a href="/Store/Products/Details/${ProductID}" class="image">
+                                    <img src="/Store/img/empty-image.png"   onerror="this.src='/Store/img/empty-image.png'" alt="">
+                                </a>`;
+                        } else {
+                            CartEntryDiv += ` < a href = "/Store/Products/Details/' + ProductID + '" class="image" > <img src="${productResult?.images?.[0]}" onerror="this.src='/Store/img/empty-image.png'" alt=""></a>`;
+                        }
+                        CartEntryDiv += `
+                                    <div class="content">
+                                        <a class="title" href="/Store/Products/Details/${ProductID}">${productResult.title}</a>
+                                        <div class="quantity">@_("Quantity"): 1 </div>
+                                        <div class="price">${CurrencyFormatter.format(fx.convert((productPrice * 1), { from: 'USD', to: CartCurrencyCode }))}</div>
+                                    </div>
+                                    <div  onclick="RemoveProductFromCart(\'' + ProductCartRecordResult.id + '\',\'' + ProductID + '\')"  class="button-x"><i class="fa fa-close"></i></div>
+                                </div>
+                            `;
+    
+                        $("#cart-popup-container").prepend(CartEntryDiv);
+    
+                        if (ProductCartRecordsCount == 0) {
+                            $("#NoProductsDivEntry").fadeOut(300, function () { $(this).remove(); });
+                        }
+    
+                        ProductCartRecordsCount++;
+    
+                        $("#CartTotalPriceContainer").replaceWith("<b id='CartTotalPriceContainer'>" + CurrencyFormatter.format(TotalPrice) + "<b>");
+                        $("#CartDropdownGrandtotal").replaceWith(`<b id='CartDropdownGrandtotal' class="grandtotal">Subtotal: ${CurrencyFormatter.format(TotalPrice)}<b>`);
+    
+                        toastr.success('@_("The product has been successfully added to your cart!")');
+                        NProgress.done();
+                    });
+                });
+            });
+        };
+    
+        function RemoveProductFromCart(RecordID, ProductID) {
+            NProgress.start();
+            $.ajax({
+                url: '/api/v2/Store/CartRecords/Products/' + RecordID,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                headers: {
+                    RequestVerificationToken:
+                        $('input:hidden[name="__RequestVerificationToken"]').val()
+                }
+            }).done(function (ProdCartReg) {
+                $.ajax({
+                    url: '/api/v2/Store/CartRecords/Products/' + RecordID,
+                    type: 'DELETE', contentType: 'application/json; charset=utf-8',
+                    headers: {
+                        RequestVerificationToken: $('input:hidden[name="__RequestVerificationToken"]').val()
+                    },
+                }).done(function (result) {
+                    $.ajax({
+                        url: '/api/v2/Store/Products/GetFinalPriceInUSD?ItemID=' + ProductID,
+                        type: 'GET',
+                        contentType: 'application/json; charset=utf-8',
+                        headers: {
+                            RequestVerificationToken:
+                                $('input:hidden[name="__RequestVerificationToken"]').val()
+                        }
+                    }).done(function (productPrice) {
+                        $('#' + RecordID).fadeOut(300, function () { $(this).remove(); });
+                        TotalPrice -= fx.convert((productPrice * ProdCartReg.quantity), { from: 'USD', to: CartCurrencyCode });
+                        ProductCartRecordsCount--;
+                        if (ProductCartRecordsCount == 0) {
+                            var emptyBlock = `
+                                <div id="NoProductsDivEntry" class="cart-entry">
+                                    <a class="image"><img src="/images/Graphics/cod (103).png"   onerror="this.src='/Store/img/empty-image.png'" /></a>
+                                    <div class="content">
+                                        <a class="title" href="#">@_("This cart looks empty.")</a>
+                                        <div class="quantity">@_("Let's add some products and services!")</div>
+                                        <div class="price"><a href="/Store/Products">@_("Go to the Store")</a> </div>
+                                    </div>
+                                </div>
+                            `;
+    
+                            $("#" + RecordID).replaceWith(emptyBlock);
+                        }
+                        else {
+                            $('#' + RecordID).fadeOut(300, function () { $(this).remove(); });
+                        }
+    
+                        $("#CartTotalPriceContainer").replaceWith("<b id='CartTotalPriceContainer'>" + CurrencyFormatter.format(TotalPrice) + "<b>");
+                        $("#CartDropdownGrandtotal").replaceWith("<b id='CartDropdownGrandtotal' class=\"grandtotal\">Subtotal: " + CurrencyFormatter.format(TotalPrice) + "<b>");
+    
+                        toastr.info('@_("The product was successfully removed from your cart.")');
+                        NProgress.done();
+                    });
+    
+                });
+            });
+        };
+    
+        function AddProductToCompare(ProductID) {
+            NProgress.start();
+            var ProductToCompareRecord = { "ProductID": ProductID, "CartID": CartID };
+            $.ajax({
+                url: '/api/v2/Store/CompareRecords/Products',
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                headers: {
+                    RequestVerificationToken:
+                        $('input:hidden[name="__RequestVerificationToken"]').val()
+                },
+                data: JSON.stringify(ProductToCompareRecord)
+            }).done(function (result) {
+                toastr.info('@_("The product has been successfully added to your comparison table. Redirecting...")');
+                NProgress.done();
+                location.replace("/Store/Compare/Index");
+            });
+        };
+    </script>
+    <!--====== Noscript ======-->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript is disabled in your browser.</h1>
+
+                            <span class="app-setting__text">Please enable JavaScript in your browser or upgrade to a
+                                JavaScript-capable browser.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</body>
+
+</html>

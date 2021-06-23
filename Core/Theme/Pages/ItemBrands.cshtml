@@ -1,0 +1,89 @@
+@{Title = "Home";}
+@{Slug = "/Home";}
+
+<div class="section">
+    <div class="container-fluid">
+        @await ViewService.InvokeAsync("HomeHero")
+        <div class="row">
+            <div class="col-md-4">
+                <h2>
+                    Store
+                </h2>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+                    mollis euismod. Donec sed odio dui.
+                </p>
+                <p>
+                    <a class="btn" href="#">View details »</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>
+                    Heading
+                </h2>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+                    mollis euismod. Donec sed odio dui.
+                </p>
+                <p>
+                    <a class="btn" href="#">View details »</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>
+                    Heading
+                </h2>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+                    mollis euismod. Donec sed odio dui.
+                </p>
+                <p>
+                    <a class="btn" href="#">View details »</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="information-blocks">
+    <div class="row">
+        <div class="information-blocks">
+            <div class="block-header">
+                <h3 class="title">@_("Amazing brands!")</h3>
+                <div class="description">@_("To fulfill your passion for technology.")</div>
+            </div>
+        </div>
+        <br />
+        <br />
+        @foreach (var Brand in Model)
+        {
+            <div class="col-sm-6 col-md-3 information-entry" style="margin-bottom:15px">
+                <div class="Item-column-entry">
+                    <div class="image"><a asp-area="Store" asp-controller="Brands" asp-action="Details" asp-route-id="@Brand.ID"><img alt="@Brand.Name's Logo" style="height:500px;" src="@Html.DisplayFor(modelItem => Brand.LogoURL)"></a></div>
+                    <h3 class="title"><a asp-area="Store" asp-controller="Brands" asp-action="Details" asp-route-id="@Brand.ID">@Brand.Name</a></h3>
+                    <div class="description">
+                        <ul class="list-type-1">
+                            <li><a asp-area="Store" asp-controller="Brands" asp-action="Details" asp-route-id="@Brand.ID"><i class="fa fa-angle-right"></i>(@Brand.Items.Union(Brand.BrandRecords.Select(c => c.Item)).Count()) Items.</a></li>
+                            <li><a href="@Brand.WebsiteURL" target="_blank"><i class="fa fa-home"></i>Visit Website</a></li>
+                        </ul>
+                    </div>
+                    @if (Brand.Trending)
+                    {
+                        <div class="hot-mark yellow"><i class="fas fa-badge-percent"></i></div>
+                    }
+                    @if (Brand.Trending)
+                    {
+                        <div class="hot-mark red"><i class="fas fa-badge"></i></div>
+                    }
+                </div>
+            </div>
+        }
+
+
+    </div>
+</div>
+
+

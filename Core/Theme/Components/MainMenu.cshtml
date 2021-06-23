@@ -1,0 +1,282 @@
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using Microsoft.AspNetCore.Localization
+@using System.Linq
+@{
+    var MainMenu = await MenusService.GetMenuContextAsync("Portal.Header");
+}
+
+<style>
+    .material-menu {
+        display: inline-flex;
+    }
+
+    .material-menu-list {}
+
+    .material-menu-list>li {
+        text-align: center;
+        flex-direction: row !important;
+    }
+</style>
+
+<nav class="material-menu clearfix">
+    <ul class="mobile-sub material-menu-list">
+
+
+        @foreach (var TopLevelItem in MainMenu.MenuContextItems)
+        {
+            if (TopLevelItem.ChildMenuItems != null && TopLevelItem.ChildMenuItems.Count() != 0)
+            {
+                <li>
+                    <a href="#" id="nav_@TopLevelItem.Name">
+                        <i class="@TopLevelItem.Icon"></i>
+                        @_(TopLevelItem.Name)
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="material-menu-submenu">
+                        <li>
+                            <a href="#">
+                                <b> @_(TopLevelItem.Category)</b>
+                            </a>
+                        </li>
+
+                        @foreach (var _1stLevelChildItem in TopLevelItem.ChildMenuItems)
+                        {
+                            if (_1stLevelChildItem.ChildMenuItems != null)
+                            {
+                                <li class="">
+                                    <a href="#">
+                                        <i class="@_1stLevelChildItem.Icon"></i>
+                                        &nbsp;&nbsp;
+                                        @_(_1stLevelChildItem.Name)
+                                    </a>
+
+                                    <ul class="material-menu-submenu-sub">
+
+                                        <li>
+                                            <h6 class="dropdown-header">
+                                                <b>
+                                                    @_(@_1stLevelChildItem.Category)
+                                                </b>
+                                            </h6>
+                                        </li>
+
+                                        @foreach (var _2ndLevelChildItem in @_1stLevelChildItem.ChildMenuItems)
+                                        {
+                                            if (_2ndLevelChildItem.ChildMenuItems != null)
+                                            {
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="@_2ndLevelChildItem.Icon"></i>
+                                                        &nbsp;&nbsp;
+                                                        @_(_2ndLevelChildItem.Name)
+                                                    </a>
+
+                                                    <ul class="material-menu-submenu-sub-sub">
+
+                                                        <li>
+                                                            <h6 class="dropdown-header">
+                                                                <b>
+                                                                    @_(@_2ndLevelChildItem.Category)
+                                                                </b>
+                                                            </h6>
+                                                        </li>
+                                                        @foreach (var _3rdLevelChildItem in _2ndLevelChildItem.ChildMenuItems)
+                                                        {
+                                                            if (_3rdLevelChildItem.ChildMenuItems != null)
+                                                            {
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <i class="@_3rdLevelChildItem.Icon"></i>
+                                                                        &nbsp;&nbsp;
+                                                                        @_(_3rdLevelChildItem.Name)
+                                                                    </a>
+
+                                                                    <ul class="material-menu-submenu-sub-sub">
+                                                                        <li>
+                                                                            <h6 class="dropdown-header">
+                                                                                <b>
+                                                                                    @_(@_3rdLevelChildItem.Category)
+                                                                                </b>
+                                                                            </h6>
+                                                                        </li>
+                                                                        @foreach (var _4thLevelChildItem in _3rdLevelChildItem.ChildMenuItems)
+                                                                        {
+                                                                            <li>
+                                                                                <a href="@_4thLevelChildItem.Url">
+                                                                                    <i class="@_4thLevelChildItem.Icon"></i>
+                                                                                    &nbsp;&nbsp;
+                                                                                    @_(_4thLevelChildItem.Name)
+                                                                                </a>
+                                                                            </li>
+                                                                        }
+
+                                                                    </ul>
+                                                                </li>
+                                                            }
+                                                            else
+                                                            {
+                                                                <li>
+                                                                    <a href="@_3rdLevelChildItem.Url">
+                                                                        <i class="@_3rdLevelChildItem.Icon"></i>
+                                                                        &nbsp;&nbsp;
+                                                                        @_(_3rdLevelChildItem.Name)
+                                                                    </a>
+                                                                </li>
+                                                            }
+                                                        }
+
+                                                    </ul>
+                                                </li>
+                                            }
+                                            else
+                                            {
+                                                <li>
+
+                                                    <a href="@_2ndLevelChildItem.Url" class="dropdown-item">
+                                                        <i class="@_2ndLevelChildItem.Icon"></i>
+                                                        &nbsp;&nbsp;
+                                                        @_(_2ndLevelChildItem.Name)
+                                                    </a>
+                                                </li>
+                                            }
+                                        }
+
+                                    </ul>
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    <a href="@_1stLevelChildItem.Url" class="dropdown-item">
+                                        <i class="@_1stLevelChildItem.Icon"></i>
+                                        &nbsp;&nbsp;
+                                        @_(_1stLevelChildItem.Name)
+                                    </a>
+                                </li>
+                            }
+                        }
+
+                    </ul>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <a href="@TopLevelItem.Url" id="nav_@TopLevelItem.Name">
+                        <i class="fas @TopLevelItem.Icon"></i>
+                        @_(TopLevelItem.Name)
+                    </a>
+                </li>
+            }
+        }
+
+
+
+        <li class="nav-item dropdown">
+            @{
+                var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+                var cultureItems = RequestLocalizationOptions.Value.SupportedUICultures
+                .Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
+                .ToList();
+                var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" :
+                $"~{Context.Request.Path.Value}";
+            }
+            <a class="nav-link   dropdown-toggle" href="#" id="SelectLang" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                @requestCulture.RequestCulture.Culture.TwoLetterISOLanguageName -
+                <script>document.write(CartCurrencyCode);</script>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="SelectLang">
+                <h6 class="dropdown-header">
+                    <b> <i class="fas fa-globe-americas"></i>&nbsp; @_("Current currency"): </b>
+                    <b id="CurrencyTip">
+                        <script>document.write(CartCurrencyCode);</script>
+                    </b>
+                </h6>
+                <div class="dropdown-divider"></div>
+                <a href="/Currencies/Index" class="dropdown-item">
+                    <i class="fas fa-dollar-sign"></i>&nbsp; @_("Change currency")
+                </a>
+                <!-- Language -->
+                <h6 class="dropdown-header">
+                    <b> <i class="fas fa-globe-americas"></i>&nbsp; @_("Current Language"): </b>
+                    <b id="CurrencyTip">
+                        @requestCulture.RequestCulture.Culture.TwoLetterISOLanguageName
+                    </b>
+                </h6>
+                <div class="dropdown-divider"></div>
+
+                @foreach (var item in cultureItems)
+                {
+                    var value = @item.Value;
+                    <a href="#" onclick="SelectLang('@(value.Replace(" ", ""))')" class="dropdown-item">
+                        <i class="fas fa-language"></i>&nbsp; @item.Text
+                    </a>
+                }
+            </div>
+            <script>
+                //Select Language
+                function SelectLang(value) {
+                    cookie = "c=" + value.trim() + "|uic=" + value.trim();
+                    Cookies.set('.AspNetCore.Culture', cookie);
+                    window.location.reload();
+                }
+            </script>
+        </li>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <script>
+                var today = new Date();
+                var hourNow = today.getHours();
+                var greeting;
+
+                if (hourNow > 18) {
+                    greeting = '👋🏻 @_("Good evening"), @User.Identity.Name.';
+                } else if (hourNow > 12) {
+                    greeting = '👋🏻 @_("Good afternoon"), @User.Identity.Name.';
+                } else if (hourNow > 0) {
+                    greeting = '👋🏻 @_("Good morning"), @User.Identity.Name.';
+                } else {
+                    greeting = '👋🏻 @_("Welcome"), @User.Identity.Name.';
+                }
+            </script>
+            <li class="nav-item dropdown">
+                <a class="nav-link" id="navServices" href="#" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                    <i class="material-icons">
+                        <img style="max-height:25px; margin-top:-12px" alt="Avatar" src="/ui/images/anonymous.png"
+                        class="rounded-circle img-fluid">
+                    </i>
+                    @_("Your Account")
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-with-icons" aria-labelledby="navServices">
+                    <h6 class="dropdown-header">
+                        <script>
+                            document.write(greeting)
+                        </script>
+                    </h6>
+                    <div class="dropdown-divider"></div>
+                    <a href="/Account/Index" onclick="NProgress.start()" class="dropdown-item">
+                        <i class="fas fa-id-badge"></i>
+                        &nbsp;&nbsp;
+                        @_("Your Account")
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/Account/SignOut" onclick="NProgress.start()" class="dropdown-item">
+                        <i class="fas fa-sign-out-alt"></i>
+                        &nbsp;&nbsp;
+                        <span>@_("Log Out")</span>
+                    </a>
+                </div>
+            </li>
+        }
+        else
+        {
+            <li class="button-container nav-item iframe-extern">
+                <a href="/Account/SignIn" class="btn btn-info btn-round btn-block">
+                    @_("Login / Sign up")
+                </a>
+            </li>
+        }
+    </ul>
+</nav>
