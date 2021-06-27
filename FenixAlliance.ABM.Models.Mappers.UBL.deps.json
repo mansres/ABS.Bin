@@ -1,11 +1,11 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v6.0",
+    "name": ".NETCoreApp,Version=v5.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v6.0": {
+    ".NETCoreApp,Version=v5.0": {
       "FenixAlliance.ABM.Models.Mappers.UBL/1.1.6.9": {
         "runtime": {
           "FenixAlliance.ABM.Models.Mappers.UBL.dll": {}

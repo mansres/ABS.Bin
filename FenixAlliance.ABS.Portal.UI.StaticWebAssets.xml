@@ -7,5 +7,5 @@
   <ContentRoot BasePath="/fixtures" Path="C:\Code\FAGroup\FenixAlliance.ABM\FenixAlliance.ABM.Fixtures\wwwroot\" />
   <ContentRoot BasePath="/fs" Path="C:\Code\FAGroup\FenixAlliance.ABP\FenixAlliance.ABP.FileSystem\wwwroot\" />
   <ContentRoot BasePath="/Identity" Path="C:\Users\PC\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.7\staticwebassets\V4\" />
-  <ContentRoot BasePath="/ui" Path="C:\Code\FAGroup\FenixAlliance.ABS\FenixAlliance.ABS.Portal\FenixAlliance.ABS.Portal.UI\obj\Release\net6.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/ui" Path="C:\Code\FAGroup\FenixAlliance.ABS\FenixAlliance.ABS.Portal\FenixAlliance.ABS.Portal.UI\obj\Release\net5.0\scopedcss\bundle\" />
 </StaticWebAssets>

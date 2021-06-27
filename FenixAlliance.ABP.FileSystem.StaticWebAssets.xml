@@ -5,6 +5,6 @@
   <ContentRoot BasePath="_content/Toolbelt.Blazor.HotKeys" Path="C:\Users\PC\.nuget\packages\toolbelt.blazor.hotkeys\10.0.1\build\..\staticwebassets\" />
   <ContentRoot BasePath="/aps" Path="C:\Code\FAGroup\FenixAlliance.APS\FenixAlliance.APS.Core\wwwroot\" />
   <ContentRoot BasePath="/fixtures" Path="C:\Code\FAGroup\FenixAlliance.ABM\FenixAlliance.ABM.Fixtures\wwwroot\" />
-  <ContentRoot BasePath="/fs" Path="C:\Code\FAGroup\FenixAlliance.ABP\FenixAlliance.ABP.FileSystem\obj\Release\net6.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/fs" Path="C:\Code\FAGroup\FenixAlliance.ABP\FenixAlliance.ABP.FileSystem\obj\Release\net5.0\scopedcss\bundle\" />
   <ContentRoot BasePath="/Identity" Path="C:\Users\PC\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.7\staticwebassets\V4\" />
 </StaticWebAssets>
