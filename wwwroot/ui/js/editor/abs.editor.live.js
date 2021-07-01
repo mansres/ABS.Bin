@@ -56,7 +56,7 @@
             $(".component-properties-tab").hide();
         }
 
-        Vvveb.Builder.init(`/Content/Razor/${pageId}`, function () {
+        Vvveb.Builder.init(`/Pages/${pageId}`, function () {
             Vvveb.Gui.init();
         });
     }
