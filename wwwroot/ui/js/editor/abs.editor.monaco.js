@@ -58,6 +58,41 @@ function createDependencyProposals(range) {
 }
 
 window.adminPortal = {
+    setDotnetReference: function (pDotNetReference) {
+        window.adminPortal.pDotNetReference = pDotNetReference;
+    },
+    addSaveActionToMonaco: function () {
+        editor.addAction({
+            // An unique identifier of the contributed action.
+            id: 'savePage',
+
+            // A label of the action that will be presented to the user.
+            label: 'Save Page',
+
+            // An optional array of keybindings for the action.
+            keybindings: [
+                // chord
+                monaco.KeyMod.chord(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KEY_S)
+            ],
+
+            // A precondition for this action.
+            precondition: null,
+
+            // A rule to evaluate on top of the precondition in order to dispatch the keybindings.
+            keybindingContext: null,
+
+            contextMenuGroupId: 'navigation',
+
+            contextMenuOrder: 1.5,
+
+            // Method that will be executed when the action is triggered.
+            // @param editor The editor instance is passed in as a convinience
+            run: function (ed) {
+                window.adminPortal.pDotNetReference.invokeMethodAsync('HandleValidSubmit');
+                return null;
+            }
+        });
+    },
     enableMonacoEditor: function (containerId = "monacoEditorContainer", editorLanguage = "html", editorContent = "") {
         // Through the options literal, the behaviour of the editor can be easily customized.
         // Here are a few examples of config options that can be passed to the editor.
@@ -105,7 +140,7 @@ window.adminPortal = {
                 lineNumbers: "on",
                 roundedSelection: false,
                 automaticLayout: true,
-                scrollBeyondLastLine: false,
+                scrollBeyondLastLine: true,
                 readOnly: false,
                 theme: "vs-dark",
             });
@@ -115,15 +150,10 @@ window.adminPortal = {
             window.onresize = function () {
                 editor.layout();
             };
+
         } catch (ex) {
             console.log(ex);
         }
-    },
-
-    setHtmlEditorContent: function (content) {
-        content = document.getElementById('pageContent');
-        lastChild = content.lastElementChild;
-        lastChild.innerHTML = content;
     },
     fullScreenCodeEditor: function (containerId = "monacoEditorContainer") {
 
@@ -144,11 +174,6 @@ window.adminPortal = {
         }
         editor.layout()
     },
-    getHtmlEditorContent: function () {
-        content = document.getElementById('pageContent');
-        lastChild = content.lastElementChild;
-        return lastChild.innerHTML;
-    },
     setCodeEditorContent: function (content) {
         if (!editor) {
             window.adminPortal.enableMonacoEditor();
@@ -160,15 +185,6 @@ window.adminPortal = {
             window.adminPortal.enableMonacoEditor();
         }
         return editor.getValue();
-    },
-    getSummerNoteEditorContent: function (textAreaId) {
-        return $('#' + textAreaId).summernote('code')
-    },
-    enableSummerNote: function (textAreaId) {
-
-        // Summernote
-        $('#' + textAreaId).summernote()
-
     },
     closeHtmlTags: function () {
         function isBracketClose(event) {

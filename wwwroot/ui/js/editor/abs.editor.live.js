@@ -36,6 +36,9 @@
     },
     reloadIframe: function () {
         document.getElementById('iframe1').contentWindow.location.reload();
+        window.editorInterop.disableIframeLinks()
+        window.editorInterop.enableIframeInspectorforAllTags()
+        window.editorInterop.formatCode();
     },
     toggleLeftColumn: function () {
         Vvveb.Gui.toggleLeftColumn()
@@ -58,6 +61,88 @@
 
         Vvveb.Builder.init(`/Pages/${pageId}`, function () {
             Vvveb.Gui.init();
+            window.editorInterop.disableIframeLinks()
+            window.editorInterop.enableIframeInspectorforAllTags()
+        });
+    },
+    enableIframeInspectorforAllTags: function (tag) {
+
+        window.editorInterop.enableIframeInspector('*')
+    },
+    enableIframeInspector: function (tag) {
+        
+        $('#iframe1').contents().find(tag).each(function () {
+
+            $(this).click(function (event) {
+                var selection = document.getElementById('iframe1').contentWindow.getSelection();
+                if (selection && selection.length !== 0) {
+                    window.editorInterop.searchCodeModel(selection.toString());
+                }
+            })
+
+            $(this).click(function (event) {
+                try {
+
+                    if (this.id) {
+                        window.editorInterop.searchCodeModel(this.id.toString())
+                    } else {
+                        window.editorInterop.searchCodeModel(this.classList.toString())
+                    }
+
+                } catch (e) {
+                    //noop
+                }
+            });
+        });
+    },
+    searchCodeModel: function (query) {
+        if (!query)
+            return;
+
+        const model = editor.getModel();
+        const range = model.findMatches(query)[0].range;
+        if (range) {
+
+            console.log(range)
+            editor.revealLine(range.startLineNumber);
+
+            editor.setSelection(range);
+            editor.getAction('actions.find').run();
+        }
+
+    },
+    formatCode: function () {
+
+        var options = {
+            "indent": "auto",
+            "indent-spaces": 4,
+            "wrap": 2000,
+            "markup": true,
+            "output-xml": false,
+            "output-html": true,
+            "numeric-entities": true,
+            "quote-marks": true,
+            "quote-nbsp": false,
+            "show-body-only": true,
+            "quote-ampersand": false,
+            "break-before-br": true,
+            "uppercase-tags": false,
+            "uppercase-attributes": false,
+            "drop-font-tags": false,
+            "tidy-mark": false
+        }
+
+        var html = window.adminPortal.getCodeEditorContent();
+        var result = tidy_html5(html, options);
+
+        window.adminPortal.setCodeEditorContent(result)
+    },
+    disableIframeLinks: function () {
+
+        $('#iframe1').contents().find('a').each(function () {
+            $(this).click(function (event) {
+                event.preventDefault();
+            });
         });
     }
 }
