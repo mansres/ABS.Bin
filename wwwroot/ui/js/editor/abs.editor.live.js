@@ -1,6 +1,32 @@
 ﻿window.editorInterop = {
+    codeMarkers: [],
     setDotnetReference: function (pDotNetReference) {
         window.editorInterop.pDotNetReference = pDotNetReference;
+    },
+    invokeSaveChanges: function () {
+        window.editorInterop.pDotNetReference.invokeMethodAsync('HandleValidSubmit');
+    },
+    setModelMarkers: function (markers) {
+        window.editorInterop.codeMarkers = markers;
+        markers.forEach(function (el) {
+            switch (el.severity) {
+                case 0:
+                    el.severity = monaco.MarkerSeverity.Hint
+                    break;
+                case 1:
+                    el.severity = monaco.MarkerSeverity.Info
+                    break;
+                case 2:
+                    el.severity = monaco.MarkerSeverity.Warning
+                    break;
+                case 3:
+                    el.severity = monaco.MarkerSeverity.Error
+                    break;
+                default:
+            }
+        });
+
+        monaco.editor.setModelMarkers(editor.getModel(), 'test', markers)
     },
     addSaveActionToMonaco: function () {
         editor.addAction({
@@ -29,7 +55,7 @@
             // Method that will be executed when the action is triggered.
             // @param editor The editor instance is passed in as a convinience
             run: function (ed) {
-                window.editorInterop.pDotNetReference.invokeMethodAsync('HandlePageLiveEditValidSubmit');
+                window.editorInterop.invokeSaveChanges();
                 return null;
             }
         });
@@ -38,7 +64,6 @@
         document.getElementById('iframe1').contentWindow.location.reload();
         window.editorInterop.disableIframeLinks()
         window.editorInterop.enableIframeInspectorforAllTags()
-        window.editorInterop.formatCode();
     },
     toggleLeftColumn: function () {
         Vvveb.Gui.toggleLeftColumn()
@@ -58,12 +83,6 @@
         } else {
             $(".component-properties-tab").hide();
         }
-
-        Vvveb.Builder.init(`/Pages/${pageId}`, function () {
-            Vvveb.Gui.init();
-            window.editorInterop.disableIframeLinks()
-            window.editorInterop.enableIframeInspectorforAllTags()
-        });
     },
     enableIframeInspectorforAllTags: function (tag) {
 
@@ -112,7 +131,6 @@
 
     },
     formatCode: function () {
-
         var options = {
             "indent": "auto",
             "indent-spaces": 4,
@@ -123,7 +141,7 @@
             "numeric-entities": true,
             "quote-marks": true,
             "quote-nbsp": false,
-            "show-body-only": true,
+            "show-body-only": false,
             "quote-ampersand": false,
             "break-before-br": true,
             "uppercase-tags": false,
@@ -132,10 +150,10 @@
             "tidy-mark": false
         }
 
-        var html = window.adminPortal.getCodeEditorContent();
-        var result = tidy_html5(html, options);
+        //var html = window.adminPortal.getCodeEditorContent();
+        //var result = tidy_html5(html, options);
 
-        window.adminPortal.setCodeEditorContent(result)
+        //window.adminPortal.setCodeEditorContent(result)
     },
     disableIframeLinks: function () {
 

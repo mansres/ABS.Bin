@@ -62,6 +62,7 @@ window.adminPortal = {
         window.adminPortal.pDotNetReference = pDotNetReference;
     },
     addSaveActionToMonaco: function () {
+
         editor.addAction({
             // An unique identifier of the contributed action.
             id: 'savePage',
@@ -93,7 +94,7 @@ window.adminPortal = {
             }
         });
     },
-    enableMonacoEditor: function (containerId = "monacoEditorContainer", editorLanguage = "html", editorContent = "") {
+    enableMonacoEditor: function (containerId = "monacoEditorContainer", editorLanguage = "razor", editorContent = "") {
         // Through the options literal, the behaviour of the editor can be easily customized.
         // Here are a few examples of config options that can be passed to the editor.
         // You can also call editor.updateOptions at any time to change the options.
@@ -135,12 +136,11 @@ window.adminPortal = {
 
             editor = monaco.editor.create(document.getElementById(containerId), {
                 value: unescape(editorContent),
+                scrollBeyondLastLine: true,
                 language: editorLanguage,
-
-                lineNumbers: "on",
                 roundedSelection: false,
                 automaticLayout: true,
-                scrollBeyondLastLine: true,
+                lineNumbers: "on",
                 readOnly: false,
                 theme: "vs-dark",
             });
@@ -156,7 +156,6 @@ window.adminPortal = {
         }
     },
     fullScreenCodeEditor: function (containerId = "monacoEditorContainer") {
-
 
         var elem = document.getElementById(containerId);
 
