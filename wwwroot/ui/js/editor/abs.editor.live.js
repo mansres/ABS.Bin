@@ -83,8 +83,16 @@
         } else {
             $(".component-properties-tab").hide();
         }
+
+        Vvveb.Builder.init(`/Pages/${pageId}`, function () {
+            Vvveb.Gui.init();
+            window.editorInterop.disableIframeLinks()
+            window.editorInterop.enableIframeInspectorforAllTags()
+        });
+
+
     },
-    enableIframeInspectorforAllTags: function (tag) {
+    enableIframeInspectorforAllTags: function () {
 
         window.editorInterop.enableIframeInspector('*')
     },
@@ -122,15 +130,14 @@
         const range = model.findMatches(query)[0].range;
         if (range) {
 
-            console.log(range)
             editor.revealLine(range.startLineNumber);
-
             editor.setSelection(range);
             editor.getAction('actions.find').run();
         }
 
     },
     formatCode: function () {
+
         var options = {
             "indent": "auto",
             "indent-spaces": 4,
@@ -141,7 +148,7 @@
             "numeric-entities": true,
             "quote-marks": true,
             "quote-nbsp": false,
-            "show-body-only": false,
+            "show-body-only": true,
             "quote-ampersand": false,
             "break-before-br": true,
             "uppercase-tags": false,
@@ -150,10 +157,10 @@
             "tidy-mark": false
         }
 
-        //var html = window.adminPortal.getCodeEditorContent();
-        //var result = tidy_html5(html, options);
+        var html = window.adminPortal.getCodeEditorContent();
+        var result = tidy_html5(html, options);
 
-        //window.adminPortal.setCodeEditorContent(result)
+        window.adminPortal.setCodeEditorContent(result)
     },
     disableIframeLinks: function () {
 

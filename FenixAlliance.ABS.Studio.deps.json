@@ -323,6 +323,39 @@
           "lib/netstandard2.0/AdaptiveExpressions.dll": {}
         }
       },
+      "Amazon.AspNetCore.Identity.Cognito/3.0.0": {
+        "dependencies": {
+          "AWSSDK.CognitoIdentity": "3.7.0.3",
+          "AWSSDK.CognitoIdentityProvider": "3.7.0.3",
+          "AWSSDK.Extensions.NETCore.Setup": "3.7.0.1",
+          "Amazon.Extensions.CognitoAuthentication": "2.2.1",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.8.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.AspNetCore.Identity.Cognito.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Amazon.AspNetCore.Identity.Cognito.dll": {}
+        }
+      },
+      "Amazon.Extensions.CognitoAuthentication/2.2.1": {
+        "dependencies": {
+          "AWSSDK.CognitoIdentity": "3.7.0.3",
+          "AWSSDK.CognitoIdentityProvider": "3.7.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Extensions.CognitoAuthentication.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.Extensions.CognitoAuthentication.dll": {}
+        }
+      },
       "AngleSharp/0.15.0": {
         "dependencies": {
           "System.Text.Encoding.CodePages": "5.0.0"
@@ -591,6 +624,77 @@
         },
         "compile": {
           "lib/netstandard2.0/Automatonymous.dll": {}
+        }
+      },
+      "AWSSDK.CognitoIdentity/3.7.0.3": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.0.4",
+          "AWSSDK.SecurityToken": "3.7.0.3"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.CognitoIdentity.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.3"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.CognitoIdentity.dll": {}
+        }
+      },
+      "AWSSDK.CognitoIdentityProvider/3.7.0.3": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.0.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.CognitoIdentityProvider.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.3"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.CognitoIdentityProvider.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.0.4": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.4"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.7.0.1": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.0.4",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.100.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
+      "AWSSDK.SecurityToken/3.7.0.3": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.0.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.3"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {}
         }
       },
       "Azure.Core/1.15.0": {
@@ -4857,6 +4961,38 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
+      "Okta.AspNet.Abstractions/3.2.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "6.11.1",
+          "System.IdentityModel.Tokens.Jwt": "6.11.1",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Okta.AspNet.Abstractions.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Okta.AspNet.Abstractions.dll": {}
+        }
+      },
+      "Okta.AspNetCore/3.5.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.7",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.7",
+          "Okta.AspNet.Abstractions": "3.2.0"
+        },
+        "runtime": {
+          "lib/net5.0/Okta.AspNetCore.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Okta.AspNetCore.dll": {}
+        }
+      },
       "Parlot/0.0.17": {
         "runtime": {
           "lib/netstandard2.1/Parlot.dll": {
@@ -7917,6 +8053,8 @@
       },
       "FenixAlliance.ACL.Dependencies/1.1.6.9": {
         "dependencies": {
+          "Amazon.AspNetCore.Identity.Cognito": "3.0.0",
+          "Amazon.Extensions.CognitoAuthentication": "2.2.1",
           "AngleSharp": "0.15.0",
           "AspNetCore.HealthChecks.SqlServer": "5.0.3",
           "AspNetCore.HealthChecks.UI": "5.0.1",
@@ -8043,6 +8181,7 @@
           "NodaTime.Serialization.JsonNet": "3.0.0",
           "NuGet.Packaging": "5.9.1",
           "NuGet.Protocol": "5.9.1",
+          "Okta.AspNetCore": "3.5.0",
           "Polly": "7.2.2",
           "Polly.Caching.Memory": "3.0.2",
           "Pomelo.EntityFrameworkCore.MySql": "5.0.0",
@@ -9755,6 +9894,20 @@
       "path": "adaptiveexpressions/4.13.2",
       "hashPath": "adaptiveexpressions.4.13.2.nupkg.sha512"
     },
+    "Amazon.AspNetCore.Identity.Cognito/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h1c3m412e0y0je25iNmd3g05Tr1Fr+YdUlIIJnI55ZyeWgUT8AylSkRvDMGJEMsb2j9T91VqqH7B9R+QGyT4aA==",
+      "path": "amazon.aspnetcore.identity.cognito/3.0.0",
+      "hashPath": "amazon.aspnetcore.identity.cognito.3.0.0.nupkg.sha512"
+    },
+    "Amazon.Extensions.CognitoAuthentication/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YTCzWN2hnUU77rnZpVDZUqwhFtQkXDAVHGG9FcXAa6OkD/yO7imJRVyxs5UD9Q6vDSrUOVlHNNTUsALWB0rZ+Q==",
+      "path": "amazon.extensions.cognitoauthentication/2.2.1",
+      "hashPath": "amazon.extensions.cognitoauthentication.2.2.1.nupkg.sha512"
+    },
     "AngleSharp/0.15.0": {
       "type": "package",
       "serviceable": true,
@@ -9880,6 +10033,41 @@
       "sha512": "sha512-Cyzi+JrQ0f2GF9ouy2DptdCPQVGrWSl0oFI//GokvKilgjaffuGd/jm0nZ+iKS1M7aPP2/I2E41216N+pEGAgw==",
       "path": "automatonymous/5.1.1",
       "hashPath": "automatonymous.5.1.1.nupkg.sha512"
+    },
+    "AWSSDK.CognitoIdentity/3.7.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-myOKxID/sfkCbunuknBUzSjqrbr45udynhgs+Phio7Tk+OIXqVJ9ENw5wwq2tHPdot8hgOaCTirNRNIgxJQu6w==",
+      "path": "awssdk.cognitoidentity/3.7.0.3",
+      "hashPath": "awssdk.cognitoidentity.3.7.0.3.nupkg.sha512"
+    },
+    "AWSSDK.CognitoIdentityProvider/3.7.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-69wV11byVjMgYqJv4S49lqIipLtnjlcWYURxmtoTZunDqbqtPYgk2/3TVxP6e3VbSTI5zfOHqjvjU2UH+yyKaA==",
+      "path": "awssdk.cognitoidentityprovider/3.7.0.3",
+      "hashPath": "awssdk.cognitoidentityprovider.3.7.0.3.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V4bg471WLZ7vitDCv6zxGLz2sp89iTm3bCLpVCnIdC1dKOhP5QYQDe2gZnuMHFFJ1024Bd1IlPuKou412uYAlw==",
+      "path": "awssdk.core/3.7.0.4",
+      "hashPath": "awssdk.core.3.7.0.4.nupkg.sha512"
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cEsWQnC8uisjpv9l3AYI5XyM9k27g/HESGI214IzGGmclZapZRzTishuWVrRjql1NaeHvUXgzylUXXdQ4e6x1A==",
+      "path": "awssdk.extensions.netcore.setup/3.7.0.1",
+      "hashPath": "awssdk.extensions.netcore.setup.3.7.0.1.nupkg.sha512"
+    },
+    "AWSSDK.SecurityToken/3.7.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4iKvdmlanki7TYrw3eyLtFA2cYYgxE0vqgpSamAekUh+NAXKfhLfdJROaJONe0Nr6jCz93VwxAJayTprYzR7aA==",
+      "path": "awssdk.securitytoken/3.7.0.3",
+      "hashPath": "awssdk.securitytoken.3.7.0.3.nupkg.sha512"
     },
     "Azure.Core/1.15.0": {
       "type": "package",
@@ -12162,6 +12350,20 @@
       "sha512": "sha512-I/2Z/dAcV6tz8Bri9lYbcMoq6R9J1J8Vv23gDCAnWjwrIdwunhmnWgiZx/b7cmlEXaD1r0kxen18fXYoyqs4rg==",
       "path": "nuget.versioning/5.9.1",
       "hashPath": "nuget.versioning.5.9.1.nupkg.sha512"
+    },
+    "Okta.AspNet.Abstractions/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YGfg7ocpIjbVKwUfSOZHgw9+m4HQS3COZmF6m72FNqeq0PMaUut4nRKn0z26OHrj+Wjuqg56Mx0ZOZZNy/u1Rg==",
+      "path": "okta.aspnet.abstractions/3.2.0",
+      "hashPath": "okta.aspnet.abstractions.3.2.0.nupkg.sha512"
+    },
+    "Okta.AspNetCore/3.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RedrsSDm6jR/1qDAZhUDUNYEOBPLWsfD6DaQ46BAdoEe0KglL0sDXcwPcFRAOuRQds3Xiicg/No7obnJXIgghQ==",
+      "path": "okta.aspnetcore/3.5.0",
+      "hashPath": "okta.aspnetcore.3.5.0.nupkg.sha512"
     },
     "Parlot/0.0.17": {
       "type": "package",
