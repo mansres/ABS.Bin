@@ -822,7 +822,7 @@
 
 
 .ms-Calendar-holder[b-7q5pg5xq0y] {
-    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y;
     box-sizing: border-box;
     display: none;
 }
@@ -928,7 +928,7 @@
     line-height: 28px;
     font-size: 12px;
     font-weight: 400;
-    color: rgb(50, 49, 48);
+    color: var(--palette-NeutralPrimary);
     cursor: pointer;
     position: relative;
 }
@@ -2629,7 +2629,7 @@
         border: 0;
     }
 
-.ms-Fabric--isFocusVisible .ms-ContextualMenu-root[b-y69p9egh3a]  ms-ContextualMenu-item:focus::after {
+.ms-Fabric--isFocusVisible .ms-ContextualMenu-list[b-y69p9egh3a]  .ms-ContextualMenu-link:focus::after {
     content: '';
     position: absolute;
     left: 1px;
@@ -3594,10 +3594,10 @@
 .ms-Dropdown:not(.is-disabled):hover .ms-Dropdown-title[b-alogj0gxvs] {
     color: var(--semanticTextColors-MenuItemTextHovered);
 }
- 
+
 /*//dropdownRules-Add(new Rule() //{
             //    .ms-Dropdown:focus .ms-Dropdown-title
-            //   
+            //
             //    {
             //        border-color:var(--palette-NeutralPrimary);
             //    }
@@ -3741,6 +3741,7 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     text-align: left;
+    padding-top: 7px;
 }
 
 
@@ -3766,7 +3767,7 @@
     background-color: var(--semanticColors-MenuBackground);
 }
 
-[b-alogj0gxvs] .ms-Dropdown-item.selected, 
+[b-alogj0gxvs] .ms-Dropdown-item.selected,
 [b-alogj0gxvs] .ms-Dropdown-item.ms-Button.ms-Button--action.selected {
     color: var(--semanticTextColors-MenuItemTextHovered);
     background-color: var(--semanticColors-MenuItemBackgroundPressed);
@@ -4406,7 +4407,7 @@
 [b-8eajuovjp2] .ms-Nav {
     overflow-y: auto;
     user-select: none;
-    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y;
 }
     .ms-Nav.is-on-top[b-8eajuovjp2] {
         position: absolute;
@@ -4703,7 +4704,7 @@
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y;
     bottom: 0;
     top: 0;
     left: auto;

@@ -20,7 +20,7 @@ function Follow(FollowerID, FollowedID) {
         $(Selector).css('cursor', 'pointer');
         console.log(result);
         console.log(result.ID);
-        $(Selector).replaceWith('<a  id="' + result.ID + '" class="btn btn-block text-white bg-danger" onclick="Unfollow(\'' + result.ID + "','" + FollowerID + "','" + FollowedID + '\')" >@_["Unfollow"]</a>');
+        $(Selector).replaceWith('<a  id="' + result.ID + '" class="btn btn-block text-white bg-danger" onclick="Unfollow(\'' + result.ID + "','" + FollowerID + "','" + FollowedID + '\')" >Unfollow</a>');
     });
 }
 
@@ -41,7 +41,6 @@ function Unfollow(FollowRecordID, FollowerID, FollowedID) {
         $(Selector).css('cursor', 'pointer');
         toastr.info('@_["You have stopped following this account."]');
         console.log(result);
-        $(Selector).replaceWith('<a  id="' + FollowedID + '" class="btn btn-block text-white bg-blue" onclick="Follow(\''
-            + FollowerID + "','" + FollowedID + '\')" >@_["Follow"]<div class="ripple-container"></div></a>');
+        $(Selector).replaceWith('<a  id="' + FollowedID + '" class="btn btn-block text-white bg-blue" onclick="Follow(\'' + FollowerID + "','" + FollowedID + '\')" >Follow<div class="ripple-container"></div></a>');
     });
 }
