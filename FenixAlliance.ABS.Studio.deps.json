@@ -5157,6 +5157,35 @@
           "lib/net50/MimeKit.dll": {}
         }
       },
+      "Mobsites.Blazor.BaseComponents/1.0.4": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.8",
+          "Microsoft.AspNetCore.Components.Web": "5.0.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Blazor.BaseComponents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Blazor.BaseComponents.dll": {}
+        }
+      },
+      "Mobsites.Blazor.SignaturePad/1.1.7": {
+        "dependencies": {
+          "Mobsites.Blazor.BaseComponents": "1.0.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Blazor.SignaturePad.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Blazor.SignaturePad.dll": {}
+        }
+      },
       "mongocsharpdriver/2.11.0": {
         "dependencies": {
           "MongoDB.Bson": "2.13.0",
@@ -5581,7 +5610,7 @@
           "lib/netstandard2.0/RabbitMQ.Client.dll": {}
         }
       },
-      "Radzen.Blazor/3.6.8": {
+      "Radzen.Blazor/3.7.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "5.0.8",
           "Microsoft.AspNetCore.Components.Web": "5.0.8",
@@ -5590,8 +5619,8 @@
         },
         "runtime": {
           "lib/net5.0/Radzen.Blazor.dll": {
-            "assemblyVersion": "3.6.8.0",
-            "fileVersion": "3.6.8.0"
+            "assemblyVersion": "3.7.2.0",
+            "fileVersion": "3.7.2.0"
           }
         },
         "compile": {
@@ -7713,7 +7742,7 @@
           "lib/netstandard2.1/YamlDotNet.dll": {}
         }
       },
-      "Z.EntityFramework.Extensions.EFCore/5.2.3": {
+      "Z.EntityFramework.Extensions.EFCore/5.2.4": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.8",
@@ -7724,34 +7753,34 @@
         },
         "runtime": {
           "lib/netstandard2.1/Z.EntityFramework.Extensions.EFCore.dll": {
-            "assemblyVersion": "5.2.3.0",
-            "fileVersion": "5.2.3.0"
+            "assemblyVersion": "5.2.4.0",
+            "fileVersion": "5.2.4.0"
           }
         },
         "compile": {
           "lib/netstandard2.1/Z.EntityFramework.Extensions.EFCore.dll": {}
         }
       },
-      "Z.EntityFramework.Plus.EFCore/5.2.3": {
+      "Z.EntityFramework.Plus.EFCore/5.2.4": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.8",
           "System.Reflection.Emit": "4.7.0",
           "System.Reflection.TypeExtensions": "4.7.0",
-          "Z.EntityFramework.Extensions.EFCore": "5.2.3",
-          "Z.Expressions.Eval": "4.0.46"
+          "Z.EntityFramework.Extensions.EFCore": "5.2.4",
+          "Z.Expressions.Eval": "4.0.47"
         },
         "runtime": {
           "lib/netstandard2.1/Z.EntityFramework.Plus.EFCore.dll": {
-            "assemblyVersion": "5.2.3.0",
-            "fileVersion": "5.2.3.0"
+            "assemblyVersion": "5.2.4.0",
+            "fileVersion": "5.2.4.0"
           }
         },
         "compile": {
           "lib/netstandard2.1/Z.EntityFramework.Plus.EFCore.dll": {}
         }
       },
-      "Z.Expressions.Eval/4.0.46": {
+      "Z.Expressions.Eval/4.0.47": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.Extensions.Caching.Memory": "5.0.0",
@@ -7768,8 +7797,8 @@
         },
         "runtime": {
           "lib/netstandard2.1/Z.Expressions.Eval.dll": {
-            "assemblyVersion": "4.0.46.0",
-            "fileVersion": "4.0.46.0"
+            "assemblyVersion": "4.0.47.0",
+            "fileVersion": "4.0.47.0"
           }
         },
         "compile": {
@@ -7785,6 +7814,20 @@
         },
         "compile": {
           "lib/netcoreapp3.1/zxing.dll": {}
+        }
+      },
+      "ZXingBlazor/0.1.6": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.8"
+        },
+        "runtime": {
+          "lib/net5.0/ZXingBlazor.dll": {
+            "assemblyVersion": "0.1.5.0",
+            "fileVersion": "0.1.5.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/ZXingBlazor.dll": {}
         }
       },
       "FenixAlliance.ABM.Core/1.1.6.9": {
@@ -8857,6 +8900,7 @@
           "Microsoft.TestPlatform": "16.10.0",
           "Microsoft.VisualStudio.Web.BrowserLink": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "Mobsites.Blazor.SignaturePad": "1.1.7",
           "MongoDB.Bson": "2.13.0",
           "MongoDB.Driver": "2.13.0",
           "NReco.LambdaParser": "1.0.12",
@@ -8871,7 +8915,7 @@
           "Pomelo.EntityFrameworkCore.MySql": "5.0.1",
           "QRCoder": "1.4.1",
           "RabbitMQ.Client": "6.2.2",
-          "Radzen.Blazor": "3.6.8",
+          "Radzen.Blazor": "3.7.2",
           "Razor.Templating.Core": "1.5.0",
           "RazorLight": "1.1.0",
           "SendGrid": "9.24.1",
@@ -8883,6 +8927,7 @@
           "Serilog.Enrichers.Thread": "3.1.0",
           "Serilog.Settings.Configuration": "3.1.0",
           "Serilog.Sinks.AzureBlobStorage": "3.0.2",
+          "SixLabors.ImageSharp": "1.0.3",
           "SixLabors.ImageSharp.Web": "1.0.3",
           "StackifyMiddleware": "3.0.5.2",
           "Standard.Licensing": "1.1.5",
@@ -8901,8 +8946,9 @@
           "Toolbelt.Blazor.HotKeys": "10.0.1",
           "UnitConversion": "1.0.41",
           "Unity": "5.11.10",
-          "Z.EntityFramework.Plus.EFCore": "5.2.3",
+          "Z.EntityFramework.Plus.EFCore": "5.2.4",
           "ZXing.Net": "0.16.6",
+          "ZXingBlazor": "0.1.6",
           "reCAPTCHA.AspNetCore": "3.0.10"
         },
         "runtime": {
@@ -13036,6 +13082,20 @@
       "path": "mimekit/2.13.0",
       "hashPath": "mimekit.2.13.0.nupkg.sha512"
     },
+    "Mobsites.Blazor.BaseComponents/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-USlF5gK9+EV5F8r45uYcR065dKlVT2qZ7fN0VKdUpxRd3cayQfEyUsSSvfbqNzsVV+479HCM9g3I6P9xg9hHeg==",
+      "path": "mobsites.blazor.basecomponents/1.0.4",
+      "hashPath": "mobsites.blazor.basecomponents.1.0.4.nupkg.sha512"
+    },
+    "Mobsites.Blazor.SignaturePad/1.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3HAXj6Etvhrjn0ypgGkVQAW0aRkIpJ2Hxh+zZaXtvr8NfNHFHAQuwT53OZI+YPtaaBUHeZ7KsMbEQWrWZHliHw==",
+      "path": "mobsites.blazor.signaturepad/1.1.7",
+      "hashPath": "mobsites.blazor.signaturepad.1.1.7.nupkg.sha512"
+    },
     "mongocsharpdriver/2.11.0": {
       "type": "package",
       "serviceable": true,
@@ -13239,12 +13299,12 @@
       "path": "rabbitmq.client/6.2.2",
       "hashPath": "rabbitmq.client.6.2.2.nupkg.sha512"
     },
-    "Radzen.Blazor/3.6.8": {
+    "Radzen.Blazor/3.7.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2jmGyyrfj28AteyI7a2EwueSbwgBesEet29CeE8FoppvyAmavNuXaGDYAXSsJ0ygRajsQlLh2NWcv54rCW2m/w==",
-      "path": "radzen.blazor/3.6.8",
-      "hashPath": "radzen.blazor.3.6.8.nupkg.sha512"
+      "sha512": "sha512-tZW8I4YkhFch1jH182jtpztIOiVUk32h6Tk+Dj9+b6Gt0TwJ0XTPvjnKMgAAd/dGc508Ka92h5NygpVczRT0fA==",
+      "path": "radzen.blazor/3.7.2",
+      "hashPath": "radzen.blazor.3.7.2.nupkg.sha512"
     },
     "Razor.Templating.Core/1.5.0": {
       "type": "package",
@@ -14562,26 +14622,26 @@
       "path": "yamldotnet/8.1.2",
       "hashPath": "yamldotnet.8.1.2.nupkg.sha512"
     },
-    "Z.EntityFramework.Extensions.EFCore/5.2.3": {
+    "Z.EntityFramework.Extensions.EFCore/5.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4T+RxtIV7uyM8JEIH4T6waBgnWjOS+TnT8+nBEB9/efrW3JeF/OawVZwosXHxYKsFAwiGlArmeKaeJi8rV+qTQ==",
-      "path": "z.entityframework.extensions.efcore/5.2.3",
-      "hashPath": "z.entityframework.extensions.efcore.5.2.3.nupkg.sha512"
+      "sha512": "sha512-RcsmoS8zxmbg6hvz4BR4JFuGwUfVpA7enJi6yxCuWFN8MZzvz3UUm3PsFhVBTgf30lHuuL22BBOAIfEaz35Zaw==",
+      "path": "z.entityframework.extensions.efcore/5.2.4",
+      "hashPath": "z.entityframework.extensions.efcore.5.2.4.nupkg.sha512"
     },
-    "Z.EntityFramework.Plus.EFCore/5.2.3": {
+    "Z.EntityFramework.Plus.EFCore/5.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/CTKOJiJ+YnUp/GVbqVIfaoBLUd8QG0qtW5F1C3XGH+jkHlveXQTXfBboW8gVgsVOuOh97E9wMJQ68z1wq5dPg==",
-      "path": "z.entityframework.plus.efcore/5.2.3",
-      "hashPath": "z.entityframework.plus.efcore.5.2.3.nupkg.sha512"
+      "sha512": "sha512-i+ApFKCwXOIEvaaZzohYKDE32ISpLPhJq9uZowoca+uECk90gS8yDAsIC+/mvdo+hkEDB4yE5vNOOAUaF6r89g==",
+      "path": "z.entityframework.plus.efcore/5.2.4",
+      "hashPath": "z.entityframework.plus.efcore.5.2.4.nupkg.sha512"
     },
-    "Z.Expressions.Eval/4.0.46": {
+    "Z.Expressions.Eval/4.0.47": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OQA1wUsPdnQkAeaOagKABHqBLmlF3nhGTMjFXTJ1ZMHjsmMRfFhcxg5owbrsvTFKRlXBob+JrekrtheJAzG9Gw==",
-      "path": "z.expressions.eval/4.0.46",
-      "hashPath": "z.expressions.eval.4.0.46.nupkg.sha512"
+      "sha512": "sha512-t6D5pzT0Muuh5q2Hp3ptz4R28i8OYqrZF340aFfBrqyC4zpPZ+vRzF7GVYnQZR19egycbS0azwYBl+gvB3DzEQ==",
+      "path": "z.expressions.eval/4.0.47",
+      "hashPath": "z.expressions.eval.4.0.47.nupkg.sha512"
     },
     "ZXing.Net/0.16.6": {
       "type": "package",
@@ -14589,6 +14649,13 @@
       "sha512": "sha512-0+6EcJ7Ve1BocwqvqpAmgMa7xF3wxqROcM3KvAE6WGNIqXLA5YEziLjRX+kKYVrcttlFRz1IaoRSzt/o6Ttviw==",
       "path": "zxing.net/0.16.6",
       "hashPath": "zxing.net.0.16.6.nupkg.sha512"
+    },
+    "ZXingBlazor/0.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bee/vvw6ZUaOhDYcdv6OoqLjGT8vA/yY4k+3iQ3DL9tcu8329s63GyoX0GxpILTkprbCFqg7fa//ZmkWayKo3Q==",
+      "path": "zxingblazor/0.1.6",
+      "hashPath": "zxingblazor.0.1.6.nupkg.sha512"
     },
     "FenixAlliance.ABM.Core/1.1.6.9": {
       "type": "project",
