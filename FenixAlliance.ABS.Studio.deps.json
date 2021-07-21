@@ -8390,6 +8390,7 @@
           "FenixAlliance.ABS.Modules.Projects": "1.1.6.9",
           "FenixAlliance.ABS.Modules.Quality": "1.1.6.9",
           "FenixAlliance.ABS.Modules.Sales": "1.1.6.9",
+          "FenixAlliance.ABS.Modules.Sales.POS": "1.1.6.9",
           "FenixAlliance.ABS.Modules.Security": "1.0.0",
           "FenixAlliance.ABS.Modules.Services": "1.1.6.9",
           "FenixAlliance.ABS.Modules.Signator": "1.0.0",
@@ -8526,6 +8527,17 @@
         },
         "compile": {
           "FenixAlliance.ABS.Modules.Sales.dll": {}
+        }
+      },
+      "FenixAlliance.ABS.Modules.Sales.POS/1.1.6.9": {
+        "dependencies": {
+          "FenixAlliance.ABS.Hub": "1.1.6.9"
+        },
+        "runtime": {
+          "FenixAlliance.ABS.Modules.Sales.POS.dll": {}
+        },
+        "compile": {
+          "FenixAlliance.ABS.Modules.Sales.POS.dll": {}
         }
       },
       "FenixAlliance.ABS.Modules.Security/1.0.0": {
@@ -14874,6 +14886,11 @@
       "sha512": ""
     },
     "FenixAlliance.ABS.Modules.Sales/1.1.6.9": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FenixAlliance.ABS.Modules.Sales.POS/1.1.6.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
