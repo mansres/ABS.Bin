@@ -5416,6 +5416,21 @@
           "lib/netstandard2.0/NuGet.Configuration.dll": {}
         }
       },
+      "NuGet.DependencyResolver.Core/5.9.0": {
+        "dependencies": {
+          "NuGet.LibraryModel": "5.9.0",
+          "NuGet.Protocol": "5.10.0"
+        },
+        "runtime": {
+          "lib/net5.0/NuGet.DependencyResolver.Core.dll": {
+            "assemblyVersion": "5.9.0.7134",
+            "fileVersion": "5.9.0.7134"
+          }
+        },
+        "compile": {
+          "lib/net5.0/NuGet.DependencyResolver.Core.dll": {}
+        }
+      },
       "NuGet.Frameworks/5.10.0": {
         "runtime": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {
@@ -5425,6 +5440,21 @@
         },
         "compile": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {}
+        }
+      },
+      "NuGet.LibraryModel/5.9.0": {
+        "dependencies": {
+          "NuGet.Common": "5.10.0",
+          "NuGet.Versioning": "5.10.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NuGet.LibraryModel.dll": {
+            "assemblyVersion": "5.9.0.7134",
+            "fileVersion": "5.9.0.7134"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NuGet.LibraryModel.dll": {}
         }
       },
       "NuGet.Packaging/5.10.0": {
@@ -8083,7 +8113,7 @@
       "FenixAlliance.ABS.Core/1.1.6.9": {
         "dependencies": {
           "FenixAlliance.ABP.Hub": "1.1.6.9",
-          "FenixAlliance.ABS.SDK": "1.1.6.9"
+          "NuGet.DependencyResolver.Core": "5.9.0"
         },
         "runtime": {
           "FenixAlliance.ABS.Core.dll": {}
@@ -8741,14 +8771,6 @@
         },
         "compile": {
           "FenixAlliance.ABS.Portal.UI.dll": {}
-        }
-      },
-      "FenixAlliance.ABS.SDK/1.1.6.9": {
-        "runtime": {
-          "FenixAlliance.ABS.SDK.dll": {}
-        },
-        "compile": {
-          "FenixAlliance.ABS.SDK.dll": {}
         }
       },
       "FenixAlliance.ABS.Studio.Core/1.1.6.9": {
@@ -13201,12 +13223,26 @@
       "path": "nuget.configuration/5.10.0",
       "hashPath": "nuget.configuration.5.10.0.nupkg.sha512"
     },
+    "NuGet.DependencyResolver.Core/5.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-92ohDmKVDb9C4txds9SBuUo3DHULjre6tQ+4n1ED3DpnhIWCrc9eEUyuscZg/DuNaImO3VnZx6HiIFDVRG9A7A==",
+      "path": "nuget.dependencyresolver.core/5.9.0",
+      "hashPath": "nuget.dependencyresolver.core.5.9.0.nupkg.sha512"
+    },
     "NuGet.Frameworks/5.10.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-RaXCqj2ZImTVV0DhlwMkE7S7EoOxqkdpmg4YNeZc5DnFpMMC7HYj6TbNTufK25JN/QhKfftuiWf/oqaYkZhnAA==",
       "path": "nuget.frameworks/5.10.0",
       "hashPath": "nuget.frameworks.5.10.0.nupkg.sha512"
+    },
+    "NuGet.LibraryModel/5.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MXuzzGxPjLt7M4p4rx7h6Kl7jhwQaYtpSWLPtGpL1YUXo9XY3ltRfBuR9AHctqZMwj/RWeb1gIqVq7bnBMZVvg==",
+      "path": "nuget.librarymodel/5.9.0",
+      "hashPath": "nuget.librarymodel.5.9.0.nupkg.sha512"
     },
     "NuGet.Packaging/5.10.0": {
       "type": "package",
@@ -15028,11 +15064,6 @@
       "sha512": ""
     },
     "FenixAlliance.ABS.Portal.UI/1.1.6.9": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "FenixAlliance.ABS.SDK/1.1.6.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
