@@ -2,8 +2,8 @@
 ![Alliance Business Suite](https://absuite.net/wp-content/uploads/sites/13/2020/03/Logo.Blue_.NoBG_.h40.png "Alliance Business Suite")
 
 <p>
-  <a href="https://docs.absuite.net/reference/1.1.7/" target="_blank">
-     <img alt="Version" src="https://img.shields.io/badge/Version-1.1.7-blue.svg?cacheSeconds=2592000" />
+  <a href="https://docs.absuite.net/reference/1.2.0/" target="_blank">
+     <img alt="Version" src="https://img.shields.io/badge/Version-1.2.0-blue.svg?cacheSeconds=2592000" />
   </a>
   <a href="https://docs.absuite.net" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/Documentation-yes-brightgreen.svg" />
@@ -24,7 +24,9 @@ The Alliance Business Suite gives users a Modular, Full-Stack, Low-Code Applicat
 
 Both client and server code are written in C#, allowing users to extend the product with their own code through Module libraries. It builds upon next-generation technologies such as Blazor, SignalR, Razor Pages, and MVC through ASP.NET Core, an open-source and cross-platform web UI framework for building web apps using .NET and C# with or without the use of JavaScript.
 
-ABS Apps are composed of reusable web UI components implemented using C#, HTML, and CSS. 
+The power of the Alliance Business Suite can be leveraged from small personal blogs,  eCommerce platforms, and professional portfolios to the infrastructure of large corporations.
+
+
 
 ## About the Alliance Creed
 
@@ -161,29 +163,32 @@ namespace FenixAlliance.ABS
 # Roadmap
 This project is a work in progress and the schedule for implementing enhancements is dependent upon the availability of community members who are willing/able to assist. For a more comprehensive look at our roadmap, please visit our **[Progess Board](https://dev.azure.com/fenixalliance/ABS.Docs/_workitems/recentlyupdated)**.
 
-V.1.4 ( release in 2022 S1 )
+V.1.3 ( release: July 12, 2023 )
 - [ ] UBL 2.1 Support
 - [ ] Process Canvas.
 - [ ] PowerShell SDK 
 
-V.1.3 ( release in 2021 S2 )
+V.1.3 ( release: July 12, 2022 )
+- [ ] .NET 6.0 Stable Release
+- [ ] Template Definitions
+- [ ] Agreement Template Definitions
+- [ ] Email Signature Template Definitions
+- [ ] Document Template Definitions
+- [ ] Article Template Definitions
 - [ ] gRPC Modularization
 - [ ] Reporting Dashboard
 - [ ] Dynamic Dashboards
-- [ ] Granular Property Set Access
 - [ ] gRPC Modularization
 - [ ] ACS Modularization
-- [ ] Custom Macro Definitions
+- [ ] Granular Property Set Access
+- [ ] Custom Includes Definitions
 - [ ] Virtual Entity Data Sources
-
-V.1.2 ( release: July 12, 2021 )
 - [ ] Studio Static Localization
-- [ ] Template Definitions
-    - [ ] Agreement Template Definitions
-    - [ ] Email Template Definitions
-    - [ ] Email Signature Template Definitions
-    - [ ] Document Template Definitions
-    - [ ] Article Template Definitions
+- ✅ Email Template Definitions
+- ✅ Blazor Support (Experimental)
+
+V.1.2 LTS ( release: July 12, 2021 )
+
 - ✅ Custom Options Manager
 - ✅ Custom Portal Option Definitions
 - ✅ Virtual SPA Support (Angular/React)
@@ -214,7 +219,7 @@ V.1.2 ( release: July 12, 2021 )
     - ✅ Managed Module Support
     - ✅ Unmanaged Module Support
 
-V.1.0.0 ( released in Dec 31, 2020 )
+V.1.1 ( release: July 12, 2020 )
 - ✅ Authentication / User Management / Profile Management
 - ✅ Authorization / Roles Management / Granular Permissions
 - ✅ Blazor Support
