@@ -18482,46 +18482,35 @@ body {
 }
 
 
-/*Scroll bar nav*/
-::-webkit-scrollbar {
-    width: auto;
+@media all and (min-width:960px) and (max-width: 1024px) {
+    /* put your css styles in here */
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: auto;
-    -webkit-border-radius: auto;
-    border-radius: auto;
-    background: auto;
+@media all and (min-width:801px) and (max-width: 959px) {
+    /* put your css styles in here */
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: auto;
-    border-radius: auto;
-    background: auto;
-    -webkit-box-shadow: auto;
+@media all and (min-width:769px) and (max-width: 800px) {
+    /* put your css styles in here */
 }
 
-    ::-webkit-scrollbar-thumb:window-inactive {
-        background: auto;
+@media all and (min-width:569px) and (max-width: 768px) {
+    /* put your css styles in here */
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+    /* put your css styles in here */
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+    /* put your css styles in here */
+    .ms-ContextualHost.is-positioned {
+        position: relative;
+        margin: 0;
     }
 
-::-webkit-scrollbar {
-    all: unset;
 }
 
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+@media all and (min-width:0px) and (max-width: 320px) {
+    /* put your css styles in here */
 }
