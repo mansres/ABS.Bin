@@ -18078,3 +18078,27 @@
         max-width: 100% !important;
     }
 
+/*Scroll bar nav*/
+::-webkit-scrollbar {
+    width: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: auto;
+    -webkit-border-radius: auto;
+    border-radius: auto;
+    background: auto;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: auto;
+    border-radius: auto;
+    background: auto;
+    -webkit-box-shadow: auto;
+}
+
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: auto;
+    }

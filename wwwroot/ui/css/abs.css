@@ -351,15 +351,7 @@
     width: 24px
 }
 
-.control-icon .dashboard-customScrollbar {
-    overflow: hidden;
-    max-height: 300px
-}
 
-.control-icon .ps:hover > .ps__scrollbar-y-rail, .control-icon .ps > .ps__scrollbar-y-rail {
-    left: 0;
-    top: 40px !important
-}
 
 .view-all {
     position: absolute;
@@ -18487,4 +18479,49 @@ textarea[cols] {
 
 body {
     min-height: 100vh;
+}
+
+
+/*Scroll bar nav*/
+::-webkit-scrollbar {
+    width: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: auto;
+    -webkit-border-radius: auto;
+    border-radius: auto;
+    background: auto;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: auto;
+    border-radius: auto;
+    background: auto;
+    -webkit-box-shadow: auto;
+}
+
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: auto;
+    }
+
+::-webkit-scrollbar {
+    all: unset;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
