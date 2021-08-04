@@ -707,7 +707,7 @@
       "Azure.Identity/1.4.0": {
         "dependencies": {
           "Azure.Core": "1.16.0",
-          "Microsoft.Identity.Client": "4.35.0",
+          "Microsoft.Identity.Client": "4.35.1",
           "Microsoft.Identity.Client.Extensions.Msal": "2.18.4",
           "System.Memory": "4.5.4",
           "System.Security.Cryptography.ProtectedData": "5.0.0",
@@ -914,7 +914,7 @@
       "BlazorFluentUI.ListComponents/5.5.3": {
         "dependencies": {
           "BlazorFluentUI.CoreComponents": "5.5.3",
-          "DynamicData": "7.1.1",
+          "DynamicData": "7.2.1",
           "Microsoft.AspNetCore.Components.Web": "5.0.8"
         },
         "runtime": {
@@ -1266,14 +1266,14 @@
           "lib/netstandard2.0/DotNetToolkit.dll": {}
         }
       },
-      "DynamicData/7.1.1": {
+      "DynamicData/7.2.1": {
         "dependencies": {
           "System.Reactive": "5.0.0"
         },
         "runtime": {
           "lib/net5.0/DynamicData.dll": {
-            "assemblyVersion": "7.1.0.0",
-            "fileVersion": "7.1.1.11487"
+            "assemblyVersion": "7.2.0.0",
+            "fileVersion": "7.2.1.55539"
           }
         },
         "compile": {
@@ -2583,6 +2583,21 @@
           "lib/netstandard2.0/MassTransit.dll": {}
         }
       },
+      "MatBlazor/2.8.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.8",
+          "Microsoft.AspNetCore.Components.Web": "5.0.8"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MatBlazor.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/MatBlazor.dll": {}
+        }
+      },
       "MediatR/9.0.0": {
         "runtime": {
           "lib/netstandard2.1/MediatR.dll": {
@@ -2656,15 +2671,15 @@
           "lib/netstandard2.0/MessagePack.Annotations.dll": {}
         }
       },
-      "MetadataExtractor/2.6.0": {
+      "MetadataExtractor/2.7.0": {
         "dependencies": {
           "System.Text.Encoding.CodePages": "5.0.0",
           "XmpCore": "6.1.10.1"
         },
         "runtime": {
           "lib/netstandard2.0/MetadataExtractor.dll": {
-            "assemblyVersion": "2.6.0.0",
-            "fileVersion": "2.6.0.0"
+            "assemblyVersion": "2.7.0.0",
+            "fileVersion": "2.7.0.0"
           }
         },
         "compile": {
@@ -3694,7 +3709,7 @@
           "Microsoft.Bot.Schema": "4.14.1",
           "Microsoft.Extensions.Http": "5.0.0",
           "Microsoft.Extensions.Logging": "5.0.0",
-          "Microsoft.Identity.Client": "4.35.0",
+          "Microsoft.Identity.Client": "4.35.1",
           "Microsoft.IdentityModel.Clients.ActiveDirectory": "5.2.4",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.12.0",
           "Microsoft.Rest.ClientRuntime": "2.3.21",
@@ -3992,7 +4007,7 @@
       "Microsoft.Data.SqlClient/2.1.2": {
         "dependencies": {
           "Microsoft.Data.SqlClient.SNI.runtime": "2.1.1",
-          "Microsoft.Identity.Client": "4.35.0",
+          "Microsoft.Identity.Client": "4.35.1",
           "Microsoft.IdentityModel.JsonWebTokens": "6.12.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.12.0",
           "Microsoft.Win32.Registry": "5.0.0",
@@ -4644,7 +4659,7 @@
       "Microsoft.Graph.Core/2.0.0": {
         "dependencies": {
           "Azure.Core": "1.16.0",
-          "Microsoft.Identity.Client": "4.35.0",
+          "Microsoft.Identity.Client": "4.35.1",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.12.0",
           "System.Diagnostics.DiagnosticSource": "5.0.1",
           "System.Security.Claims": "4.3.0",
@@ -4660,11 +4675,11 @@
           "lib/netstandard2.0/Microsoft.Graph.Core.dll": {}
         }
       },
-      "Microsoft.Identity.Client/4.35.0": {
+      "Microsoft.Identity.Client/4.35.1": {
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {
-            "assemblyVersion": "4.35.0.0",
-            "fileVersion": "4.35.0.0"
+            "assemblyVersion": "4.35.1.0",
+            "fileVersion": "4.35.1.0"
           }
         },
         "compile": {
@@ -4673,7 +4688,7 @@
       },
       "Microsoft.Identity.Client.Extensions.Msal/2.18.4": {
         "dependencies": {
-          "Microsoft.Identity.Client": "4.35.0",
+          "Microsoft.Identity.Client": "4.35.1",
           "System.Security.Cryptography.ProtectedData": "5.0.0"
         },
         "runtime": {
@@ -4686,14 +4701,14 @@
           "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll": {}
         }
       },
-      "Microsoft.Identity.Web/1.15.1": {
+      "Microsoft.Identity.Web/1.15.2": {
         "dependencies": {
           "Azure.Identity": "1.4.0",
           "Azure.Security.KeyVault.Certificates": "4.1.0",
           "Azure.Security.KeyVault.Secrets": "4.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.8",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.8",
-          "Microsoft.Identity.Client": "4.35.0",
+          "Microsoft.Identity.Client": "4.35.1",
           "Microsoft.IdentityModel.Logging": "6.12.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.12.0",
           "System.IdentityModel.Tokens.Jwt": "6.12.0",
@@ -4701,26 +4716,26 @@
         },
         "runtime": {
           "lib/net5.0/Microsoft.Identity.Web.dll": {
-            "assemblyVersion": "1.15.1.0",
-            "fileVersion": "1.15.1.0"
+            "assemblyVersion": "1.15.2.0",
+            "fileVersion": "1.15.2.0"
           }
         },
         "compile": {
           "lib/net5.0/Microsoft.Identity.Web.dll": {}
         }
       },
-      "Microsoft.Identity.Web.UI/1.15.1": {
+      "Microsoft.Identity.Web.UI/1.15.2": {
         "dependencies": {
-          "Microsoft.Identity.Web": "1.15.1"
+          "Microsoft.Identity.Web": "1.15.2"
         },
         "runtime": {
           "lib/net5.0/Microsoft.Identity.Web.UI.Views.dll": {
-            "assemblyVersion": "1.15.1.0",
-            "fileVersion": "1.15.1.0"
+            "assemblyVersion": "1.15.2.0",
+            "fileVersion": "1.15.2.0"
           },
           "lib/net5.0/Microsoft.Identity.Web.UI.dll": {
-            "assemblyVersion": "1.15.1.0",
-            "fileVersion": "1.15.1.0"
+            "assemblyVersion": "1.15.2.0",
+            "fileVersion": "1.15.2.0"
           }
         },
         "compile": {
@@ -5779,6 +5794,36 @@
           "lib/net5.0/Mosaik.Core.dll": {}
         }
       },
+      "MudBlazor/5.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.8",
+          "Microsoft.AspNetCore.Components.Web": "5.0.8"
+        },
+        "runtime": {
+          "lib/net5.0/MudBlazor.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/MudBlazor.dll": {}
+        }
+      },
+      "MudBlazor.ThemeManager/1.0.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.8",
+          "MudBlazor": "5.1.0"
+        },
+        "runtime": {
+          "lib/net5.0/MudBlazor.ThemeManager.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/MudBlazor.ThemeManager.dll": {}
+        }
+      },
       "MySql.Data/8.0.14": {
         "dependencies": {
           "Google.Protobuf": "3.11.4",
@@ -6362,7 +6407,7 @@
           "lib/netstandard2.0/RabbitMQ.Client.dll": {}
         }
       },
-      "Radzen.Blazor/3.7.3": {
+      "Radzen.Blazor/3.8.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "5.0.8",
           "Microsoft.AspNetCore.Components.Web": "5.0.8",
@@ -6371,8 +6416,8 @@
         },
         "runtime": {
           "lib/net5.0/Radzen.Blazor.dll": {
-            "assemblyVersion": "3.7.3.0",
-            "fileVersion": "3.7.3.0"
+            "assemblyVersion": "3.8.1.0",
+            "fileVersion": "3.8.1.0"
           }
         },
         "compile": {
@@ -6416,6 +6461,54 @@
           "lib/netstandard1.6/RazorLight.dll": {}
         }
       },
+      "Reactive.Wasm/1.2.2": {
+        "dependencies": {
+          "Splat": "11.1.1",
+          "System.Reactive": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reactive.Wasm.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.2.9890"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Reactive.Wasm.dll": {}
+        }
+      },
+      "ReactiveUI/14.2.1": {
+        "dependencies": {
+          "DynamicData": "7.2.1",
+          "Splat": "11.1.1",
+          "System.Reactive": "5.0.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0"
+        },
+        "runtime": {
+          "lib/net5.0/ReactiveUI.dll": {
+            "assemblyVersion": "14.2.0.0",
+            "fileVersion": "14.2.1.57049"
+          }
+        },
+        "compile": {
+          "lib/net5.0/ReactiveUI.dll": {}
+        }
+      },
+      "ReactiveUI.Blazor/14.2.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.8",
+          "Reactive.Wasm": "1.2.2",
+          "ReactiveUI": "14.2.1"
+        },
+        "runtime": {
+          "lib/net5.0/ReactiveUI.Blazor.dll": {
+            "assemblyVersion": "14.2.0.0",
+            "fileVersion": "14.2.1.57049"
+          }
+        },
+        "compile": {
+          "lib/net5.0/ReactiveUI.Blazor.dll": {}
+        }
+      },
       "reCAPTCHA.AspNetCore/3.0.10": {
         "runtime": {
           "lib/netcoreapp3.1/reCAPTCHA.AspNetCore.dll": {
@@ -6425,6 +6518,17 @@
         },
         "compile": {
           "lib/netcoreapp3.1/reCAPTCHA.AspNetCore.dll": {}
+        }
+      },
+      "RestSharp/106.12.0": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.12.0.0",
+            "fileVersion": "106.12.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
@@ -6826,6 +6930,17 @@
           "lib/netcoreapp3.1/SixLabors.ImageSharp.Web.dll": {}
         }
       },
+      "Splat/11.1.1": {
+        "runtime": {
+          "lib/net5.0/Splat.dll": {
+            "assemblyVersion": "11.1.0.0",
+            "fileVersion": "11.1.1.30354"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Splat.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.4": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.0.4",
@@ -6989,39 +7104,39 @@
           "lib/netstandard2.1/StarkbankEcdsa.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/6.1.4": {
+      "Swashbuckle.AspNetCore.Swagger/6.1.5": {
         "dependencies": {
           "Microsoft.OpenApi": "1.2.3"
         },
         "runtime": {
           "lib/net5.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "assemblyVersion": "6.1.4.0",
-            "fileVersion": "6.1.4.0"
+            "assemblyVersion": "6.1.5.0",
+            "fileVersion": "6.1.5.0"
           }
         },
         "compile": {
           "lib/net5.0/Swashbuckle.AspNetCore.Swagger.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/6.1.4": {
+      "Swashbuckle.AspNetCore.SwaggerGen/6.1.5": {
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "6.1.4"
+          "Swashbuckle.AspNetCore.Swagger": "6.1.5"
         },
         "runtime": {
           "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "assemblyVersion": "6.1.4.0",
-            "fileVersion": "6.1.4.0"
+            "assemblyVersion": "6.1.5.0",
+            "fileVersion": "6.1.5.0"
           }
         },
         "compile": {
           "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/6.1.4": {
+      "Swashbuckle.AspNetCore.SwaggerUI/6.1.5": {
         "runtime": {
           "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "assemblyVersion": "6.1.4.0",
-            "fileVersion": "6.1.4.0"
+            "assemblyVersion": "6.1.5.0",
+            "fileVersion": "6.1.5.0"
           }
         },
         "compile": {
@@ -9364,55 +9479,79 @@
           "FenixAlliance.ABS.Modules.CloudHub.dll": {}
         }
       },
-      "FenixAlliance.ABS.Modules.Cognitive/1.0.0": {
+      "FenixAlliance.ABS.Modules.CognitiveServices.Commons/1.0.0": {
         "dependencies": {
-          "FenixAlliance.ABS.Hub": "1.1.6.9",
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR": "1.0.0",
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Common": "1.0.0",
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Core": "1.0.0"
+          "FenixAlliance.ABS.Hub": "1.1.6.9"
         },
         "runtime": {
-          "FenixAlliance.ABS.Modules.Cognitive.dll": {}
+          "FenixAlliance.ABS.Modules.CognitiveServices.Commons.dll": {}
         },
         "compile": {
-          "FenixAlliance.ABS.Modules.Cognitive.dll": {}
+          "FenixAlliance.ABS.Modules.CognitiveServices.Commons.dll": {}
+        }
+      },
+      "FenixAlliance.ABS.Modules.CognitiveServices.Core/1.0.0": {
+        "dependencies": {
+          "FenixAlliance.ABS.Hub": "1.1.6.9",
+          "FenixAlliance.ABS.Modules.CognitiveServices.NLP": "1.0.0",
+          "FenixAlliance.ABS.Modules.CognitiveServices.SAR": "1.0.0",
+          "FenixAlliance.ABS.Modules.CognitiveServices.SentimentAnalysis": "1.0.0",
+          "FenixAlliance.ABS.Modules.CognitiveServices.SpamDetection": "1.0.0"
+        },
+        "runtime": {
+          "FenixAlliance.ABS.Modules.CognitiveServices.Core.dll": {}
+        },
+        "compile": {
+          "FenixAlliance.ABS.Modules.CognitiveServices.Core.dll": {}
+        }
+      },
+      "FenixAlliance.ABS.Modules.CognitiveServices.NLP/1.0.0": {
+        "dependencies": {
+          "FenixAlliance.ABS.Hub": "1.1.6.9"
+        },
+        "runtime": {
+          "FenixAlliance.ABS.Modules.CognitiveServices.NLP.dll": {}
+        },
+        "compile": {
+          "FenixAlliance.ABS.Modules.CognitiveServices.NLP.dll": {}
         }
       },
       "FenixAlliance.ABS.Modules.CognitiveServices.SAR/1.0.0": {
         "dependencies": {
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Common": "1.0.0",
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Core": "1.0.0"
-        },
-        "runtime": {
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.dll": {}
-        },
-        "compile": {
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.dll": {}
-        }
-      },
-      "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Common/1.0.0": {
-        "dependencies": {
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Core": "1.0.0",
+          "FenixAlliance.ABS.Hub": "1.1.6.9",
           "System.Runtime": "4.3.1",
           "System.Runtime.Caching": "5.0.0",
           "WindowsAzure.Storage": "9.3.3"
         },
         "runtime": {
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Common.dll": {}
+          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.dll": {}
         },
         "compile": {
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Common.dll": {}
+          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.dll": {}
         }
       },
-      "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Core/1.0.0": {
+      "FenixAlliance.ABS.Modules.CognitiveServices.SentimentAnalysis/1.0.0": {
         "dependencies": {
-          "FenixAlliance.ABS.Hub": "1.1.6.9"
+          "FenixAlliance.ABS.Hub": "1.1.6.9",
+          "FenixAlliance.ABS.Modules.CognitiveServices.Commons": "1.0.0"
         },
         "runtime": {
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Core.dll": {}
+          "FenixAlliance.ABS.Modules.CognitiveServices.SentimentAnalysis.dll": {}
         },
         "compile": {
-          "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Core.dll": {}
+          "FenixAlliance.ABS.Modules.CognitiveServices.SentimentAnalysis.dll": {}
+        }
+      },
+      "FenixAlliance.ABS.Modules.CognitiveServices.SpamDetection/1.0.0": {
+        "dependencies": {
+          "FenixAlliance.ABS.Hub": "1.1.6.9",
+          "FenixAlliance.ABS.Modules.CognitiveServices.Commons": "1.0.0"
+        },
+        "runtime": {
+          "FenixAlliance.ABS.Modules.CognitiveServices.SpamDetection.dll": {}
+        },
+        "compile": {
+          "FenixAlliance.ABS.Modules.CognitiveServices.SpamDetection.dll": {}
         }
       },
       "FenixAlliance.ABS.Modules.ContactSight/1.1.6.9": {
@@ -9487,12 +9626,13 @@
           "FenixAlliance.ABS.Modules.Blockchains": "1.0.0",
           "FenixAlliance.ABS.Modules.BotMaker.Core": "1.0.0",
           "FenixAlliance.ABS.Modules.CloudHub": "1.0.0",
-          "FenixAlliance.ABS.Modules.Cognitive": "1.0.0",
+          "FenixAlliance.ABS.Modules.CognitiveServices.Core": "1.0.0",
           "FenixAlliance.ABS.Modules.ContactSight": "1.1.6.9",
           "FenixAlliance.ABS.Modules.Healthcare": "1.0.0",
           "FenixAlliance.ABS.Modules.Helpdesk": "1.1.6.9",
           "FenixAlliance.ABS.Modules.IAM": "1.1.6.9",
           "FenixAlliance.ABS.Modules.Learning": "1.1.6.9",
+          "FenixAlliance.ABS.Modules.Licensing": "1.0.0",
           "FenixAlliance.ABS.Modules.Logistics": "1.1.6.9",
           "FenixAlliance.ABS.Modules.Manufacturing": "1.1.6.9",
           "FenixAlliance.ABS.Modules.Marketing": "1.1.6.9",
@@ -9511,7 +9651,8 @@
           "FenixAlliance.ABS.Modules.Sustainability": "1.0.0",
           "FenixAlliance.ABS.Modules.Workflows": "1.0.0",
           "FenixAlliance.ABS.Modules.Workforce": "1.1.6.9",
-          "FenixAlliance.ABS.Modules.Workplace": "1.1.6.9"
+          "FenixAlliance.ABS.Modules.Workplace": "1.1.6.9",
+          "FenixAlliance.ICX.Core": "1.1.6.9"
         },
         "runtime": {
           "FenixAlliance.ABS.Modules.Hub.dll": {}
@@ -9540,6 +9681,17 @@
         },
         "compile": {
           "FenixAlliance.ABS.Modules.Learning.dll": {}
+        }
+      },
+      "FenixAlliance.ABS.Modules.Licensing/1.0.0": {
+        "dependencies": {
+          "FenixAlliance.ABS.Hub": "1.1.6.9"
+        },
+        "runtime": {
+          "FenixAlliance.ABS.Modules.Licensing.dll": {}
+        },
+        "compile": {
+          "FenixAlliance.ABS.Modules.Licensing.dll": {}
         }
       },
       "FenixAlliance.ABS.Modules.Logistics/1.1.6.9": {
@@ -9890,10 +10042,11 @@
           "LiteDB": "5.0.11",
           "MailKit": "2.14.0",
           "MassTransit": "7.2.1",
+          "MatBlazor": "2.8.0",
           "MediatR": "9.0.0",
           "MediatR.Extensions.Autofac.DependencyInjection": "7.3.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
-          "MetadataExtractor": "2.6.0",
+          "MetadataExtractor": "2.7.0",
           "Microsoft.ApplicationInsights.AspNetCore": "2.18.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Microsoft.AspNetCore.Authentication": "2.2.0",
@@ -9956,9 +10109,9 @@
           "Microsoft.Extensions.Logging.Debug": "5.0.0",
           "Microsoft.Extensions.Primitives": "5.0.1",
           "Microsoft.Graph": "4.0.0",
-          "Microsoft.Identity.Client": "4.35.0",
-          "Microsoft.Identity.Web": "1.15.1",
-          "Microsoft.Identity.Web.UI": "1.15.1",
+          "Microsoft.Identity.Client": "4.35.1",
+          "Microsoft.Identity.Web": "1.15.2",
+          "Microsoft.Identity.Web.UI": "1.15.2",
           "Microsoft.IdentityModel.Tokens": "6.12.0",
           "Microsoft.ML": "1.6.0",
           "Microsoft.ML.AutoML": "0.18.0",
@@ -9975,6 +10128,8 @@
           "Mobsites.Blazor.SignaturePad": "1.1.7",
           "MongoDB.Bson": "2.13.0",
           "MongoDB.Driver": "2.13.0",
+          "MudBlazor": "5.1.0",
+          "MudBlazor.ThemeManager": "1.0.3",
           "NReco.LambdaParser": "1.0.12",
           "Newtonsoft.Json": "13.0.1",
           "NodaTime": "3.0.5",
@@ -9987,9 +10142,11 @@
           "Pomelo.EntityFrameworkCore.MySql": "5.0.1",
           "QRCoder": "1.4.1",
           "RabbitMQ.Client": "6.2.2",
-          "Radzen.Blazor": "3.7.3",
+          "Radzen.Blazor": "3.8.1",
           "Razor.Templating.Core": "1.5.0",
           "RazorLight": "1.1.0",
+          "ReactiveUI.Blazor": "14.2.1",
+          "RestSharp": "106.12.0",
           "SendGrid": "9.24.1",
           "Seq.Extensions.Logging": "6.0.0",
           "Serilog": "2.10.0",
@@ -10003,9 +10160,9 @@
           "SixLabors.ImageSharp.Web": "1.0.3",
           "StackifyMiddleware": "3.0.5.2",
           "Standard.Licensing": "1.1.5",
-          "Swashbuckle.AspNetCore.Swagger": "6.1.4",
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.1.4",
-          "Swashbuckle.AspNetCore.SwaggerUI": "6.1.4",
+          "Swashbuckle.AspNetCore.Swagger": "6.1.5",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.1.5",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.1.5",
           "System.ComponentModel.Annotations": "5.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.12.0",
           "System.Reactive": "5.0.0",
@@ -12104,12 +12261,12 @@
       "path": "dotnettoolkit/1.6.0",
       "hashPath": "dotnettoolkit.1.6.0.nupkg.sha512"
     },
-    "DynamicData/7.1.1": {
+    "DynamicData/7.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Pc6J5bFnSxEa64PV2V67FMcLlDdpv6m+zTBKSnRN3aLon/WtWWy8kuDpHFbJlgXHtqc6Nxloj9ItuvDlvKC/8w==",
-      "path": "dynamicdata/7.1.1",
-      "hashPath": "dynamicdata.7.1.1.nupkg.sha512"
+      "sha512": "sha512-kjzcz13spIQoXlR4nZhIOsyXfW42rtr7ncOyymD83vPa/S+m0CkZdDx3/z2oYneUV84J7wNZnRZISATat/Iobg==",
+      "path": "dynamicdata/7.2.1",
+      "hashPath": "dynamicdata.7.2.1.nupkg.sha512"
     },
     "Emitter/1.0.41": {
       "type": "package",
@@ -12790,6 +12947,13 @@
       "path": "masstransit/7.2.1",
       "hashPath": "masstransit.7.2.1.nupkg.sha512"
     },
+    "MatBlazor/2.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NAbkrLR6YdEXNtQQreJOAdZEqTBeG6wXiTxs9ItHBCLnoCouX//VELHakDXcMtK27QzmeB8uGRwWIkglvhpKLg==",
+      "path": "matblazor/2.8.0",
+      "hashPath": "matblazor.2.8.0.nupkg.sha512"
+    },
     "MediatR/9.0.0": {
       "type": "package",
       "serviceable": true,
@@ -12825,12 +12989,12 @@
       "path": "messagepack.annotations/2.2.85",
       "hashPath": "messagepack.annotations.2.2.85.nupkg.sha512"
     },
-    "MetadataExtractor/2.6.0": {
+    "MetadataExtractor/2.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XrmOWuG/f05LNezGwq+z8YPzbHtOFgNcoOqWfwrRLnT4rWfwHkht2jVqeWHYc3qumi0OWZYL7dG2qZqhTBflhQ==",
-      "path": "metadataextractor/2.6.0",
-      "hashPath": "metadataextractor.2.6.0.nupkg.sha512"
+      "sha512": "sha512-QyI86sJvRSm29Ze4GA3gi/c5oRfNMYA1VjQpvoLtlT6PONCLmTbOzePSzLVpUOnu41ROA7PWc2Rb7y6TjM0TuQ==",
+      "path": "metadataextractor/2.7.0",
+      "hashPath": "metadataextractor.2.7.0.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights/2.18.0": {
       "type": "package",
@@ -13931,12 +14095,12 @@
       "path": "microsoft.graph.core/2.0.0",
       "hashPath": "microsoft.graph.core.2.0.0.nupkg.sha512"
     },
-    "Microsoft.Identity.Client/4.35.0": {
+    "Microsoft.Identity.Client/4.35.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oebkkKUlS8Z/gSBUVMGulaUerQGmD1qNr+5I5o9E2/bPC/jqYjVowGV9u7DRbdBfCc6oDoX9VajQwO+2Tl0SAA==",
-      "path": "microsoft.identity.client/4.35.0",
-      "hashPath": "microsoft.identity.client.4.35.0.nupkg.sha512"
+      "sha512": "sha512-u7IU0HlOG+nedpG/syrKStAVkHfp2cBJe09udQF8jFiQs3784dGteMneijM61g4NIGBi3XmDDNnbmPVi2K94Ng==",
+      "path": "microsoft.identity.client/4.35.1",
+      "hashPath": "microsoft.identity.client.4.35.1.nupkg.sha512"
     },
     "Microsoft.Identity.Client.Extensions.Msal/2.18.4": {
       "type": "package",
@@ -13945,19 +14109,19 @@
       "path": "microsoft.identity.client.extensions.msal/2.18.4",
       "hashPath": "microsoft.identity.client.extensions.msal.2.18.4.nupkg.sha512"
     },
-    "Microsoft.Identity.Web/1.15.1": {
+    "Microsoft.Identity.Web/1.15.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tvFinF3AH5N5XF0XdUWxB7VHxL+f4zKTGvwlsZ6XrLye4BZp3iZ1RFgRRLvER9TEOp0DxO/SidEO2wYL6IC9ig==",
-      "path": "microsoft.identity.web/1.15.1",
-      "hashPath": "microsoft.identity.web.1.15.1.nupkg.sha512"
+      "sha512": "sha512-qAE0JcyvPKzQXNZTJbpsTsFt1b006K66wjdA90ayt9xkW5IY7PIpcvhSz/kzkt45vBYaGMs6LL1v6XVsKN1rdQ==",
+      "path": "microsoft.identity.web/1.15.2",
+      "hashPath": "microsoft.identity.web.1.15.2.nupkg.sha512"
     },
-    "Microsoft.Identity.Web.UI/1.15.1": {
+    "Microsoft.Identity.Web.UI/1.15.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JQ4xYNybht/PApj9qyfgop856m+z12RqM8vPJNNGCaKfjDqsP4I8PxVFOJM9CALj7zRW0efGZ9OXiVyyLVp3fw==",
-      "path": "microsoft.identity.web.ui/1.15.1",
-      "hashPath": "microsoft.identity.web.ui.1.15.1.nupkg.sha512"
+      "sha512": "sha512-dcbL1bYu0LjRJKz4JWxaTOoEGiVXgIF6WT/ylqM+Sqh2KBFhjRMch53LDYyTvN6rM2QqsRooQrA8SZIIHmKtTA==",
+      "path": "microsoft.identity.web.ui/1.15.2",
+      "hashPath": "microsoft.identity.web.ui.1.15.2.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Clients.ActiveDirectory/5.2.4": {
       "type": "package",
@@ -14372,6 +14536,20 @@
       "path": "mosaik.core/0.0.18041",
       "hashPath": "mosaik.core.0.0.18041.nupkg.sha512"
     },
+    "MudBlazor/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1+S6iKhtLK8+slvfi15qZiyP2IC4eZsj9lyHQD4WMV8C+LNvgsi19awPdOKfoHJxrdLOFqLpPN4vGUFRoYLsmA==",
+      "path": "mudblazor/5.1.0",
+      "hashPath": "mudblazor.5.1.0.nupkg.sha512"
+    },
+    "MudBlazor.ThemeManager/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qCSa+XmNu93JjAQ0dahH1Pz0rBpds0/g+yVNsp6mCA7FrxHHnhoUVFcCscO7b1P1Cak062TY69hZHJF8WxLGcw==",
+      "path": "mudblazor.thememanager/1.0.3",
+      "hashPath": "mudblazor.thememanager.1.0.3.nupkg.sha512"
+    },
     "MySql.Data/8.0.14": {
       "type": "package",
       "serviceable": true,
@@ -14659,12 +14837,12 @@
       "path": "rabbitmq.client/6.2.2",
       "hashPath": "rabbitmq.client.6.2.2.nupkg.sha512"
     },
-    "Radzen.Blazor/3.7.3": {
+    "Radzen.Blazor/3.8.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QsJwYj2kg/99DUE8+YT5zQL6+Oh0GcT/Gy6CGHhBs359qTn32+RyQ4OSi/fJwsKtq2NA+FccwQco+Dvj+JQzXQ==",
-      "path": "radzen.blazor/3.7.3",
-      "hashPath": "radzen.blazor.3.7.3.nupkg.sha512"
+      "sha512": "sha512-Gu0zWsVcZOJ3N85EaLY36LeWd5StF4nMMJZnoDbnIqA/xpSH/1eOaxViJd8NkNR+T9xQpjNE0iipKp8rS7lBqw==",
+      "path": "radzen.blazor/3.8.1",
+      "hashPath": "radzen.blazor.3.8.1.nupkg.sha512"
     },
     "Razor.Templating.Core/1.5.0": {
       "type": "package",
@@ -14680,12 +14858,40 @@
       "path": "razorlight/1.1.0",
       "hashPath": "razorlight.1.1.0.nupkg.sha512"
     },
+    "Reactive.Wasm/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dw7s6gHXuRbAZQR1sw0vr/zH4PqDp/SmxBtnG/Epiv326PkIxmN2JtJsUN6tEY8WEA8fVBGZj5ITMomRfwYS9w==",
+      "path": "reactive.wasm/1.2.2",
+      "hashPath": "reactive.wasm.1.2.2.nupkg.sha512"
+    },
+    "ReactiveUI/14.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nmR3Kp+nMi7QmHhhkmD51g0nF9L4qZRdzxHxFqvnaihpFLN8TUJa3ZdggO70bJHf0Es84VkqwWdV2vuq5mmV3w==",
+      "path": "reactiveui/14.2.1",
+      "hashPath": "reactiveui.14.2.1.nupkg.sha512"
+    },
+    "ReactiveUI.Blazor/14.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O4YW6O1OltdO70w6L/AyyROs7ChvFz3W7QnTb0Um8XbSQ1WZoQCpTfkwMGkBWQ9AZkQZIWVOXctZpOU1g1mUZA==",
+      "path": "reactiveui.blazor/14.2.1",
+      "hashPath": "reactiveui.blazor.14.2.1.nupkg.sha512"
+    },
     "reCAPTCHA.AspNetCore/3.0.10": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-MJ3MCMBWr4gd+JZBXyUyT+YOdnMTNlysRrWKne/B/4hSxrpqERxinenvup6hVkQAoPz0DXzzJDujROEQPwohow==",
       "path": "recaptcha.aspnetcore/3.0.10",
       "hashPath": "recaptcha.aspnetcore.3.0.10.nupkg.sha512"
+    },
+    "RestSharp/106.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-irOsQHe5nTJB0BKxGQnTX1dsgCPl5dLTxvL7gbl98JiFPiHMN4wpFyUG/66ZpaFCsIrPKh6XwozWXlwYe9JwYQ==",
+      "path": "restsharp/106.12.0",
+      "hashPath": "restsharp.106.12.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
@@ -14974,6 +15180,13 @@
       "path": "sixlabors.imagesharp.web/1.0.3",
       "hashPath": "sixlabors.imagesharp.web.1.0.3.nupkg.sha512"
     },
+    "Splat/11.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qIgixm6tg+6Sztd5BM36Y+sRWdmzlCV2TYnViOSwqvOGAMaYYE9EhIaKHLbZHn6KXWAML8GMGx0kaosUMUA0rA==",
+      "path": "splat/11.1.1",
+      "hashPath": "splat.11.1.1.nupkg.sha512"
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.4": {
       "type": "package",
       "serviceable": true,
@@ -15023,26 +15236,26 @@
       "path": "starkbank-ecdsa/1.3.1",
       "hashPath": "starkbank-ecdsa.1.3.1.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.Swagger/6.1.4": {
+    "Swashbuckle.AspNetCore.Swagger/6.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5XRKPKXpQRJMdOwHgotSZjWYGKnvresUIKiUOecmDrsiTkRpUd15QJMS/+HKYjjOvWnJthYwhLJG3pABJOHwOg==",
-      "path": "swashbuckle.aspnetcore.swagger/6.1.4",
-      "hashPath": "swashbuckle.aspnetcore.swagger.6.1.4.nupkg.sha512"
+      "sha512": "sha512-Wp8FlwNCKR/DfxvEkjQdru0l7aUp4/5VLEvejCA8t/SMMcUTP+xw4zvyEjGCBoJ/ETqzQM3y+72iYaEOhBlYOw==",
+      "path": "swashbuckle.aspnetcore.swagger/6.1.5",
+      "hashPath": "swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/6.1.4": {
+    "Swashbuckle.AspNetCore.SwaggerGen/6.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-i0Y3a3XMKz7r9vMNtB7TUIsWXpz9uJwnJ42NV3lAnmem7XpTykxm/cFJqHc9CqVBdbPf7XPvhUvEiUybRlocIg==",
-      "path": "swashbuckle.aspnetcore.swaggergen/6.1.4",
-      "hashPath": "swashbuckle.aspnetcore.swaggergen.6.1.4.nupkg.sha512"
+      "sha512": "sha512-16M5iJN+hzykkH/vEm4V+47rh8r8KNCOSkIWvP9/+krH3hqVjMlhuop8Xzq6IXckmpXLwxoylLBpiSG9Yy2UUQ==",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.1.5",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.6.1.5.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/6.1.4": {
+    "Swashbuckle.AspNetCore.SwaggerUI/6.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ue8Ag73DOXPPB/NCqT7oN1PYSj35IETWROsIZG9EbwAtFDcgonWOrHbefjMFUGyPalNm6CSmVm1JInpURnxMgw==",
-      "path": "swashbuckle.aspnetcore.swaggerui/6.1.4",
-      "hashPath": "swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512"
+      "sha512": "sha512-/YwEGAdkDK8rEPSuPURNNgJ3mWmtsCI/xnVlWBaM2UDNVTr8wBUO0qhLvHFgrf6NjjjNq6cyO3M7lZMLXcGusw==",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.1.5",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
@@ -16345,7 +16558,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FenixAlliance.ABS.Modules.Cognitive/1.0.0": {
+    "FenixAlliance.ABS.Modules.CognitiveServices.Commons/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FenixAlliance.ABS.Modules.CognitiveServices.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FenixAlliance.ABS.Modules.CognitiveServices.NLP/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -16355,12 +16578,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Common/1.0.0": {
+    "FenixAlliance.ABS.Modules.CognitiveServices.SentimentAnalysis/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "FenixAlliance.ABS.Modules.CognitiveServices.SAR.Core/1.0.0": {
+    "FenixAlliance.ABS.Modules.CognitiveServices.SpamDetection/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -16401,6 +16624,11 @@
       "sha512": ""
     },
     "FenixAlliance.ABS.Modules.Learning/1.1.6.9": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FenixAlliance.ABS.Modules.Licensing/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
