@@ -1,0 +1,1 @@
+import{r as i,h as o}from"./p-9ac75b7d.js";const t=class{constructor(o){i(this,o)}componentWillLoad(){let i=this.match.params.id;i&&"new"==i.toLowerCase()&&(i=null),this.id=i}render(){return o("div",null,o("elsa-workflow-definition-editor-screen",{"workflow-definition-id":this.id}))}};export{t as elsa_studio_workflow_definitions_edit};

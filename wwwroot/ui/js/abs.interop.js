@@ -163,6 +163,11 @@ window.blazorUtils = {
     startLoading() {
         window.blazorUtils.NProgressStart()
     },
+    resizeIframe(iframeId) {
+        $(iframeId).load(function () {
+            this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+        });
+    },
     formatCurrency: function (number, currency = "USD", locale = "en-US") {
         return new Intl.NumberFormat(locale, { style: 'currency', currency: currency }).format(number)
     },

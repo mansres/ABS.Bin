@@ -1,0 +1,1 @@
+import{A as o}from"./p-62f42337.js";function t(i){o.injectProps(i,["history","location"])}var i;!function(o){o[o.TopLeft=0]="TopLeft",o[o.TopRight=1]="TopRight"}(i||(i={}));export{i as D,t as i};

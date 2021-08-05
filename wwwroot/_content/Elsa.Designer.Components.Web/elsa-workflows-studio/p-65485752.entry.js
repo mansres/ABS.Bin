@@ -1,0 +1,1 @@
+import{r as o,h as r}from"./p-9ac75b7d.js";const e=class{constructor(r){o(this,r)}componentWillLoad(){this.id=this.match.params.id}render(){return r("div",null,r("elsa-workflow-blueprint-viewer-screen",{workflowDefinitionId:this.id}))}};export{e as elsa_studio_workflow_blueprint_view};
