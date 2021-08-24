@@ -1,0 +1,18 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Blazor.Extensions.Canvas" Path="C:\Users\PC\.nuget\packages\blazor.extensions.canvas\1.1.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/BlazorFluentUI.CoreComponents" Path="C:\Users\PC\.nuget\packages\blazorfluentui.corecomponents\5.5.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/BlazorFluentUI.ListComponents" Path="C:\Users\PC\.nuget\packages\blazorfluentui.listcomponents\5.5.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/ChartJs.Blazor.Fork" Path="C:\Users\PC\.nuget\packages\chartjs.blazor.fork\2.0.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/MatBlazor" Path="C:\Users\PC\.nuget\packages\matblazor\2.8.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Mobsites.Blazor.SignaturePad" Path="C:\Users\PC\.nuget\packages\mobsites.blazor.signaturepad\1.1.7\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/MudBlazor" Path="C:\Users\PC\.nuget\packages\mudblazor\5.1.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/MudBlazor.ThemeManager" Path="C:\Users\PC\.nuget\packages\mudblazor.thememanager\1.0.5\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\PC\.nuget\packages\radzen.blazor\3.9.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Toolbelt.Blazor.HotKeys" Path="C:\Users\PC\.nuget\packages\toolbelt.blazor.hotkeys\10.0.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/ZXingBlazor" Path="C:\Users\PC\.nuget\packages\zxingblazor\0.1.6\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/aps" Path="C:\Code\FAGroup\FenixAlliance.APS\FenixAlliance.APS.Core\wwwroot\" />
+  <ContentRoot BasePath="/fixtures" Path="C:\Code\FAGroup\FenixAlliance.ABM\FenixAlliance.ABM.Fixtures\wwwroot\" />
+  <ContentRoot BasePath="/fs" Path="C:\Code\FAGroup\FenixAlliance.ABP\FenixAlliance.ABP.FileSystem\wwwroot\" />
+  <ContentRoot BasePath="/Identity" Path="C:\Users\PC\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.9\staticwebassets\V4\" />
+  <ContentRoot BasePath="/ui" Path="C:\Code\FAGroup\FenixAlliance.ABS\FenixAlliance.ABS.Portal\FenixAlliance.ABS.Portal.UI\obj\Release\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>

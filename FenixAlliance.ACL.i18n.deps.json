@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FenixAlliance.ACL.i18n/1.2.0": {
+        "runtime": {
+          "FenixAlliance.ACL.i18n.dll": {}
+        },
+        "resources": {
+          "es/FenixAlliance.ACL.i18n.resources.dll": {
+            "locale": "es"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FenixAlliance.ACL.i18n/1.2.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

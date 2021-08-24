@@ -4,11 +4,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [1.2.1] - 2021-07-12
+### Added
+- [ABS] View Rendering Cache
+- [ABS] AppDomain Assembly Scoping
+
+
 ## [1.2] - 2021-07-12
+### Added
+- [ABS] Razor Templating Engine
+- [ABS] Custom Options Manager (API)
+- [ABS] Portal Option Manager (UI)
+- [ABS] Custom Portal Option Definitions
+- [ABS] Virtual SPA Support (Angular/React)
+- [ABS] Custom Service Endpoint Definitions
 
 ## [1.1.9] - 2021-06-30
+### Added
+- [ABS] Theme Precompilation
 
 ## [1.1.8] - 2021-06-18
+
+### Added
+- [ABS] Workflows Capability
+
 
 ## [1.1.7] - 2021-06-06
 ### Added
@@ -75,6 +95,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [ABM] Model Modification to support DB-stored precompiled views.
 ### Removed
 - [ICX] Taxonomies Creation Controllers/Views.
+
 ## [1.1.4.x] - 2021-04-13
 ### Added
 - [ABS] Extension Updates Page
