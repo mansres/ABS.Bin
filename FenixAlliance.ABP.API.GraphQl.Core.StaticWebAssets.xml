@@ -5,10 +5,10 @@
   <ContentRoot BasePath="_content/ChartJs.Blazor.Fork" Path="C:\Users\PC\.nuget\packages\chartjs.blazor.fork\2.0.2\build\..\staticwebassets\" />
   <ContentRoot BasePath="_content/MatBlazor" Path="C:\Users\PC\.nuget\packages\matblazor\2.8.0\build\..\staticwebassets\" />
   <ContentRoot BasePath="_content/Mobsites.Blazor.SignaturePad" Path="C:\Users\PC\.nuget\packages\mobsites.blazor.signaturepad\1.1.7\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/MudBlazor" Path="C:\Users\PC\.nuget\packages\mudblazor\5.1.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/MudBlazor" Path="C:\Users\PC\.nuget\packages\mudblazor\5.1.3\build\..\staticwebassets\" />
   <ContentRoot BasePath="_content/MudBlazor.ThemeManager" Path="C:\Users\PC\.nuget\packages\mudblazor.thememanager\1.0.5\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\PC\.nuget\packages\radzen.blazor\3.9.6\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Toolbelt.Blazor.HotKeys" Path="C:\Users\PC\.nuget\packages\toolbelt.blazor.hotkeys\10.0.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\PC\.nuget\packages\radzen.blazor\3.9.8\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Toolbelt.Blazor.HotKeys" Path="C:\Users\PC\.nuget\packages\toolbelt.blazor.hotkeys\11.1.0\build\..\staticwebassets\" />
   <ContentRoot BasePath="_content/ZXingBlazor" Path="C:\Users\PC\.nuget\packages\zxingblazor\0.1.6\build\..\staticwebassets\" />
   <ContentRoot BasePath="/" Path="C:\Code\FAGroup\FenixAlliance.ABP\FenixAlliance.ABP.API.GraphQl\FenixAlliance.ABP.API.GraphQl.Core\obj\Release\net5.0\scopedcss\bundle\" />
   <ContentRoot BasePath="/aps" Path="C:\Code\FAGroup\FenixAlliance.APS\FenixAlliance.APS.Core\wwwroot\" />
